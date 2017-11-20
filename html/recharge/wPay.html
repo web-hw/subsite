@@ -3,18 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>充值中心</title>
-	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
-	<link rel="stylesheet" href="__PUBLIC__/css/recharge.css">
-	<script src="__PUBLIC__/lib/jquery-1.7.2.min.js"></script>
-	<include file="Public/IE" />
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/recharge.css">
+	<!--[if IE]><style>.main .cont dd input.other-money{top:0;}</style><![endif]-->
+	<!--[if lt IE 8]><style>.main .cont{width:880px;}</style><![endif]-->
+	<link rel="stylesheet" href="../../css/footer.css">
+	<script src="../../lib/jquery-1.7.2.min.js"></script>
 </head>
-<body>
-<include file="Public/recharge_top" />
+<!-- top start -->
+<div class="recharge-nav clearfix">
+	<div class="title f-left">
+		<a href="/"></a>
+		<p>充值中心</p>
+	</div>
+	<ul class="f-right clearfix">
+		<li><a id="loginBtn">登录</a></li>
+		<li>|</li>
+		<li><a id="regBtn">注册</a></li>
+	</ul>
+</div>
+<!-- end top -->
 <div class="d">
 	<p class="divide"></p>
 </div>
 <div class="main">
-	<include file="Public/recharge_nav" />
+	<div class="pay-way f-left">
+		<ul>
+			<li><a class="alipay current" href="index.html">支付宝</a></li>
+			<li><a class="wChat" href="wPay.html">微信</a></li>
+		</ul>
+	</div>
 	<div class="c-wChat cont a-w f-right">
 		<p class="title">微信支付</p>
 		<form>
@@ -96,10 +114,80 @@
 				<dd><input class="btn" type="button" value="立即充值"></dd>
 			</dl>
 		</form>
-		<p class="tel">如有疑问, 请拨打 4001-898-116 / 028-67875837, 或联系在线客服</p>
+		<p class="tel">如有疑问, 请拨打 4001-000-000 / 028-66666666, 或联系在线客服</p>
 	</div>
 </div>
-<include file="Public/footer" />
-<script src="__PUBLIC__/js/recharge.js"></script>
+<!-- footer start -->
+<div class="footer5">
+	<div class="footer-content clearfix">
+		<div class="footer-left f-left"></div>
+		<div class="footer-right f-right">
+			<div class="footer-link">
+				<ul class="clearfix">
+					<li><a href="#">关于我们</a></li>
+					<li>｜</li>
+					<li><a href="#">客服中心</a></li>
+					<li>｜</li>
+					<li><a href="#">商务合作</a></li>
+					<li>｜</li>
+					<li><a href="#">联系我们</a></li>
+					<li>｜</li>
+					<li><a href="#">工作机会</a></li>
+					<li>｜</li>
+					<li><a href="#">家长监护</a></li>
+				</ul>
+			</div>
+			<div>CopyRight &copy; 2017 四川大神时代网络科技有限公司. All Right Reserved</div>
+			<div>川网文（2017）0000-000号 备11111111号-1   增值电信业务经营许可证：川A2-00000000</div>
+			<div>客服电话：028-11110000 / 4001-1111-000 纠纷处理方式：联系客服或依《用户协议》约定方式处理 </div>
+		</div>
+	</div>
+	<div class="work-logo-group">
+		<ul class="clearfix">
+			<li><a class="f-w f-w-1" href="javascript:;">公共信息安全<br>网络检查</a></li>
+			<li><a class="f-w f-w-2" href="javascript:;">不良信息举报<br>中心</a></li>
+			<li><a class="f-w f-w-3" href="javascript:;">企业信用评级<br>证书</a></li>
+			<li><a class="f-w f-w-4" href="javascript:;">互联网文化经<br>营单位</a></li>
+			<li><a class="f-w f-w-5" href="javascript:;">四川省工商行<br>政管理局</a></li>
+			<li class="safe-website"><a  key ="59896c002548be46f1222a90"  logo_size="124x47"  logo_type="common"  href="http://www.anquan.org" ><script src="//static.anquan.org/static/outer/js/aq_auth.js"></script></a></li>
+		</ul>
+	</div>
+	<!-----#站长统计----->
+	<div class="zztj">
+		<script src="https://s22.cnzz.com/z_stat.php?id=1262541727&web_id=1262541727
+
+" language="JavaScript"></script>
+	</div>
+	<style>
+		.zztj{position:absolute;bottom:0;}
+		.zztj a{color:black;font-size: 12px;}
+	</style>
+	<!-----#站长统计end----->
+	<!-- SEO 百度站长 -->
+	<script>
+		(function(){
+			var bp = document.createElement('script');
+			var curProtocol = window.location.protocol.split(':')[0];
+			if (curProtocol === 'https') {
+				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+			}
+			else {
+				bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
+		})();
+	</script>
+	<!-- 自动收录 -->
+	<script>(function(){
+		var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?8ef09848fa7de9ad9f2b90ae7b9338ac":"https://jspassport.ssl.qhimg.com/11.0.1.js?8ef09848fa7de9ad9f2b90ae7b9338ac";
+		document.write('<script src="' + src + '" id="sozz"><\/script>');
+	})();
+	</script>
+	<!-- 360流量统计 -->
+	<script type="text/javascript" src="//s.union.360.cn/177497.js" async defer></script>
+</div>
+<!-- end footer -->
+<script src="../../js/recharge.js"></script>
 </body>
 </html>
