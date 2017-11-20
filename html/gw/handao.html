@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>寒刀官网|网页游戏平台</title>
+    <link rel="stylesheet" href="static1/guanwang/css/main.css" />
+	<meta content="网页游戏，寒刀官网，寒刀新服，寒刀开服" name="keywords" />
+	<meta content="寒刀官方网站，玩页游来大神游戏，一起玩更快乐。致力于提供优质的客户服务，打造绿色游戏生态圈成为深受玩家喜爱的网页游戏平台." name="Description" />
+	
+    <script type="text/javascript" src="static1/guanwang/js/jQuery.1.8.2.min.js" ></script>
+    <script type="text/javascript" src="static1/guanwang/js/jquery.SuperSlide.2.1.1.source.js" ></script>
+    <script type="text/javascript" src="static1/guanwang/js/main.js" ></script>
+</head>
+<style>
+    .midLeft_scrollbar{
+        overflow-y: auto;
+
+        /*三角箭头的颜色*/
+        scrollbar-arrow-color: #666;
+        /*滚动条滑块按钮的颜色*/
+        scrollbar-face-color: #000;
+        /*滚动条整体颜色*/
+        scrollbar-highlight-color: #333;
+
+        /*滚动条轨道颜色*/
+        scrollbar-track-color: #666;
+
+    }
+    /*滚动条整体部分*/
+    ::-webkit-scrollbar{background-color: #666;}
+    /*滚动条的轨道*/
+    ::-webkit-scrollbar-track{background-color: #666;}
+    /*滚动条的滑块按钮*/
+    ::-webkit-scrollbar-thumb{background-color: #000;}
+    /*滚动条的上下两端的按钮*/
+    ::-webkit-scrollbar-button{height: 10px;background-color: #666;}
+
+</style>
+<body>
+<div class="bg" style="background-image: url(static1/guanwang/img/handaobg.jpg)">
+    <header>
+        <div class="top" style="background-image: url(static1/guanwang/img/ytop.png)">
+            <div class="top-in">
+                <ul class="ul-left">
+                    <li>
+                        <a href="/?ct=guanwang&ac=hd"><p>官网首页<br><span>HOME</span>  </p></a>
+                    </li>
+                    <li>
+                        <a href="/?ct=guanwang&ac=hd_news&list=news"><p>新闻中心 <br><span>NEWS</span>  </p></a>
+                    </li>
+                    <li>
+                        <a href="/?ct=recharge"><p>充值中心<br> <span>PAY</span>  </p></a>
+                    </li>
+                </ul>
+                <!--<div class="top-logo">
+                    <img src="img/top-logo.png">
+                </div>-->
+                <ul class="ul-right">
+                    <li>
+                        <a href="/?ct=package"><p>游戏礼包<br><span>bag </span> </p></a>
+                    </li>
+                    <li>
+                        <a href="/?ct=guanwang&ac=hd_news&list=activity"><p>活动中心<br><span>data</span>   </p></a>
+                    </li>
+                    <li>
+                        <a href="/?ct=cs"><p>客服中心<br><span>service</span>  </p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="content">
+            <div class="ale">
+                <p>本游戏适合18岁以上玩家进入</p>
+            </div>
+            <div class="con-top">
+                <!--登录前-->
+                <!--登录前-->
+                <{if empty($userinfo)}>
+                <{include file="../91wan/guanwang/common/login_before.html"}>
+                <!--登陆后-->
+                <{else}>
+                <{include file="../91wan/guanwang/common/login_after.html"}>
+                <{/if}>
+                <div class="top-ban">
+                    <div class="hd hd-ban">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="bd bd-ban">
+                        <ul>
+                            <li style="background-image: url(static1/guanwang/img/hdB1.jpg);"></li>
+                            <li style="background-image: url(static1/guanwang/img/hdB2.jpg);"></li>
+                            <li style="background-image: url(static1/guanwang/img/hdB3.jpg);"></li>
+                        </ul>
+                    </div>
+                </div>
+                <script>
+                    $(function(){
+                        $('.top-ban').slide({mainCell:".bd ul",effect:"left",autoPlay:true});
+                    })
+                </script>
+                <div class="top-photo">
+
+                    <a href="/?ct=guanwang&ac=hd_pic" class="photo1">
+                        <p>游戏截图<br><span>sreenshots</span></p>
+                        <i></i>
+                    </a>
+
+                    <a  href="/?ct=guanwang&ac=hd_pro_pic" class="photo1 photo2">
+                        <p>精美原图<br><span>screenshots</span></p>
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+            <div class="con-mid">
+                <div class="midLeft midLeft_scrollbar">
+                    <div class="mid-top">
+                        <p>服务器列表</p>
+                    </div>
+                    <ul>
+                        <{if !empty($server_list)}>
+                            <{foreach from=$server_list item=item}>
+                                <li>
+                                    <a href="?ct=glogin&game_id=<{$item.game_id}>&server_id=<{$item.server_id}>">
+                                    <i></i>
+                                    <span>
+                                        <{$item.server_name}> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <{if $item.new==1 && $item.status !=0}>
+                                            <{if $item.type}>
+                                                (<{$item.type|mb_strcut:5:5}>)
+                                                <{else}>
+                                                 (新区)
+                                            <{/if}>
+                                            <{elseif $item.status==0}>
+                                            (停机)
+                                            <{elseif $item.status==1}>
+                                            (正常)
+                                            <{elseif $item.status==2}>
+                                            (火爆)
+		          				        <{/if}>
+
+                                    </span>
+                                    </a>
+                                </li>
+                            <{/foreach}>
+                        <{/if}>
+                    </ul>
+                    <div class="fuwu"><a href="/?ct=guanwang&ac=all_servers&gid=255" target="_blank">
+                        查看更多服务器
+                    </a></div>
+                </div>
+                <div class="midMid">
+                    <div class="hd tab-hd">
+                        <ul>
+                            <li class="on">新闻</li>
+                            <li>资讯</li>
+                            <li>活动</li>
+                            <li>攻略</li>
+                            <a href="/?ct=news" class="last" target="_blank">+</a>
+                        </ul>
+                    </div>
+                    <div class="bd tab-bd">
+                        <ul>
+                            <a href="/?ct=news&ac=info&id=<{$new1.id}>" target="_blank"><p class="hot">【本周推荐】<{$new1.name|mb_strcut:0:29}>...</p></a>
+                            <{if !empty($new2)}>
+                                <{foreach from=$new2 item=news}>
+                                    <li>
+                                        <a href="/?ct=guanwang&ac=hd_newsitem&id=<{$news.id}>" target="_blank">
+                                        <span class="xinL">【新闻】<{$news.name|mb_strcut:0:50}>...</span>
+                                        <span class="xinR"><{$news.createtime}></span>
+                                        </a>
+                                    </li>
+                                <{/foreach}>
+                            <{/if}>
+                        </ul>
+                        <ul>
+                            <{if !empty($gg)}>
+                                <{foreach from=$gg item=g}>
+                                <li>
+                                    <a href="/?ct=guanwang&ac=hd_newsitem&id=<{$g.id}>" target="_blank">
+                                        <span class="xinL">【公告】<{$g.name|mb_strcut:0:50}>...</span>
+                                        <span class="xinR"><{$g.createtime}></span>
+                                    </a>
+                                </li>
+                                <{/foreach}>
+                            <{/if}>
+                        </ul>
+                        <ul>
+                            <{if !empty($hd)}>
+                                <{foreach from=$hd item=h }>
+                                <li>
+                                    <a href="/?ct=guanwang&ac=hd_newsitem&id=<{$h.id}>" target="_blank">
+                                        <span class="xinL">【活动】<{$h.name|mb_strcut:0:50}>...</span>
+                                        <span class="xinR"><{$h.createtime}></span>
+                                    </a>
+                                </li>
+                                <{/foreach}>
+                            <{/if}>
+                        </ul>
+                        <ul>
+                            <{if !empty($gl)}>
+                                <{foreach from=$gl item=l}>
+                                <li>
+                                    <a href="/?ct=guanwang&ac=hd_newsitem&id=<{$l.id}>" target="_blank">
+                                        <span class="xinL">【攻略】<{$l.name|mb_strcut:0:50}>...</span>
+                                        <span class="xinR"><{$l.createtime}></span>
+                                    </a>
+                                </li>
+                                <{/foreach}>
+                            <{/if}>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    $(function(){
+                        $('.midMid').slide({trigger:"click"});
+                    })
+                </script>
+
+                <div class="midRight">
+                    <a href="/weiduan/寒刀.exe" class="yh">
+                        <i></i>
+                        <div class="i-left">
+                            <p>微端下载</p>
+                            <span>新手礼包</span>
+                        </div>
+                    </a>
+                    <a href="/?ct=package" class=" dd yh">
+                        <i></i>
+                        <div class="i-left">
+                            <p>新手礼包</p>
+                            <span>新手必备</span>
+                        </div>
+                    </a>
+                    <a href="/?ct=club" class=" ff yh" >
+                        <i></i>
+                        <div class="i-left">
+                            <p>VIP特权</p>
+                            <span>好礼享不停</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="con-bom">
+                <div class="bomLeft">
+                    <p class="bomLeft-top">
+                        在线客服
+                    </p>
+                    <p> 官方QQ群号：567465841</p>
+                    <!--<p>游戏咨询:<a href="javascript:void (0)">客服QQ:2729046001</a></p>-->
+                    <!--<p>充值咨询:<a href="javascript:void (0)">客服QQ:3256255104</a></p>-->
+                    <div class="fuwu"><a href="/?ct=cs">
+                        进入客服中心
+                    </a></div>
+                    <select>
+                        <option>合作媒体</option><i></i>
+                    </select>
+                    <select>
+                        <option>友情链接</option><i></i>
+                    </select>
+                </div>
+
+                <div class="bomPic">
+                    <ul>
+                        <li style="background-image: url(static1/guanwang/img/hdtj-pic1.jpg);">
+                            <div class="li-in">
+                                <div class="li-in-top">
+                                    <div class="black">
+                                        <i></i>
+                                        <span>新手指导</span>
+                                        <i></i>
+                                    </div>
+                                    <div class="pic-ul">
+                                        <{if !empty($xs)}>
+                                            <{foreach from=$xs item=x}>
+                                                <a href="/?ct=guanwang&ac=hd_newsitem&id=<{$x.id}>" class="pic-ul-li"><{$x.name}></a>
+                                            <{/foreach}>
+                                        <{/if}>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(static1/guanwang/img/hdtj-pic2.jpg);">
+                            <div class="li-in">
+                                <div class="li-in-top">
+                                    <div class="black">
+                                        <i></i>
+                                        <span>高手进阶</span>
+                                        <i></i>
+                                    </div>
+                                    <div class="pic-ul">
+                                        <{if !empty($gs)}>
+                                            <{foreach from=$gs item=gss}>
+                                                <a href="/?ct=guanwang&ac=hd_newsitem&id=<{$gss.id}>" class="pic-ul-li"><{$gss.name}></a>
+                                            <{/foreach}>
+                                        <{/if}>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url(static1/guanwang/img/hdtj-pic3.jpg);">
+                            <div class="li-in">
+                                <div class="li-in-top">
+                                    <div class="black">
+                                        <i></i>
+                                        <span>特色玩法</span>
+                                        <i></i>
+                                    </div>
+                                    <div class="pic-ul">
+                                        <{if !empty($ts)}>
+                                            <{foreach from=$ts item=t}>   
+                                                <a href="/?ct=guanwang&ac=hd_newsitem&id=<{$t.id}>" class="pic-ul-li"><{$t.name}></a>
+                                            <{/foreach}>
+                                        <{/if}>
+                                        <!--<a href="#" class="pic-ul-li">神兵系统</a>-->
+                                        <!--<a href="#" class="pic-ul-li">技能系统</a>-->
+                                        <!--<a href="#" class="pic-ul-li">官衔系统</a>-->
+                                        <!--<a href="#" class="pic-ul-li"> 法宝系统</a>-->
+                                        <!--<a href="#" class="pic-ul-li">锻造系统</a>-->
+                                        <!--<a href="#" class="pic-ul-li">翅膀系统</a>-->
+                                        <!--<a href="#" class="pic-ul-li">称号系统</a>-->
+                                        <!--<a href="#" class="pic-ul-li"> 游戏介绍</a>-->
+                                        <!--<a href="#" class="pic-ul-li">坐骑系统</a>-->
+                                        <!--<a href="#" class="pic-ul-li">神器系统</a>-->
+                                        <!--<a href="#" class="pic-ul-li">志传系统 </a>-->
+                                        <!--<a href="#" class="pic-ul-li">军团系统</a>-->
+                                        <!--<a href="#" class="pic-ul-li">竞技场</a>-->
+                                        <!--<a href="#" class="pic-ul-li tese">特色系统 </a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <{include file="../91wan/guanwang/common/hd_footer.html"}>
+</div>
+</body>
+</html>

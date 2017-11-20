@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="keywords" content="#">
+	<meta name="description" content="#">
+	<title>奇迹MU遗失的大陆｜新闻中心</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/gw.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/qj.css">
+</head>
+<body style="background:#f5f5f5 url('__PUBLIC__/images/gw/qj-bg.jpg') no-repeat center 38px;">
+<include file="Public/top_line" />
+<div class="qj-news-container">
+	<include file="Public/gw_header_qj" />
+	<div class="servers"><div class="f-right" style="width:600px;"></div></div>
+	<div class="main">
+		<div class="module-left f-left">
+			<div class="news-login">
+				<include file="Public/gw_login" />
+			</div>
+			<div class="news-xs-guide">
+				<include file="Public/gw_xs_guide" />
+			</div>
+			<div class="news-kf">
+				<include file="Public/gw_kf_center"/>
+			</div>
+			<div class="news-qrcode">
+				<include file="Public/gw_qrcode"/>
+			</div>
+		</div>
+		<div class="module-right f-right boxShadow module-right-pic-cy">
+			<div class="title  pic-title-cy"><i class="title">游戏图库</i><i class="location">当前位置：奇迹MU遗失的大陆 > 游戏截图</i></div>
+			<div class="pic-content">
+				<div class="pic-nav cy-pic-nav">
+					<a href="" class="active">游戏截图</a>
+					<a href="">精美原图</a>
+				</div><i class="divide-line"></i>
+				<div class="pic-box">
+					<ul class="clearfix">
+						<li>
+							<img class="sm-pic" src="__PUBLIC__/images/gw/qj-banner1.jpg" alt=""/>
+							<div class="scale-box">
+								<a class="pic-scale-btn" style=""></a>
+							</div>
+						</li>
+						<li>
+							<img class="sm-pic" src="__PUBLIC__/images/gw/qj-banner2.jpg" alt=""/>
+							<div class="scale-box">
+								<a class="pic-scale-btn" style=""></a>
+							</div>
+						</li>
+						<li>
+							<img class="sm-pic" src="__PUBLIC__/images/gw/qj-banner2.jpg" alt=""/>
+							<div class="scale-box">
+								<a class="pic-scale-btn" style=""></a>
+							</div>
+						</li>
+						<li>
+							<img class="sm-pic" src="__PUBLIC__/images/gw/qj-banner1.jpg" alt=""/>
+							<div class="scale-box">
+								<a class="pic-scale-btn" style=""></a>
+							</div>
+						</li>
+						<li>
+							<img class="sm-pic" src="__PUBLIC__/images/gw/qj-banner1.jpg" alt=""/>
+							<div class="scale-box">
+								<a class="pic-scale-btn" style=""></a>
+							</div>
+						</li>
+						<li>
+							<img class="sm-pic" src="__PUBLIC__/images/gw/qj-banner2.jpg" alt=""/>
+							<div class="scale-box">
+								<a class="pic-scale-btn" style=""></a>
+							</div>
+						</li>
+						<li>
+							<img class="sm-pic" src="__PUBLIC__/images/gw/qj-banner2.jpg" alt=""/>
+							<div class="scale-box">
+								<a class="pic-scale-btn" style=""></a>
+							</div>
+						</li>
+						<li>
+							<img class="sm-pic" src="__PUBLIC__/images/gw/qj-banner1.jpg" alt=""/>
+							<div class="scale-box">
+								<a class="pic-scale-btn" style=""></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="large-pic-box">
+					<div class="clearfloat"><img class="noBr_IE closeBtn" src="__PUBLIC__/images/gw/bigpic-close-btn.png"/></div>
+					<div class="largeImg-box">
+						<img class="largeImg" src=""/>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				//截图放大按钮显示
+				$(function () {
+					$('.pic-box ul li').hover(function () {
+						$(this).find('.scale-box').css('display','block');
+					},function () {
+						$(this).find('.scale-box').css('display','none');
+					})
+				});
+				//点击放大按钮显示大图
+				$(function () {
+					$('.pic-scale-btn').click(function () {
+						var lgImgSrc = $(this).parent().parent().find('.sm-pic').attr('src');
+						var largeImg =$('.largeImg');
+						$('.large-pic-box').css('display','block');
+						largeImg.attr('src',lgImgSrc);
+					});
+				});
+				//点击关闭按钮关闭大图
+				$(function () {
+					$('.closeBtn').click(function () {
+						$('.large-pic-box').css('display','none');
+					})
+				});
+			</script>
+			<div class="page">
+				1 2 3 4 5 6 7 8 9 10
+			</div>
+		</div>
+	</div>
+	<include file="Public/footer" />
+</div>
+</body>
+</html>

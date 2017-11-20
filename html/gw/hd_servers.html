@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>寒刀开服表|大神游戏寒刀官网</title>
+	<meta content="寒刀开服表，寒刀官网" name="keywords" />
+	<meta content="多款好玩的网页游戏尽在大神游戏平台，点击进入寒刀新服，体验前所未有的刺激与激情。" name="Description" />
+     
+	<link rel="stylesheet" href="static1/guanwang/css/serversStyle.css">
+</head>
+<body>
+<div class="container 	<{$class.container}>">
+	<div class="content <{$class.content}> clearfloat">
+		<div class="serversListBox">
+			<div class="serversListBoxC">
+				<div class="topLink clearfloat">
+					<ul>
+						<li><a href="?ct=guanwang&ac=hd">官网首页</a></li>
+						<li><a href="http://www.ypvp.com/weiduan/寒刀.exe">微端下载</a></li>
+						<li><a href="?ct=recharge">游戏充值</a></li>
+						<li><a href="#">收藏本页</a></li>
+					</ul>
+				</div>
+				<{if empty($user_id)}>
+				<div class="titleText clearfloat">
+					<ul>
+						<Li><img class="noBr_IE" src="static1/guanwang/img/serversListIcon.png"></Li>
+						<li>用户登录</li>
+						<Li><img class="noBr_IE" src="static1/guanwang/img/serversListIcon.png"></Li>
+					</ul>
+				</div>
+				<!--登录框-->
+				<div class="loginBox clearfloat">
+					<ul>
+						<form action="/?ct=guanwang&ac=all_servers&newurl=<{geturl|urlencode}>&gid=255" method="post" enctype="multipart/form-data">
+							<li><input class="user" type="text" name="username" placeholder="用户名"/></li>
+							<li><input class="psw" type="password" name="password" placeholder="密码"/></li>
+							<li><button>登　录</button></li>
+						</form>
+					</ul>
+				</div>
+				<div class="loginCaptionBox clearfloat">
+					<ul>
+						<li class="checkbox-li"><input type="checkbox"><a href="javascript:;">记住账号</a></li>
+						<li class="regAccount-li">
+							<a href="#">
+								<img class="noBr_IE" src="static1/guanwang/img/serverEditIcon.png">
+								注册账号
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="noBr_IE" src="static1/guanwang/img/serversPswIcon.png">
+								忘记密码
+							</a>
+						</li>
+					</ul>
+				</div>
+				<{/if}>
+				<div class="titleText s-title clearfloat">
+					<ul>
+						<Li><img class="noBr_IE" src="static1/guanwang/img/serversListIcon.png"></Li>
+						<li>服务器列表</li>
+						<Li><img class="noBr_IE" src="static1/guanwang/img/serversListIcon.png"></Li>
+					</ul>
+				</div>
+				<div class="serversList clearfloat">
+					<div class="serverText tj-sTitle clearfloat">推荐服务器:</div>
+					<div class="serversItemBox tj-sBox clearfloat">
+						<ul>
+							<{if !empty($hotstatus)}>
+								<{foreach from=$hotstatus item=vo}>
+								<li><a href="?ct=glogin&game_id=<{$vo.game_id}>&server_id=<{$vo.server_id}>">
+									<span class="serversName"><{$vo.server_name}>>></span><span class="hotServers">火爆</span></a>
+								</li>
+								<{/foreach}>
+							<{/if}>
+						</ul>
+					</div>
+					<div class="all-serversList-title clearfloat">
+						<div class="serverText title clearfloat">所有服务器列表:</div>
+						<!--<div class="fastEntry clearfloat">
+							<div class="clearfloat">
+								<ul>
+									<form>
+										<li>快速选服:</li>
+										<li><input /></li>
+										<li><button>快速进入</button></li>
+									</form>
+								</ul>
+							</div>
+							<div class="lostFoucs-ts-text">输入的服数无效或者该服暂未开通</div>
+						</div>-->
+					</div>
+					<div class="serversItemBox all-sBox clearfloat">
+						<ul>
+							<{if !empty($newstatus)}>
+							<{foreach from=$newstatus item=vo}>
+								<li><a href="?ct=glogin&game_id=<{$vo.game_id}>&server_id=<{$vo.server_id}>">
+									<span class="serversName"><{$vo.server_name}>>></span><span class="hotServers">火爆</span></a>
+								</li>
+							<{/foreach}>
+							<{/if}>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
