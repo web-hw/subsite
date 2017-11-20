@@ -1,0 +1,64 @@
+.win-login ,
+.win-reg{
+/*.win-login{*/
+	position:fixed;
+	top:0;left:0;
+	width:100%;height:100%;
+	background:rgba(0,0,0,.4);
+	opacity: 0;
+	/*opacity: 1;*/
+	visibility: hidden;
+	-webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+	-moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+	transition: opacity 0.3s 0s, visibility 0s 0.3s;
+	z-index:50;
+	font-family:微软雅黑;
+}
+.is-visible {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+	-moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+	transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+/*登录*/
+.win-login .window{position:absolute;top:50%;left:50%;margin:-195px 0 0 -160px;width:320px;height:390px;background:#fff;padding:15px 30px;border-radius:9px;}
+.win-login .window a.w-close{display:block;position:absolute;right:5px;top:5px;width:20px;height:20px;border:1px solid #a2a2a2;line-height:16px;text-align:center;color:#a2a2a2;font-size:18px;border-radius:10px;cursor:pointer;}
+.win-login .window p.title{border-bottom:2px #ff9f40 solid;font-size:14px;padding-bottom:8px;}
+.win-login .window p.u-p{margin-top:30px;position:relative;}
+.win-login .window p.u-p a.err{display:block;position:absolute;right:-20px;top:6px;width:16px;height:16px;line-height:16px;background:#FF3D4C;text-align:center;color:#fff;font-size:16px;border-radius:8px;}
+.win-login .window p.u-p span{display:block;width:30px;height:30px;float:left;border:1px #a2a2a2 solid;}
+.win-login .window p.u-p span.uName{background:url("../images/icon/logIcon.png") no-repeat 5px 3px;}
+.win-login .window p.u-p span.psw{background:url("../images/icon/logIcon.png") no-repeat 5px -35px;}
+.win-login .window p.u-p input{width:230px;height:30px;padding-left:10px;line-height:30px;float:right;color:#a2a2a2;border:1px #a2a2a2 solid;border-left:0;outline:none;}
+.win-login .window .f-psw{color:#00a0e9;font-size:12px;margin-top:10px;}
+.win-login .window p.u-p input.s-btn{width:100%;height:42px;background:url("../images/op/regbtnbg.png") repeat bottom;float:none;line-height:38px;font-size:14px;color:#fff;opacity:.9;border:2px #ffa910 solid;border-radius:3px;cursor:pointer;}
+.win-login .window p.u-p input.s-btn:hover{opacity:1;}
+.win-login .window .other-login p{position:relative;margin-top:32px;border-top:1px #a0a0a0 solid;background:#dcdcdc;}
+.win-login .window .other-login p span{display:block;position:absolute;left:50%;top:-9px;margin-left:-42px;width:85px;height:12px;background:#fff;text-align:center;font-size:12px;color:#a0a0a0;}
+.win-login .window .other-login ul{padding:20px 0 0  52px;}
+.win-login .window .other-login ul li{float:left;}
+.win-login .window .other-login ul li a{display:block;width:32px;height:32px;cursor:pointer;}
+.win-login .window .other-login ul li a.QQ{background:url("../images/icon/login-icon.png") no-repeat;}
+.win-login .window .other-login ul li a.wChat{background:url("../images/icon/login-icon.png") no-repeat -59px 0;margin-left:30px;}
+.win-login .window .other-login ul li a.sina{background:url("../images/icon/login-icon.png") no-repeat -118px 0;margin-left:30px;}
+.win-login .window .other-login .reg{text-align:center;font-size:12px;color:#a0a0a0;margin-top:10px;}
+.win-login .window .other-login .reg a{color:#00a0e9;cursor:pointer;}
+/*注册*/
+.win-reg .window{position:absolute;top:50%;left:50%;margin:-195px 0 0 -160px;width:320px;height:390px;background:#fff;padding:15px 30px;border-radius:9px;}
+.win-reg .window a.w-close{display:block;position:absolute;right:5px;top:5px;width:20px;height:20px;border:1px solid #a2a2a2;line-height:16px;text-align:center;color:#a2a2a2;font-size:18px;border-radius:10px;cursor:pointer;}
+.win-reg .window p.title{border-bottom:2px #00a0e9 solid;font-size:14px;padding-bottom:8px;}
+.win-reg .window dl{font-size:12px;line-height:30px;}
+.win-reg .window dl dd{margin-top:-30px;position:relative;margin-bottom:18px;}
+.win-reg .window dl dd a.err{display:block;position:absolute;right:-20px;top:6px;width:16px;height:16px;line-height:16px;background:#FF3D4C;text-align:center;color:#fff;font-size:16px;border-radius:8px;}
+.win-reg .window dl dd a.ok{display:block;position:absolute;right:-20px;top:6px;width:16px;height:16px;line-height:16px;background:green;text-align:center;color:#fff;font-size:16px;border-radius:8px;}
+.win-reg .window dl dd p{padding:0;height:20px;line-height:18px;position:absolute;top:30px;left:25px;color:#a0a0a0;}
+.win-reg .window dl dd p.err{color:#ff3d4c;}
+.win-reg .window dl dd p.ok{color:green;}
+.win-reg .window dl dd input{width:196px;height:30px;border:1px solid #dcdcdc;line-height:28px;padding-left:10px;font-size:12px;float:right;outline:none;}
+.win-reg .window dl dd.btn-dd{margin-bottom:0;}
+.win-reg .window dl dd.btn-dd input{width:256px;height:42px;border:1px solid #00a0e9;margin-top:25px;border-bottom:2px solid #00a0e9;line-height:40px;background:url("../images/op/regbtnbg.png") repeat;opacity:.9;color:#fff;border-radius:3px;cursor:pointer;}
+.win-reg .window dl dd.btn-dd input:hover{opacity:1;}
+
+.win-reg .al-login{text-align:center;font-size:12px;color:#a0a0a0;margin-top:-1px;}
+.win-reg .al-login a{color:#00a0e9;cursor:pointer;}

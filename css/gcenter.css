@@ -1,0 +1,52 @@
+/*头部推荐游戏*/
+.hot-gameList{width:100%;height:610px;background-color:#e5e5e5;padding-top:40px;}
+.hot-gameList .hot-gListBox{width:1300px;margin:auto;}
+.hot-gameList .hot-gListBox .listBox{width:350px;height:530px;}
+.hot-gameList .hot-gListBox .listBox>ul>li{height: 80px;margin-bottom: 10px;background-color:white;padding:10px;}
+.hot-gameList .hot-gListBox .listBox>ul>li.on{border-right:3px #ff952d solid;}
+.hot-gameList .hot-gListBox .listBox>ul>li img{width:60px;height:60px;border-radius:6px;}
+.hot-gameList .hot-gListBox .listBox>ul>li .gName{width:230px;height:60px;font-size:12px;font-family:微软雅黑;margin-left:80px;}
+.hot-gameList .hot-gListBox .listBox>ul>li .gName .name{font-size:18px;}
+.hot-gameList .hot-gListBox .listBox>ul>li .gName .btns ul li{float:left;margin-right:10px;}
+.hot-gameList .hot-gListBox .listBox>ul>li .gName .btns ul li a{display:block;width:66px;height:24px;color:#676767;border:1px solid #676767;margin-top:12px;line-height:24px;text-align:center;}
+.hot-gameList .hot-gListBox .listBox>ul>li .gName .btns ul li a:hover{background-color:#ff952d;color:#fff;border:0;}
+.hot-gameList .hot-gListBox .show-pic{width:940px;height:530px;position:relative;}
+.hot-gameList .hot-gListBox .show-pic .item{width:940px;height: 530px;position:absolute;top:0;left:0;display:none;}
+.hot-gameList .hot-gListBox .show-pic .item img{width:100%;height:100%;}
+/*------所有游戏列表------*/
+.all-gameList-box{width:1300px;margin:auto;padding-top:40px;}
+.all-gameList-box .leftBox{width:310px;}
+/*开服动态*/
+.all-gameList-box .serversBox{width:310px;}
+/*游戏列表*/
+.all-gameList-box .gameList{width:950px;}
+.all-gameList-box .gameList .gList{min-height:800px;height:auto;width:100%;margin-top:20px;}
+.all-gameList-box .gameList .gList ul li{width:308px;float:left;margin-right:12px;margin-bottom:20px;}
+.all-gameList-box .gameList .gList ul li:nth-child(3n+0){margin-right:0;}
+.all-gameList-box .gameList .gList ul li img{width:100%;height:174px;}
+.all-gameList-box .gameList .gList ul li .gName{width:100%;padding:0 10px;height:46px;line-height:46px;border:1px solid #a0a0a0;border-top:0;font-size:12px;font-family:微软雅黑;}
+.all-gameList-box .gameList .gList ul li .gName a{border:1px solid #a0a0a0;display:inline-block;height:25px;width:90px;line-height:25px;margin-top:10px;text-align:center;color:#535353;}
+.all-gameList-box .gameList .gList ul li .gName a:hover{border:0;color:#fff;background-color:#ff952d;}
+/*筛选游戏选项卡*/
+.game-filter-tab{width:100%;height:100px;border:1px #c9c9c9 solid;margin:0 auto;font-size:14px;font-family: 微软雅黑;}
+.game-filter-tab .title{width:158px;height: 100%;border-right:1px #c9c9c9 solid;background-color: #eeeeee;}
+.game-filter-tab .title i{text-align:center;color:#a0a0a0;height:50%;display:block;}
+.game-filter-tab .title i.En{padding-top:20px;}
+.game-filter-tab .title i.game{padding-top:5px;}
+.game-filter-tab .item-filter{height:100%;width:788px;}
+.game-filter-tab .item-filter .En{margin-top:20px;}
+.game-filter-tab .item-filter .kind{margin-top:15px;}
+.game-filter-tab .item-filter .tab ul li{float: left;}
+.game-filter-tab .item-filter .tab ul li a{display:block;height:20px;width:78px;color:#000000;text-align:center;margin-left:30px;}
+.game-filter-tab .item-filter .tab ul li a:hover,
+.game-filter-tab .item-filter .En ul li a.active,
+.game-filter-tab .item-filter .kind ul li a.active{background-color:#ff952d;color:white;}
+
+/*分页样式*/
+.page{height: 80px;line-height: 80px;text-align: center;margin:0 auto 40px;padding-top: 10px;}
+.page .pagenumber{float: right;}
+.page a{width: 20px;height: 20px;text-align: center;line-height: 20px;float: left;color: #ff952d;font-size: 12px;border:1px #ff952d solid;margin-left: 4px;}
+.page a:hover{background-color:#ff952d;color:white;}
+.page a.first-page,.page a.last-page{width: 38px!important;}
+.current{width: 20px;height: 20px;text-align: center;line-height: 20px;float: left;color: #fff;font-size: 12px;background-color: #ff952d;border:1px #ff952d solid;margin-left: 4px;}
+.jl{width: 174px;height: 20px;text-align: center;line-height: 20px;float: left;color: #ff952d;font-size: 12px;border:1px #ff952d solid;margin-left: 4px;}

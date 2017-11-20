@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>客服中心|账号修复结果查询</title>
+	<meta name="keywords" content="#">
+	<meta name="description" content="#">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/cs.css">
+	<include file="Public/IE" />
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<div class="tran-bg"></div>
+<div class="kf-container">
+	<div class="kf-content">
+		<div class="title">客服中心丨自助服务</div>
+		<div class="content clearfix boxShadow">
+			<div class="left-nav f-left">
+				<include file="Public/cs_left_nav" />
+			</div>
+			<div class="o-step wg-o-step">
+				<div class="title">
+					外挂举报<br><i>如您在游戏中发现异常角色行为（外挂），您可以在此提交举报信息</i>
+				</div>
+				<div class="wg-desc">
+					<form action="?ct=<{$request.ct}>&ac=<{$request.ac}>" method="POST" enctype="multipart/form-data" onSubmit="return checkData('Content');">
+						<input type="hidden" name="op" value="1">
+                        <table>
+							<tr>
+								<td>您的账号：</td>
+								<td><{$userinfo.user_name}></td>
+							</tr>
+							<tr>
+								<td><i>*</i> 举报游戏信息：</td>
+								<td>
+									<select id="game" name="gamebug_game">
+										<option value="0">请选择举报角色所在游戏</option>
+										<{html_options options=$game_options}>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><i>*</i> 举报所在服务器：</td>
+								<td>
+									<select id="server" name="gamebug_server">
+										<option value="0">请选择举报角色所在游戏</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td><i>*</i> 举报游戏角色名：</td>
+								<td><input name="gamebug_name" maxlength="10" placeholder="请输入准确的角色名"/></td>
+							</tr>
+							<tr>
+								<td><i>*</i> 外挂类型：</td>
+								<td><input name="gamebug_type" maxlength="10" placeholder="请输入外挂类型"/></td>
+							</tr>
+							<tr>
+								<td><i>*</i> 发现时间：</td>
+								<td><input id="findDate" placeholder="请选择发现时间"/></td>
+							</tr>
+							<tr>
+								<td>问题截图：</td>
+
+								<td>
+									<a href="javascript:;" class="a-upload">
+										<input type="file" name="gamebug_imgs">点击这里上传问题截图　　
+										<button>选择图片</button>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="pro-desc"><i>*</i> 详细描述：</td>
+								<td>
+									<textarea rows="5" name="gamebug_content" cols="35" placeholder="请详细描述异常角色当时的情况，方便查证查证。"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td><i>*</i> 请输入验证码：</td>
+								<td>
+									<ul>
+										<li><input  required onblur="vif(this.value,this,2)" class="code-inp" placeholder="请输入右侧验证码"/></li>
+										<li><img src="?ct=cs&ac=code" onClick="this.src='?ct=cs&ac=code&a='+Math.random();"></li>
+										<li><a href="javascript:0" class="img-tx">看不清,换一张</a></li>
+									</ul>
+                                    <!--点击更换验证码-->
+                                    <script>
+                                        $('.img-tx').click(function () {
+                                            $(this).parent('li').prev('li').find('img').attr('src','?ct=cs&ac=code&a='+Math.random())
+                                        });
+                                    </script>
+								</td>
+							</tr>
+                            <tr style="height:0">
+                                <td colspan="2" class="sub-btn-td"><span style="color:red" class="vifmobile2"></span></td>
+                            </tr>
+							<tr>
+								<td colspan="2" class="sub-btn-td"><button disabled id="wgbutton">提交</button></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<script src="__PUBLIC__/lib/jHsDate.js"></script>
+				<script type="text/javascript">
+					$('#findDate').jHsDate({
+						format: 'yyyy-MM-dd hh:mm'
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+<include file="Public/cs_left_nav" />
+<style>
+	.footer5{margin-top:0;}
+</style>
+<!-- footer - end -->
+<script src="__PUBLIC__/js/kf_query.js"></script>
+<script src="__PUBLIC__/js/kf_Myrecords.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body{font-family:微软雅黑;}
+.recharge-nav{width:1200px;height:100px;margin:auto}
+.recharge-nav .title{position:relative;width:600px;height:100%;padding:30px 0 0 274px;}
+.recharge-nav .title a{display:block;width:254px;height:54px;position:absolute;left:0;background:url("../images/logo/dslogo-nav.png") no-repeat left center;}
+.recharge-nav .title p{font-size:39px;border-left:1px solid #a0a0a0;height:40px;line-height:40px;padding-left:20px;color:#535353;}
+.recharge-nav ul{margin-top:65px;}
+.recharge-nav ul li{float:left;color:#bbbbbb;font-size:14px;height:14px;line-height:14px;margin-left:6px;}
+.recharge-nav ul li a{color:#bbbbbb;cursor:pointer;}
+.recharge-nav ul li a:hover{color:#535353;}
+.d{width:100%;height:25px;background:url("../images/op/transition_bg.jpg") repeat;}
+.d .divide{width:1200px;height:25px;margin:auto;background:url("../images/op/transition_bg.jpg") repeat;}
+.main{height:auto;min-height:570px;border:1px #dcdcdc solid;width:1200px;margin:20px auto 130px;font-size:14px;color:#313131;}
+/* -- 左边充值方式导航 -- */
+.main .pay-way{width:230px;height:auto;min-height:568px;border-right:1px #dcdcdc solid;background-color:#eeeeee;}
+.main .pay-way ul li{width:100%;height:40px;border-bottom:1px #dcdcdc solid;line-height:40px;}
+.main .pay-way ul li a{display:block;width:100%;height:100%;background:#fff;padding-left:65px;color:#313131;}
+.main .pay-way ul li a.alipay{background:url("../images/icon/wayIcon.png") no-repeat 22px 6px;}
+.main .pay-way ul li a.wChat{background:url("../images/icon/wayIcon.png") no-repeat 22px -33px;}
+.main .pay-way ul li a:hover{background-color:#fff;}
+.main .pay-way ul li a.current{background-color:#fff;}
+.main .cont{padding:16px 40px 10px;}
+.main .cont p.title{color:#959595;font-size:24px;}
+.main .cont p.tel{color:#959595;font-size:12px;position:relative;top:15px;}
+/* -- 选择游戏 区服 -- */
+.main .cont dd.list{position:relative;}
+.main .cont dd.list .gList,
+.main .cont dd.list .sList{position:absolute;top:40px;width:640px;height:260px;background-color:#dcdcdc;padding:0 15px;display:none;}
+.main .cont dd.list .gList p,
+.main .cont dd.list .sList p{font-weight:bold;}
+.main .cont dd.list .gList a.close,
+.main .cont dd.list .sList a.close{position:absolute;right:0;top:5px;width:20px;height:20px;border:1px #fff solid;text-align:center;line-height:16px;color:#fff;font-size:20px;}
+.main .cont dd.list .gList ul,
+.main .cont dd.list .sList ul{width:630px;height:222px;background-color:#fff;margin-left:-10px;padding:12px 0 0 6px;overflow-y:scroll;}
+.main .cont dd.list .gList ul li,
+.main .cont dd.list .sList ul li{float:left;margin:0 2px 15px;}
+/* -- 支付宝 微信 -- */
+.main .a-w{width:960px;height:auto;min-height:568px;}
+.main .a-w dt,
+.main .a-w dd{height:34px;line-height:34px;margin-bottom:18px;}
+.main .a-w dd{margin:-52px 0 18px 90px;}
+.main .a-w dd a{display:inline-block;width:136px;height:34px;line-height:34px;text-align:center;border:1px #c9c9c9 solid;cursor:pointer;margin-right:10px;}
+.main .a-w dd a:hover{border:1px #00a0e9 solid;}
+.main .a-w dd a.current{background:url("../images/op/selected.png") no-repeat center;border:1px transparent solid;}
+.main .a-w dd.moneys{height:140px;}
+.main .a-w dd.moneys .mList{width:630px;}
+.main .a-w dd.moneys .mList a{margin-bottom:15px;}
+.main .a-w dd input{width:286px;height:34px;line-height:34px;border:1px #c9c9c9 solid;outline:none;padding-left:10px;color:#313131;}
+.main .a-w dd input.other-money{width:301px;position:relative;top:-2px;margin-left:-15px;}
+.main .a-w dd input.on{border:1px #00a0e9 solid;}
+.main .a-w dd input.btn{width:134px;height:36px;line-height:36px;background-color:#ff952d;border:0;outline:none;text-align:center;color:#fff;cursor:pointer;}
+.main .a-w dd input.btn:hover{background-color: #F98F2E;}
+
+/* 弹出框 */
+.wind-recharge{
+	position:fixed;
+	top:0;left:0;
+	width:100%;height:100%;
+	background:rgba(0,0,0,.4);
+	opacity: 0;
+	/*opacity: 1;*/
+	visibility: hidden;
+	-webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+	-moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+	transition: opacity 0.3s 0s, visibility 0s 0.3s;
+	z-index:10;
+	font-family:微软雅黑;
+}
+.is-visible {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+	-moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+	transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.wind-recharge .box{position:absolute;top:50%;left:50%;margin:-132px 0 0 -220px;background-color:#fff;width:440px;height:264px;border:3px #10a6a6 solid;font-size:14px;color:#000;}
+.wind-recharge .box p{padding-left:14px;}
+.wind-recharge .box p b{color:#00b7ee;font-weight:normal}
+.wind-recharge .box p.title{height:30px;width:100%;background-color:#00c8c8;text-align:left;margin-bottom:30px;line-height:30px;color:#fff;font-size:16px;}
+.wind-recharge .box p.info{margin-bottom:20px;}
+.wind-recharge .box p.r-money b{color:#ff0000;}
+.wind-recharge .box p.n-page{padding-left:130px;font-size:18px;}
+.wind-recharge .box p.info-2{padding-left:76px;margin-top:20px;line-height:30px;}
+.wind-recharge .box a.r-ret{position:absolute;bottom:2px;padding-left:76px;;color:#00c8c8;}
+.wind-recharge .box span.symbol{display:block;position:absolute;left:76px;top:50px;width:44px;height:44px;background-color:#beefef;line-height:44px;text-align:center;font-size:30px;color:#009a9a;border-radius:22px;}
+.wind-recharge .problem-box a,
+.wind-recharge .box a{position:absolute;color:#fff;cursor:pointer;}
+.wind-recharge .box a.r-close,
+.wind-recharge .problem-box a.r-close{display:block;width:20px;height:20px;border:1px #fff solid;line-height:16px;text-align:center;right:8px;top:5px;font-size:20px;}
+.wind-recharge .box a.sure-recharge,
+.wind-recharge .problem-box a.know,
+.wind-recharge .box a.two{display:block;bottom:40px;width:91px;height:29px;line-height:26px;text-align:center;background-color:#00c8c8;border:2px #10A6A6;border-radius:2px;}
+.wind-recharge .box a.sure-recharge{bottom:18px;left:180px;}
+.wind-recharge .box a.r-ok{left:100px;}
+.wind-recharge .box a.r-problem{right:90px;}
+.wind-recharge .problem-box{position:absolute;top:50%;left:50%;margin:-215px 0 0 -500px;background-color:#fff;width:1000px;height:430px;border:3px #10a6a6 solid;font-size:14px;color:#000;}
+.wind-recharge .problem-box p.title{height:30px;width:100%;background-color:#00c8c8;text-align:left;margin-bottom:30px;line-height:30px;color:#fff;font-size:16px;}
+.wind-recharge .problem-box p.p-t{margin-bottom:45px;text-align:center;font-size:18px;font-weight:bold;}
+.wind-recharge .problem-box p.pro-list{padding-left:120px;margin-bottom:22px;}
+.wind-recharge .problem-box p.pro-list b{color:#00c8c8;font-weight:normal;}
+.wind-recharge .problem-box a.know{left:50%;margin-left:-45px;}

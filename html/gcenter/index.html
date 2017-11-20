@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>游戏大厅</title>
+	<meta name="keywords" content="#">
+	<meta name="description" content="#">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/gcenter.css">
+	<include file="Public/IE" />
+	<!--[if lt IE 9]>
+		<style>
+			.all-gameList-box .gameList .gList{width:102%;}
+		</style>
+	<![endif]-->
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<div class="hot-gameList">
+	<div class="hot-gListBox">
+		<div class="listBox f-left">
+			<ul>
+				<li class="clearfix">
+					<img class="f-left" src="__PUBLIC__/images/logo/yh.png" alt="" width="60" height="60" /><!--游戏图标-->
+					<div class="gName">
+						<div class="name">赤月传说Ⅱ</div>
+						<div class="btns">
+							<ul>
+								<li><a href="">进入游戏</a></li>
+								<li><a href="__ROOT__/home/package" target="_blank">领取礼包</a></li>
+								<li><a href="__ROOT__/home/gw/cy" target="_blank">官网</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<img class="f-left" src="__PUBLIC__/images/logo/yh.png" alt="" width="60" height="60" /><!--游戏图标-->
+					<div class="gName">
+						<div class="name">奇迹</div>
+						<div class="btns">
+							<ul>
+								<li><a href="">进入游戏</a></li>
+								<li><a href="__ROOT__/home/package" target="_blank">领取礼包</a></li>
+								<li><a href="__ROOT__/home/gw/qj" target="_blank">官网</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<img class="f-left" src="__PUBLIC__/images/logo/hd.png" alt="" width="60" height="60" /><!--游戏图标-->
+					<div class="gName">
+						<div class="name">寒刀</div>
+						<div class="btns">
+							<ul>
+								<li><a href="">进入游戏</a></li>
+								<li><a href="__ROOT__/home/package" target="_blank">领取礼包</a></li>
+								<li><a href="" target="_blank">官网</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<img class="f-left" src="__PUBLIC__/images/logo/yh.png" alt="" width="60" height="60" /><!--游戏图标-->
+					<div class="gName">
+						<div class="name">寒刀</div>
+						<div class="btns">
+							<ul>
+								<li><a href="">进入游戏</a></li>
+								<li><a href="__ROOT__/home/package" target="_blank">领取礼包</a></li>
+								<li><a href="" target="_blank">官网</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<img class="f-left" src="__PUBLIC__/images/logo/sm.png" alt="" width="60" height="60" /><!--游戏图标-->
+					<div class="gName">
+						<div class="name">寒刀</div>
+						<div class="btns">
+							<ul>
+								<li><a href="">进入游戏</a></li>
+								<li><a href="__ROOT__/home/package" target="_blank">领取礼包</a></li>
+								<li><a href="" target="_blank">官网</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<img class="f-left" src="__PUBLIC__/images/logo/hd.png" alt="" width="60" height="60" /><!--游戏图标-->
+					<div class="gName">
+						<div class="name">寒刀</div>
+						<div class="btns">
+							<ul>
+								<li><a href="">进入游戏</a></li>
+								<li><a href="__ROOT__/home/package" target="_blank">领取礼包</a></li>
+								<li><a href="" target="_blank">官网</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="show-pic f-right boxShadow">
+			<div class="item"><a href="__ROOT__/home/gw/cy" target="_blank"><img class="f-left" src="__PUBLIC__/images/op/test_new_game.jpg"></a></div>
+			<div class="item"><a href="__ROOT__/home/gw/qj" target="_blank"><img class="f-left" src="__PUBLIC__/images/op/test_hot_game.jpg"></a></div>
+			<div class="item"><a href="" target="_blank"><img class="f-left" src="__PUBLIC__/images/op/test_act.jpg"></a></div>
+			<div class="item"><a href="" target="_blank"><img class="f-left" src="__PUBLIC__/images/op/test_hot_game.jpg"></a></div>
+			<div class="item"><a href="" target="_blank"><img class="f-left" src="__PUBLIC__/images/op/test_new_game.jpg"></a></div>
+			<div class="item"><a href="" target="_blank"><img class="f-left" src="__PUBLIC__/images/op/test_hot_game.jpg"></a></div>
+		</div>
+	</div>
+	<script>
+		//---鼠标移入左边游戏时效果
+		$(function(){
+			$(".show-pic>div:eq(0)").show();
+			$(".listBox>ul>li:eq(0)").addClass("boxShadow on")
+			$(".listBox>ul>li").hover(function(){
+				$(this).addClass("boxShadow on").siblings().removeClass("boxShadow on");
+				var n = $(".listBox>ul>li").index(this);
+				$(".show-pic>div").hide();
+				$(".show-pic>div:eq("+n+")").show();
+			})
+		})
+	</script>
+</div>
+<div class="all-gameList-box clearfix">
+	<div class="leftBox f-left">
+		<include file="Public/hot_rank" />
+	</div>
+	<div class="gameList f-right">
+		<div class="game-filter-tab clearfix">
+			<div class="title f-left">
+				<i class="En">字母筛选</i>
+				<i class="game">选择游戏</i>
+			</div>
+			<div class="item-filter f-right">
+				<div class="tab En">
+					<ul class="clearfix">
+						<li><a href="" class="active">全部</a></li>
+						<li><a href="">ABCDE</a></li>
+						<li><a href="">FGHIJK</a></li>
+						<li><a href="">LMNOP</a></li>
+						<li><a href="">QRSTU</a></li>
+						<li><a href="">VWXYZ</a></li>
+					</ul>
+				</div>
+				<div class="tab kind">
+					<ul class="clearfix">
+						<li><a href=""  class="active">全部</a></li>
+						<li><a href="" >角色扮演</a></li>
+						<li><a href="" >战争策略</a></li>
+						<li><a href="" >模拟经营</a></li>
+						<li><a href="" >休闲竞技</a></li>
+						<li><a href="" >3D</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="gList">
+			<ul class="clearfix">
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_hot_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_new_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_hot_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_new_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_hot_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_new_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_hot_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_new_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_hot_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_new_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_hot_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+				<li class="boxShadow1">
+					<a href=""><img src="__PUBLIC__/images/op/test_new_game.jpg"/></a>
+					<div class="gName clearfix">寒刀<a href="" class="f-right">进入游戏</a></div>
+				</li>
+			</ul>
+			<div class="page">1321321321321231321</div>
+		</div>
+		<script>
+//			<!-- 鼠标移入图片显示信息 -->
+			$(".all-gameList-box .gameList .gList ul li").on({
+				mouseover: function () {$(this).addClass("boxShadow-2")},
+				mouseout:function () {$(this).removeClass("boxShadow-2")}
+			});
+		</script>
+	</div>
+</div>
+<!-- footer -->
+<include file="Public/footer" />
+<!-- footer - end -->
+</body>
+</html>

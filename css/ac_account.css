@@ -1,0 +1,145 @@
+/*《《《《《《《《《《《《《《《《《《《《我的账号》》》》》》》》》》》》》》》》》》》》》*/
+a:hover{text-decoration:none}
+.ac_contentox{width: 100%;height: auto;  background-color: #f3f3f3;padding: 30px 0 90px 0 ;color: #535353}
+.ac_contentox .ac_textbox{width: 1300px;height: 684px;padding-top: 20px;margin: 0 auto}
+.ac_contentox .ac_textbox .ac_rightnav{width: 1059px;height: 684px;padding: 0 30px; background-color: #fff;float: right}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction{font-size: 14px;color: #535353   }
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .tit{font-size: 18px;border-left: 4px solid #3889d6;margin-top: 10px;padding-left: 5px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .p2{font-size: 16px;margin-top: 15px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .p2 span{font-size: 12px}
+/*没有进行过防沉迷验证*/
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .Anti-addiction-message{display: none}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .Anti-addiction-message.active{display: inline-block;margin-top: 15px;text-align: center;font-size: 14px;border: 1px solid #dcdcdc;padding: 5px 15px 5px 30px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .Anti-addiction-message.active .p1{line-height: 30px;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .Anti-addiction-message.active input{width: 330px;height: 30px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .Anti-addiction-message.active button{margin-top: 10px;padding: 0 30px;border-radius: 26px;border: 1px solid #00a0e9;outline: none;line-height: 26px;height: 26px;
+    background-color:#fff;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .Anti-addiction-message.active button:hover{border: none;  background-color: #ff952d;color: #FFF}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .Anti-addiction-message.active .remind-words{margin-top: 10px;text-align: left;font-size: 12px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .Anti-addiction-message.active .remind-words span{color: #ff952d}
+/*已经进行过防沉迷验证*/
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction  .Verified-message{margin-top: 15px;font-size: 14px;border: 1px solid #dcdcdc;display: none}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction  .Verified-message.active{display: inline-block}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction  .Verified-message .Verified-name{width: 100%;height: 50px;border-bottom: 1px solid #dcdcdc}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction  .Verified-message .Verified-name span{width:240px;height: 50px;line-height: 50px;display: inline-block;  background-color: #eeeeee;text-align: center;
+    border-bottom:1px solid #dcdcdc  }
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction  .Verified-message .Verified-name i{width:240px;height: 50px;line-height: 50px;display: inline-block; padding-left: 100px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction  .Verified-message .Verified-idcar{width: 100%;height: 50px;border-bottom: 1px solid #dcdcdc;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction  .Verified-message .Verified-idcar span{width:240px;height: 50px;line-height: 50px;display: inline-block;  background-color: #eeeeee;text-align: center;
+    border-bottom:1px solid #dcdcdc  }
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction  .Verified-message .Verified-idcar i{width:240px;height: 50px;line-height: 50px;display: inline-block; padding-left: 100px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction  .Verified-message .remind-words2{padding: 10px 15px 10px 30px ;font-size: 12px;  background-color: #eeeeee;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction  .Verified-message .remind-words2 span{color: #ff952d}
+
+/*密保设置*/
+.ac_rightnav .ac_accountsafe{margin-top: 20px;width: 100%;font-size: 14px;color: #535353}
+.ac_rightnav .ac_accountsafe>.tit{border-bottom: 2px solid #00a0e9}
+.ac_rightnav .ac_accountsafe .tit span{font-size: 12px}
+.ac_rightnav .ac_accountsafe .set-password{width: 100%;padding: 0 35px}
+.ac_rightnav .ac_accountsafe .set-password li{width: 100%;border-bottom: 1px solid #dcdcdc;height: 83px;padding:10px 0 10px 60px;  }
+.ac_rightnav .ac_accountsafe .set-password .user-password{  background: url(../images/icon/ac_lockicon.png)no-repeat 10px 23px; }
+.ac_rightnav .ac_accountsafe .set-password .user-email{  background: url(../images/icon/ac_e-mailicon.png)no-repeat 10px 23px; }
+.ac_rightnav .ac_accountsafe .set-password .user-phone{  background: url(../images/icon/ac_phoneicon.png)no-repeat 10px 23px; }
+.ac_rightnav .ac_accountsafe .set-password .user-idcar{  background: url(../images/icon/ac_id-careicon.png)no-repeat 10px 23px;}
+.ac_rightnav .ac_accountsafe .set-password  .words_box{width: 100%;height: 100%;padding-top: 15px}
+.ac_rightnav .ac_accountsafe .set-password  .words_box .tit{font-size: 14px ;color: #000;display: inline-block;}
+.ac_rightnav .ac_accountsafe .set-password  .words_box .tit>i{padding-left: 10px;font-size: 12px;color: #00a0e9}
+.ac_rightnav .ac_accountsafe .set-password  .words_box.active .tit>i{color: #ff952d}
+.ac_rightnav .ac_accountsafe .set-password  .words_box .tit-pro{margin-top: 5px;color: #a0a0a0;font-size: 12px}
+.ac_rightnav .ac_accountsafe .set-password  .words_box>a{float: right;padding: 5px 20px;border-radius: 29px;border: 1px solid #00a0e9;color: #00a0e9;}
+.ac_rightnav .ac_accountsafe .set-password  .words_box.active>a{color: #a0a0a0;border: 1px solid #a0a0a0;}
+.ac_rightnav .ac_accountsafe .set-password .user-phone .words_box.active>a{color: #00a0e9;border: 1px solid #00a0e9;}
+
+/*账户安全*/
+.ac_rightnav .ac_accountsafe .edit-contentbox{width: 100%;padding: 40px 35px;height: 300px; z-index: 2;display:none }
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist{width: 460px;height: 100%;margin: 0 auto;display: none}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-tit{width: 360px;padding-left: 60px;height: 50px; background: url(../images/icon/ac_lockicon.png)no-repeat 10px 4px;margin: 0 auto}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-tit.email{background: url(../images/icon/ac_e-mailicon.png)no-repeat 10px 4px;}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-tit.phone{background: url(../images/icon/ac_phoneicon.png)no-repeat 10px 4px;}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-tit.idcar{background: url(../images/icon/ac_id-careicon.png)no-repeat 10px 4px;}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-tit .p1{color: #000;font-size: 16px;padding-bottom: 5px}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-tit .p2{color: #a0a0a0;font-size: 12px}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-question{margin-top: 20px}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-question select{margin-left: 20px;height: 27px;width: 370px}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-question input{margin-left: 20px;height: 27px;width: 263px}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-question .get-nub{padding: 5px 10px ;  background-color: #3889d6;color: #FFF;border: none;margin-left: 20px}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-answer{margin-top: 15px}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .edit-answer input{margin-left: 20px;height: 27px;width: 370px}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .submit-btn{text-align: center;margin-top: 35px}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .submit-btn button{width: 98px ;height: 27px;border-radius: 26px;  background-color: #3889d6;border: none;color: #fff;cursor: pointer}
+.ac_rightnav .ac_accountsafe .edit-contentbox .edit-contentlist .submit-btn button:hover{  background-color: #ff952d;}
+
+/*《《《《《《《《《《《《《《《《《《《《个人资料》》》》》》》》》》》》》》》》》》》》》*/
+/*个人资料详情*/
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content{width: 100%;height: 430px;border: 1px solid #dcdcdc;margin-top: 15px;display: none}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content .ac_infobox{width: 650px;margin: 50px auto 0 auto;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content .ac_infobox li{height: 40px;line-height: 40px;width: 100%}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content .ac_infobox li input{height: 27px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content .ac_infobox li input[type="radio"]{height: 12px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content .ac_infobox li>div{display: inline-block;width: 100px;text-align: right}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content .ac_infobox li>span{display: inline-block;width: 175px;text-align: left;padding-left: 15px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content .ac_infobox li>i{font-size: 12px;color:#a0a0a0 }
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content .ac_infobox .keep-btn{text-align: center;margin-top: 50px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content .ac_infobox .keep-btn a{padding: 5px 35px;border: 1px solid #00a0e9;  border-radius: 29px;color: #00a0e9;font-size: 14px;}
+/*编辑个人资料*/
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content.ac_info-edit{display: inline-block;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content.ac_info-edit .ac_infobox .keep-btn{text-align: center;margin-top: 50px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content.ac_info-edit .ac_infobox .keep-btn button{padding: 5px 35px;border: 1px solid #00a0e9;border-radius: 29px;color: #00a0e9;font-size: 14px;
+    background-color: #fff;cursor: pointer}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content.ac_info-edit .ac_infobox .keep-btn a{margin-left: 50px;padding: 5px 35px;border: 1px solid #00a0e9;
+    border-radius: 29px;color: #00a0e9;font-size: 14px;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_info-content.ac_info-edit .ac_infobox i span{color: red}
+
+/*《《《《《《《《《《《《《《《《《《《《消息中心》》》》》》》》》》》》》》》》》》》》》*/
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content{width: 100%;height: 500px;margin-top: 15px;}
+
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .tit-operation>span{padding: 0 30px;border-right: 1px solid #535353;font-size: 14px;color: #535353;cursor: pointer}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .tit-operation>span:hover{color: #ff0000;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .tit-operation>span.active i{color: #ff0000;border-bottom: 2px solid #ff0000;padding-bottom: 5px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .tit-operation .all-news{padding-left: 0}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .tit-operation  .delete-btn{border: 1px solid #ff0000;padding: 2px 30px;border-radius: 22px;color: #FFF;
+    background-color: #ff0000;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .tit-operation  .delete-btn:hover{color: #000}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .tit-operation  .hot-activities{border-right: 0}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .tit-operation .all-chockbtn{margin-left: 300px;border-right: 0}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .tit-operation .all-chockbtn>input{width: 20px;height: 20px;vertical-align: bottom}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox{width: 100%;height: 440px;  margin-top:15px;font-size: 0;overflow-x: hidden}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox>li{height: 139px;color: #000000;font-size: 0;margin-top: 6px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox>li>div{display: inline-block;vertical-align: top;font-size: 12px;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-check{width: 70px;height: 100%}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-check>input{width: 24px;height: 24px;margin: 56px 0 0 23px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words{width: 895px;border: 1px solid #bfbfbf;height: 100%;padding:10px 10px 0;font-size: 0 }
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words>div{display: inline-block;font-size: 12px;vertical-align: top}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words .img_box{width:182px;height: 116px;border-radius: 15px;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box{width: 680px ;height: 100%;padding-left: 20px;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box .news-tit{font-size: 14px ;color: #000;padding-bottom: 5px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box  .words_pro{height: 80px;line-height: 20px;display: -webkit-box;  -webkit-box-orient: vertical;
+    padding-right: 160px;  -webkit-line-clamp: 4;  overflow: hidden; position: relative}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box  .words_pro>a{position: absolute;right: 0;bottom: 0;font-size: 12px;
+    color: #00479d;}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box  .words_pro>a:hover{color: #4cae4c}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box  .mews-time{text-align: right}
+
+/*我的游戏*/
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words.game-list{width: 950px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box.game-box{width: 540px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box.game-box .news-tit{padding-bottom: 15px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box.game-box .words_pro{padding-right: 30px;height: 50px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box.game-box .words_pro .game-room1{color: #ff0000;cursor: pointer}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box.game-box .words_pro .game-room2{margin-left: 15px;color: #ff0000;cursor: pointer}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box.game-box .other-net{padding: 5px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .words_box.game-box .other-net span{cursor: pointer;padding: 5px 30px;border: 1px solid #a0a0a0;border-radius: 27px;margin-right: 30px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .new_gameroombox{width: 160px;border-left: 1px solid #dcdcdc;height: 120px;font-size: 12px}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .new_gameroombox .new-allroom-tit{padding-left: 10px;color:#a0a0a0 }
+
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .new_gameroombox .new-allroom .new-gameroom{display: inline-block  ;padding: 2px 20px;border: 1px solid #a0a0a0;
+    border-radius: 27px;color: #000;margin-left: 50px;margin-top: 10px;  background-color: #00a0e9;cursor: pointer}
+.ac_contentox .ac_textbox .ac_rightnav .Anti-addiction .ac_news-content .ac_newsbox .list-words  .new_gameroombox .new-allroom .new-gameroom:hover{color: #FFF}
+
+/*《《《《《《《《《《《《《《《《《《《《充值记录》》》》》》》》》》》》》》》》》》》》》*/
+.Anti-addiction .ac_news-content table{width: 100%;text-align: center}
+.Anti-addiction .ac_news-content table th{text-align: center;height: 32px;line-height: 32px}
+.Anti-addiction .ac_news-content table tr{border-bottom: 1px solid #b0b0b0  }
+.Anti-addiction .ac_news-content table tr:first-child{border-bottom: 1px solid #000}
+.Anti-addiction .ac_news-content table tr:last-child{border-bottom: none}
+.Anti-addiction .ac_news-content table td{border: none;height: 40px;line-height: 40px}

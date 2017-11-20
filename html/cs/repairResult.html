@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>客服中心|账号修复结果查询</title>
+	<meta name="keywords" content="#">
+	<meta name="description" content="#">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/cs.css">
+	<include file="Public/IE" />
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<div class="tran-bg"></div>
+<div class="kf-container">
+	<div class="kf-content">
+		<div class="title">客服中心丨自助服务</div>
+		<div class="content clearfix boxShadow">
+			<div class="left-nav f-left">
+				<include file="Public/cs_left_nav" />
+			</div>
+			<!-- 第1步 -->
+			<div class="o-step repairResult-o-step repairResult-1-step">
+				<div class="title">
+					账号修复结果查询<br><i>请输入您申请[账号修复]的账号、服务编号及查询密码</i>
+				</div>
+				<div class="reply step-1">
+					<p class="result-num">输入账号：<input type="text" id="query_name" placeholder="请输入您的账号" name=""/></p>
+					<p class="ts"><span id="err_name"></span></p>
+					<p class="result-num">服务编号：<input type="text" id="query_rand" placeholder="请输入您的服务编号" name=""/></p>
+					<p class="ts"><span id="err_rand"></span></p>
+					<p class="result-num">查询密码：<input type="text" id="query_mima" placeholder="请输入您的查询密码" name=""/></p>
+					<p class="ts"><span id="error_num"></span></p>
+					<a class="to-repair" id="btn">提交</a>
+					<div class="change-way">
+						您还可以:
+						<a href="__ROOT__/home/cs/findpsw">密码找回</a>
+					</div>
+				</div>
+			</div>
+			<!-- 第2步 -->
+			<div class="o-step repairResult-o-step repairResult-2-step" hidden>
+				<div class="title">
+					账号修复结果查询
+				</div>
+				<div class="reply">
+					<p class="result-num">编号<span class="service-num"></span>的帐号修复结果查询</p>
+					<p class="reply-content">
+						<span>您好，由于您提供的资料不足，所以无法通过审核，请您再次提交并提供充足的资料。</span><br><br>
+						<span>
+							如有任何疑问，请咨询<a href="http://www16.53kf.com/webCompany.php?style=1&arg=10161684" target="_blank">在线客服</a>
+						</span>
+					</p>
+					<a class="to-repair" href="/?ct=cs&ac=repair">去账号修复</a>
+					<div class="change-way">
+						您还可以:
+						<a href="__ROOT__/home/cs/findpsw">密码找回</a>
+					</div>
+				</div>
+			</div>
+			<!-- 第3步 -->
+			<div class="o-step repairResult-o-step repairResult-3-step" hidden>
+				<div class="title">
+					账号修复结果查询
+				</div>
+				<div class="reply">
+					<p class="result-num">编号<span class="service-num"></span>的帐号修复结果查询</p>
+					<p class="reply-content">
+						<span>您好，你的帐号修复已经通过审核，请<a id="home_keleyi_com" href="#" target="_blank">点击此处跳转</a>到你的处理页面。</span><br><br>
+						<span>
+							如有任何疑问，请咨询<a href="http://www16.53kf.com/webCompany.php?style=1&arg=10161684" target="_blank">在线客服</a>
+						</span>
+					</p>
+					<div class="change-way">
+						您还可以:
+						<a href="__ROOT__/home/cs/findpsw">密码找回</a>
+					</div>
+				</div>
+			</div>
+			<!-- 第4步 排队中 -->
+			<div class="o-step repairResult-o-step repairResult-4-step" hidden>
+				<div class="title">
+					账号修复结果查询
+				</div>
+				<div class="reply">
+					<p class="result-num">编号<span class="service-num"></span>的帐号修复结果查询</p>
+					<p class="reply-content">
+						<span>您好，您申请的[账号修复]正在排队中，当前排队号为：<b style="color:red;"><{$new}></b></span><br><br>
+						<span>
+							如有任何疑问，请咨询<a href="http://www16.53kf.com/webCompany.php?style=1&arg=10161684" target="_blank">在线客服</a>
+						</span>
+					</p>
+					<div class="change-way">
+						您还可以:
+						<a href="__ROOT__/home/cs/findpsw">密码找回</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+<include file="Public/footer" />
+<!-- footer - end -->
+<script src="static/js/repair.js"></script>
+<style>
+	.footer5{margin-top:0;}
+</style>
+</body>
+</html>

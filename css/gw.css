@@ -1,0 +1,305 @@
+/*赤月*/
+.cy-container{width: 100%;height: 1880px;position: relative;background: url("../images/gw/cygwbg.jpg") no-repeat center;margin: auto;}
+.cy-news-container{width: 100%;height: 2071px;position: relative;background: url("../images/gw/cy-newsbg.jpg") no-repeat center;margin: auto;}
+/*奇迹MU遗失的大陆*/
+.qj-container{width: 100%;min-height:1845px;height:auto;position: relative;background: url("../images/gw/qj-bg.jpg") no-repeat top center;margin: auto;}
+.qj-news-container{width: 100%;height: 2060px;position: relative;background: url("../images/gw/qj-bg.jpg") no-repeat center 0;margin: auto;}
+
+/* header 公共样式 */
+.nav-box{height: 90px;width: 100%;background: url("../images/gw/navbg.png") no-repeat center;font-family: 微软雅黑;}
+/*当屏幕最小宽度为1200px时：导航条宽度变为1200px*/
+@media screen and (max-width:1200px) {.nav-box{width: 1200px;margin: auto;}}
+.nav-box .nav{width: 1200px;height: 90px;margin: auto;}
+.nav-box .nav ul li{float: left;height: 90px;}
+.nav-box .nav ul li.logo{width:165px;}
+.nav-box .nav ul li.logo .qj{margin:10px 0 0 -25px;}/* 奇迹LOGO */
+.nav-box .nav ul li.logo .cy{margin-left:-5px;}/* 赤月LOGO */
+.nav-box .nav ul li a{height: 90px;display: block;width: 100px;text-align: center;padding-top: 25px;font-size: 17px;}
+.nav-box .nav ul li a i{font-size: 12px;}
+/* header 赤月传说样式 */
+.nav-box-cy .nav ul li.nav-left{margin-right: 72px;}
+.nav-box-cy .nav ul li.nav-right{margin-left: 72px;}
+.nav-box-cy .nav ul li a{color:#8d8d8d;}
+.nav-box-cy .nav ul li a:hover{background: url("../images/gw/nav-hover.png") no-repeat 0 34px;color:#e4d781;}
+.nav-box-cy .nav ul li a.current{background: url("../images/gw/nav-hover.png") no-repeat 0 34px;color:#e4d781;}
+
+/* 第一部分 - login - 推荐服 - banner - news */
+.section-01{height: 390px;width: 1200px;margin: 475px auto 0;}
+.servers-box{width: 100%;}
+.servers-box .servers{height: 57px;width: 600px;margin: auto;}
+.servers-box .servers-cy{background: url("../images/gw/servers-list-bg.png") no-repeat center;}/* 赤月推荐服务器列表样式 */
+.servers-box .servers-cy>ul>li{float:left;height: 57px;margin-left:35px;}
+.servers-box .servers-cy>ul>li.line-height{line-height: 57px;}
+.servers-box .servers-cy>ul>li a.more-server{display:block;height: 57px;width: 80px;line-height: 57px;background: url("../images/gw/moreicon-normal.png") no-repeat 65px 21px;}
+.servers-box .servers-cy>ul>li a.more-server:hover{background: url("../images/gw/moreicon-hover.png") no-repeat 65px 21px;color:#e4d781;}
+.servers-box .servers-cy>ul>li.servers-list-li{width: 300px;}
+.servers-box .servers-cy>ul>li.servers-list-li ul li{float: left;margin-left: 20px;}
+.servers-box .servers-cy>ul>li.servers-list-li ul li a{display: block;width: 125px;height: 27px;line-height:27px;padding-left: 20px;background: url("../images/gw/squareicon-normal.png") no-repeat 0 7px;}
+.servers-box .servers-cy>ul>li.servers-list-li ul li a:hover{background: url("../images/gw/squareicon-hover.png") no-repeat 0 7px;color:#e4d781;}
+/*-- 服务器列表字体 --*/
+.font-17{font-size: 17px;color:#f8ea8b;font-family: 微软雅黑;}
+.font-12{font-size: 12px;color:#a0a0a0;font-family: 宋体;}
+/* 登录 */
+.home-login{height: 330px;width: 300px;float: left;}
+.login{height: 330px;width: 300px;background: url("../images/gw/transparent-bg.png") repeat 100%;}
+.login .start{width: 100%;height:145px;}
+.login .cy-start{background: url("../images/gw/start-btn-bg-normal.jpg") no-repeat;border:1px #420600 solid;}/* [开始游戏]按钮背景 命名不同的class更换 */
+.login .cy-start:hover{background: url("../images/gw/start-btn-bg.jpg") no-repeat;}
+.login .start a.start-btn{display: block;width: 100%;height:100%;background: url("../images/gw/startgamebtn.png") no-repeat 50px; }
+.login .card-wd a{display: block;width: 50%;height:52px;line-height:52px;text-align: center;font-size: 17px;font-family: 微软雅黑; }
+.login .card-wd a.cy{color:#d7c677;}/* 新手卡-微端下载样式 命名不同的class更换 */
+.login .card-wd a.cy-xs-card{background: #510d06 url("../images/gw/wd-download-normal.png") no-repeat 20px;padding-left:25px;}
+.login .card-wd a.cy-xs-card:hover{background: #3b0600 url("../images/gw/wd-download-normal.png") no-repeat 20px;}
+.login .card-wd a.cy-wd-download{background: #510d06 url("../images/gw/wd-download-normal.png") no-repeat -130px;padding-left:25px;}
+.login .card-wd a.cy-wd-download:hover{background: #3b0600 url("../images/gw/wd-download-normal.png") no-repeat -130px;}
+.login .form-domain .form{width: 253px;height:65px;margin: 20px auto 0 auto;}
+.login .form-domain .form .inp-group{height: 65px;width: 179px;}
+.login .form-domain .form .inp-group input{height: 32px;line-height: 32px;width: 100%;outline: none;border:0;padding-left: 35px;font-family: 宋体;font-size: 12px;}
+.login .form-domain .form .inp-group input.user{margin-bottom: 1px;background: #fff url("../images/gw/user-psw-icon.png") no-repeat 10px 7px;}
+.login .form-domain .form .inp-group input.psw{background: #fff url("../images/gw/user-psw-icon.png") no-repeat 10px -27px;}
+.login .form-domain .form .login-btn button{height: 65px;line-height: 65px;width: 74px;text-align: center;border:0;font-size: 17px;font-family: 微软雅黑;}
+.login .form-domain .form .login-btn button.cy-login-btn{background-color: #7c1411;color:white;}/* [登陆]按钮背景 命名不同的class更换 */
+.login .form-domain .form .login-btn button.cy-login-btn:hover{background-color: #3b0600;}
+.login .form-domain .links, .login .user-info .links{width: 253px;margin: 10px auto;}
+.login .form-domain .links ul li, .login .user-info .links ul li{float: left;width: 33.3%;}
+.login .form-domain .links ul li.recharge, .login .user-info .links ul li.recharge{text-align: center;}
+.login .form-domain .links ul li.forget-psw, .login .user-info .links ul li.to-gw{text-align: right;}
+.login .form-domain .links ul li a, .login .user-info .links ul li a{color:#e3cfba;font-size: 12px;cursor:pointer;}
+.login .form-domain .links ul li a:hover, .login .user-info .links ul li a:hover{color:#fff192;}
+.login .user-info .info{width: 253px;margin: 15px auto 0 auto;font-size: 12px;}
+.login .user-info .info-cy, .login .user-info .info-cy a{color:#fff192;}/* 登录后显示的信息样式 命名不同的class更换 */
+.login .user-info .info-cy a:hover{color:#FFE24C;}
+
+.section-01 .news{height: 330px;width: 300px;float: right;background: url("../images/gw/transparent-bg.png") repeat 100%;}
+/*新闻选项卡*/
+#card-news .btn-group{background-color: #151515;font-size: 13px;font-family: 宋体;}
+#card-news .btn-group a.more{color:white;float:right;margin:11px 10px 0 0;}
+#card-news .btn-group a.more i{display: inline-block;width: 13px;height: 13px;background-color: white;color:black;border-radius: 7px;text-align: center;line-height: 13px;}
+#card-news .card-btn-news-active{background-color: #7c1411;color:white;}
+#card-news .card-content{width:300px;height:294px;display:none;}
+#card-news .card-content a.hot-news{padding:0 10px;display: inline-block;width:100%;height:30px;line-height: 30px;text-align: center;font-size: 14px;color:#f8ea8b;background-color: #510d06;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+#card-news .card-content a.hot-news:hover{color:#F8C540;}
+#card-news .card-content a.title span:nth-child(1){display:inline-block;width:230px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+#card-news .card-content a.title{display: block;width: 90%;height: 35px;line-height: 35px;color:#a0a0a0;margin: auto;font-size: 12px;}
+#card-news .card-content a.title:hover{border-bottom: 1px white dashed;color:white;}
+#card-news .card-btn{width: 48px;height: 36px;outline: none;border: 0; margin-right:-5px;cursor:pointer;}
+#card-news .card-btn:hover{color:white;background-color: #7c1411;}
+#card-news .card-btn-news{background-color: #151515;color:#a0a0a0;}
+						/* 奇迹MU遗失的大陆 */
+#card-news .qj-btn-group .card-btn{width: 48px;height: 36px;outline: none;border: 0; margin-right:-5px;cursor:pointer;}
+#card-news .qj-btn-group .card-btn:hover{color:white;background-color: #ffa20f;}
+#card-news .qj-btn-group .card-btn-news-active{background-color: #ffa20f;color:white;}
+#card-news .card-btn-news{background-color: #151515;color:#a0a0a0;}
+
+/*banner*/
+.section-01 .banner{height: 330px;width: 600px;margin: auto;}
+.picUL,.picUL li{list-style: none;margin: 0;padding: 0;}
+.picUL li>img{ border:0;  }
+.numUL li>a{ text-decoration:none; color:#333;  }
+.numUL li>a:hover{ color:#ff952d;  }
+.focusBox { position: relative; height: 330px; overflow: hidden; font: 12px/1.5 Verdana, Geneva, sans-serif; text-align: left; background: white; }
+.focusBox .picUL img { width: 600px; height: 330px; display: block;border: 0; }
+.focusBox .numUL { position: absolute; z-index: 3; bottom: 30px; right: 20px; }
+.focusBox .numUL li{ float: left; position: relative; width: 30px; height: 9px;overflow: hidden; text-align: center; margin-right: 5px; cursor: pointer; }
+.focusBox .numUL li a,.focusBox .numUL li span { position: absolute; z-index: 2; display: block; color: white; width: 100%; height: 100%; top: 0; left: 0; text-decoration: none; }
+.focusBox .numUL li span { z-index: 1; background: #fff; filter: alpha(opacity=100); opacity: 1; }
+.focusBox .numUL li.on a,.focusBox .numUL a:hover{ background:#b02112;}
+/*奇迹MU遗失的大陆*/
+.focusBox .qj-numUL li.on a,.focusBox .qj-numUL a:hover{ background:#ffa20f;}
+
+/*section02*/
+.section02{width: 1200px;margin:40px auto;height: 400px;}
+/*新手指南*/
+.section02 .qj-xs-guide{width: 300px;height: 100%;float: left;background-color:#fff;}/* --- 奇迹新手指南 --- */
+.section02 .qj-xs-guide .xs-guide .title span{color:#615f5f;}
+.section02 .qj-xs-guide .xs-guide .title a{font-size: 12px;color:#8d8d8d;}
+.section02 .qj-xs-guide .xs-guide .title a:hover{color:#ffa20f;}/* --- 奇迹新手指南 end --- */
+.section02 .home-xs-guide{width: 300px;height: 100%;float: left;background: url("../images/gw/transparent-bg.png") repeat 100%;}
+.xs-guide{width: 90%;height: 400px;margin: auto;font-family: 微软雅黑;}
+.xs-guide .title{height: 60px;line-height: 60px;}
+.xs-guide .title span{font-size: 18px;color:white;}
+.xs-guide .title a{font-size: 12px;color:#8d8d8d;}
+.xs-guide .title a:hover{color:#fff;}
+#card-xs .btn-tips{height: 30px;font-family: 微软雅黑;}
+#card-xs .btn-tips .active{background-color: #7c1411;color:white;}
+#card-xs .btn-tips .lose-tip{background-color: rgba(255,255,255,.1);color:#8d8d8d;}
+#card-xs .btn-tips .tip{width: 83px;height: 30px;outline: none;border: 0;font-size: 17px;margin-left: 3px;cursor:pointer;}
+#card-xs .btn-tips .tip:hover{color:white;background-color: #7c1411;}
+#card-xs .xs-content{width:100%;height:294px;display:none;}
+#card-xs .content01 .links{margin-top: 10px;}
+#card-xs .content01 .links ul li{float: left;margin-bottom: 10px;width: 25%;text-align: center;}
+#card-xs .content01 .links ul li a{font-size: 12px;color:#8a8b8b;}
+#card-xs .content01 .links ul li a:hover{color:#ff0700;}
+#card-xs .content01 .icon-group{height: 220px;width: 100%;}
+#card-xs .content01 .icon-group ul li{float: left;width: 124px;height: 100px;text-align: center;margin:0 5px 20px 5px;}
+#card-xs .content01 .icon-group ul li a{display: block;width: 100%;height: 100%;padding-top: 10px;font-size: 14px;color:#777878;background-color: #1b1b1b;}
+#card-xs .content01 .icon-group ul li a:hover{color:white;background-color: #510d06;}
+#card-xs .content01 .icon-group ul li a i{display: inline-block;width: 63px;height: 63px;}
+#card-xs .content01 .icon-group ul li a.hz i{background: url("../images/gw/xs-hz-normal.png") no-repeat top;}
+#card-xs .content01 .icon-group ul li a.hero i{background: url("../images/gw/xs-hero-normal.png") no-repeat top;}
+#card-xs .content01 .icon-group ul li a.wq i{background: url("../images/gw/xs-wq-normal.png") no-repeat top;}
+#card-xs .content01 .icon-group ul li a.dp i{background: url("../images/gw/xs-dp-normal.png") no-repeat top;}
+#card-xs .content01 .icon-group ul li a.hz:hover>.hz-i{background: url("../images/gw/xs-hz-hover.png") no-repeat top;}
+#card-xs .content01 .icon-group ul li a.hero:hover>.hero-i{background: url("../images/gw/xs-hero-hover.png") no-repeat top;}
+#card-xs .content01 .icon-group ul li a.wq:hover>.wq-i{background: url("../images/gw/xs-wq-hover.png") no-repeat top;}
+#card-xs .content01 .icon-group ul li a.dp:hover>.dp-i{background: url("../images/gw/xs-dp-hover.png") no-repeat top;}
+/*职业介绍card*/
+.section02 .profession{width: 600px;height: 100%;margin: auto;}
+#card-profession{position: relative;}
+#card-profession .btn-tips{height: 42px;width:100%;background:url("../images/gw/card-tips-bg.png") no-repeat left;font-family: 微软雅黑;position: absolute;top: 0;z-index: 10;}
+#card-profession .btn-tips .active{background-color: #7c1411;color:white;}
+#card-profession .btn-tips .lose-tip{background-color: transparent;color:black;}
+#card-profession .btn-tips .tip{width: 80px;height: 42px;outline: none;border: 0; margin-right:-5px;font-size: 17px;cursor:pointer;}
+#card-profession .btn-tips .tip:hover{color:white;background-color: #7c1411;}
+#card-profession .profession-content{width:600px;height:400px;display:none;padding-top:40px;padding-left: 40px;}
+#card-profession .profession-content .pic-title{margin-top:30px;width:100%;height:62px;}
+#card-profession .profession-content p{font-size: 14px;font-family: 微软雅黑;color:#343434;}
+#card-profession .profession-content p i{display: inline-block;width: 17px;height: 17px;margin-right: 3px;}
+#card-profession .profession-content p i.difficult{background: url("../images/gw/list-degree.png") no-repeat;}
+#card-profession .profession-content p i.easy{background: url("../images/gw/list-degree.png") no-repeat -22px;}
+#card-profession .profession-content p.title{font-size:28px;width:212px;}
+#card-profession .profession-content .desc{font-size:14px;line-height:25px;font-weight:500;}
+#card-profession .profession-content ul li{float:left;margin-right:6px;}
+#card-profession .profession-content ul li a{display:block;width:23px;height:22px;background:url("../images/gw/star-icon.png") no-repeat;}
+
+#card-profession .profession-content .role-pic{background:black;width: 240px;height: 132px;}
+#card-profession .content01 .role-pic{background: url("../images/gw/role01.jpg") no-repeat;-webkit-background-size:100%;background-size:100%;}
+#card-profession .content01 .soldier{background: url("../images/gw/tap-soldier.png") no-repeat left;}
+#card-profession .content01{background: url("../images/gw/tabpic-soldier.jpg") no-repeat top center;background-size: cover;}
+#card-profession .content02 .role-pic{background: url("../images/gw/role02.jpg") no-repeat;-webkit-background-size:100%;background-size:100%;}
+#card-profession .content02 .master{background: url("../images/gw/tap-master.png") no-repeat left;}
+#card-profession .content02{background: url("../images/gw/tabpic-master.jpg") no-repeat top center;background-size: cover;}
+#card-profession .content03 .role-pic{background: url("../images/gw/role03.jpg") no-repeat;-webkit-background-size:100%;background-size:100%;}
+#card-profession .content03 .minister{background: url("../images/gw/tap-minister.png") no-repeat left;}
+#card-profession .content03{background: url("../images/gw/tabpic-minister.jpg") no-repeat top center;background-size: cover;}
+
+/*微端下载-新手礼包-专属活动*/
+.section02 .wd-gift-activity{width: 300px;height: 100%;;float: right;background-color: rgba(0,0,0,.5)}
+.section02 .wd-gift-activity .mid-link{width: 100%;height:33.3%;}
+.section02 .wd-gift-activity .mid-link a.com-btn{width: 100%;height:100%;display: inline-block;}
+										/* 赤月 */
+.section02 .wd-gift-activity .mid-link a.cy-wd-btn{background: url("../images/gw/wd-gift-activity-icon.png") no-repeat 55px 35px;}/* 中间按钮背景 命名不同的class更换 */
+.section02 .wd-gift-activity .mid-link a.cy-xs-btn{background: url("../images/gw/wd-gift-activity-icon.png") no-repeat 55px -95px;}
+.section02 .wd-gift-activity .mid-link a.cy-activity-btn{background: url("../images/gw/wd-gift-activity-icon.png") no-repeat 55px -235px;}
+.section02 .wd-gift-activity .cy-mid-link{background: url("../images/gw/wd-gift-activity-bg.jpg") no-repeat 0 -136px;border:1px #420600 solid;}
+.section02 .wd-gift-activity .cy-mid-link:hover{background: url("../images/gw/wd-gift-activity-bg.jpg") no-repeat;}
+										/*奇迹MU遗失的大陆*/
+.section02 .wd-gift-activity .mid-link a.qj-wd-btn{background: url("../images/gw/wd-gift-activity-text.png") no-repeat 55px 35px;}/* 中间按钮背景 命名不同的class更换 */
+.section02 .wd-gift-activity .mid-link a.qj-xs-btn{background: url("../images/gw/wd-gift-activity-text.png") no-repeat 55px -95px;}
+.section02 .wd-gift-activity .mid-link a.qj-activity-btn{background: url("../images/gw/wd-gift-activity-text.png") no-repeat 55px -235px;}
+.section02 .wd-gift-activity .qj-mid-link{background: url("../images/gw/new-wd-gift-activity-bg.jpg") no-repeat 0 -136px;border:1px #420600 solid;}
+.section02 .wd-gift-activity .qj-mid-link:hover{background: url("../images/gw/new-wd-gift-activity-bg.jpg") no-repeat;}
+
+/*section03*/
+.section03{width: 1200px;height: 201px;margin: auto;}
+.section03 ul li{float: left;width: 299px;height: 201px;margin-right: 1px;}
+.section03 ul li a.prntScr{display: block;width: 100%;height: 100%;background: url("../images/gw/prntScr.jpg") no-repeat left;}
+.section03 ul li a.proPic{display: block;width: 100%;height: 100%;background: url("../images/gw/proPic.jpg") no-repeat left;}
+/* --- 奇迹MU遗失的大陆 游戏截图 --- */
+.section03 ul li a.qj-prntScr{display: block;width: 100%;height: 100%;background: url("../images/gw/qj-prntScr.jpg") no-repeat left;}
+.section03 ul li a.qj-proPic{display: block;width: 100%;height: 100%;background: url("../images/gw/qj-proPic.jpg") no-repeat left;}
+
+/*客服中心*/
+.kf{width: 100%;height: 100%;background:url("../images/gw/transparent-bg.png") repeat 100%;}
+.kf .title{width: 90%;height: 60px;line-height: 60px;font-size: 18px;font-family: 微软雅黑;color:#fff;margin: auto;}
+.kf .tel{width: 90%;height: 60px;font-size: 12px;font-family: 宋体;color:#fff;margin: auto;background: url("../images/gw/kf-icon-normal.png") no-repeat 20px 5px;text-align: right;line-height: 20px;padding: 8px 40px;}
+.kf .kf-links{width: 90%;font-size: 12px;font-family: 宋体;margin: auto;}
+.kf .kf-links ul li{float: left;width: 30%;}
+.kf .kf-links ul li a{color: #9e9d9c;display: block;text-align: center;height: 70px;padding-top: 54px;}
+.kf .kf-links ul li a.kf-online{background: url("../images/gw/kf-icon-normal.png") no-repeat 20px -60px;border-right: 1px black dashed;}
+.kf .kf-links ul li a.recharge{background: url("../images/gw/kf-icon-normal.png") no-repeat -55px -60px;border-right: 1px black dashed;}
+.kf .kf-links ul li a.jz{background: url("../images/gw/kf-icon-normal.png") no-repeat -138px -60px;}
+.kf .kf-links ul li a.kf-online:hover{background: url("../images/gw/kf-icon-hover.png") no-repeat 20px -60px;color:red;}
+.kf .kf-links ul li a.recharge:hover{background: url("../images/gw/kf-icon-hover.png") no-repeat -55px -60px;color:red;}
+.kf .kf-links ul li a.jz:hover{background: url("../images/gw/kf-icon-hover.png") no-repeat -138px -60px;color:red;}
+
+/*关注微信*/
+.qr-code{width: 100%;height: 100%;background:url("../images/gw/transparent-bg.png") repeat 100%;}
+.qr-code .title{width: 90%;height: 60px;line-height: 60px;font-size: 18px;font-family: 微软雅黑;color:#fff;margin: auto;}
+.qr-code .qrcode-pic{width: 90%;margin:auto;}
+.qr-code .qrcode-pic .text{width: 50%;}
+.qr-code .qrcode-pic .text i{display:block;height:50px;line-height:50px;padding-left: 35px;color:#a9a8a7;cursor: pointer;}
+.qr-code .qrcode-pic .text i:hover{color:#ff0700;}
+.qr-code .qrcode-pic .text i.wx{background: url("../images/gw/qrcode-icon-normal.png") no-repeat 0 10px;}
+.qr-code .qrcode-pic .text i.wx:hover{background: url("../images/gw/qrcode-icon-hover.png") no-repeat 0 10px;}
+.qr-code .qrcode-pic .text i.sina{background: url("../images/gw/qrcode-icon-normal.png") no-repeat 0 -35px;}
+.qr-code .qrcode-pic .text i.sina:hover{background: url("../images/gw/qrcode-icon-hover.png") no-repeat 0 -35px;}
+.qr-code .qrcode-pic .pic{width: 115px;height:115px;background: url("../images/gw/weixin.jpg") no-repeat;background-size:100% 100%;}
+.qr-code .qrcode-pic .active{width: 115px;height:115px;background: url("../images/gw/weibo.jpg") no-repeat;background-size:100% 100%;}
+
+/* footer */
+.footer{width:100%;margin: auto;height: 200px;font-size: 14px;background-color: rgba(0,0,0,0.2);font-family: 微软雅黑;position:absolute;bottom: 0;}
+.footer .foot1{width: 1080px;margin:auto;}
+.footer .foot1 .warning{width: 85%;margin: auto;border-bottom: 1px #616161 solid;height: 70px;line-height: 70px;}
+.footer .foot1 .warning ul li.m-right{float: left;margin-right: 20px;}
+.footer .foot2{width: 1080px;margin: 35px auto 0;}
+.footer .foot2 .nav-link{padding-left: 20px;width:45%;margin: auto;}
+.footer .foot2 .nav-link ul li{float: left;}
+.footer .foot2 .nav-link ul li a{color:black;}
+.footer .foot2 .nav-link ul li a:hover{color:white;}
+.footer .foot2 .nav-link ul li.link-m-right{margin-right: 10px;}
+.footer .copy-right{width: 1080px;margin: auto;text-align: center;}
+
+/*赤月新闻*/
+.servers{width:1200px;height: 57px;margin: 475px auto 0;}
+			/*左边模块*/
+.main{width: 1200px;height: 1165px;margin: auto;}
+.main .module-left{width:300px;}
+.main .module-left .news-login{width: 300px;margin-bottom: 10px;}
+.main .module-left .news-xs-guide{height: 400px;background: url("../images/gw/transparent-bg.png") repeat 100%;margin-bottom: 10px;}
+.main .module-left .qj-news-xs-guide{height: 400px;background: rgba(255,255,255,.1) url("../images/gw/qj-xsbg.jpg") no-repeat left bottom;}/* --- 奇迹MU遗失的大陆新手指南 --- */
+.main .module-left .news-kf{height: 201px;margin-bottom: 10px;}
+.main .module-left .news-qrcode{height: 201px;}
+			/*右边模块*/
+.main .module-right{width:880px;height: 1165px;font-family: 宋体;background-color: white;}
+.main .module-right .title{height: 52px;line-height: 52px;color:white;padding: 0 10px;}
+.main .module-right .cy{background-color: #7c1411;}
+.main .module-right .title i.title{font-size:30px; }
+.main .module-right .title i.location{font-size:14px; float: right;}
+.main .module-right a.hot-news{display: block;width: 100%;text-align: center;height: 36px;line-height: 36px;background-color: #510d06;color:#f8ea8b;font-weight: bold;font-size: 18px;}
+.main .module-right a.hot-news:hover{color:#F8F42C;}
+.main .module-right .news-content{max-height: 950px;padding: 0 10px;}
+.main .module-right .news-content a.news-item i.news-title{height:50px;}
+.main .module-right .news-content a.news-item i.news-title span{color:#696969;vertical-align:middle;}
+.main .module-right .news-content a.news-item i.news-title span:nth-child(2){display:inline-block;padding-left:10px;width:780px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.main .module-right .news-content a.news-item{display: block;height: 50px;line-height: 50px;width: 100%;font-size: 14px;color:#a0a0a0;border-bottom: 1px dashed #a0a0a0;}
+.main .module-right .news-content a.news-item:hover{color:#7c1411;border-bottom: 1px dashed #7c1411;}
+/*新闻详情*/
+.main .module-right i.news-item-title{display: block;width: 100%;height: 66px;line-height: 66px;text-align: center;color:#3b0600;font-weight: bold;font-size: 18px;font-family: 微软雅黑;}
+.main .module-right i.news-item-time{display: block;width: 95%;margin:0 auto 20px;text-align: right;color:#3b0600;border-bottom: 1px #a0a0a0 solid;}
+.main .module-right .news-item-content{width: 95%;margin: auto;height: 900px;overflow: auto;}
+.main .module-right .last-next {padding: 20px 0; width: 95%;margin: auto;}
+.main .module-right .last-next a{ display: block;height: 22px;line-height: 22px;font-size: 14px;}
+.main .module-right .last-next a:hover{ text-decoration: underline;}
+.main .module-right .last-next a.last{color:#010101;}
+.main .module-right .last-next a.next{color:#7b7b7b;}
+
+/*分页样式*/
+.page{height: 100px;line-height: 100px;text-align: center;margin: auto;padding-top: 40px;}
+.page .pagenumber{float: right;}
+.page a{width: 20px;height: 20px;text-align: center;line-height: 20px;float: left;color: #7c1411;font-size: 12px;border:none!important;}
+.page a{color:#7C4234;}
+.page a.first-page,.page a.last-page{width: 38px!important;}
+.current{width: 20px;height: 20px;text-align: center;line-height: 20px;float: left;color: #7C4234;font-size: 12px;}
+.jl{width: 174px;height: 20px;text-align: center;line-height: 20px;float: left;color: #000;font-size: 12px;}
+
+/*赤月游戏截图*/
+.main .module-right-pic-cy{background-color: #7c1411!important;}
+.main .module-right-pic-cy .pic-title-cy{background-color: #510d06!important;}
+.main .module-right-pic-cy .pic-content{height: 1000px;}
+.main .module-right-pic-cy .pic-content .pic-nav{height: 60px;width: 50%;margin: auto;}
+.main .module-right-pic-cy .pic-content .pic-nav a.active{color:#fff;border-bottom: 1px #fff solid;}
+.main .module-right-pic-cy .pic-content .pic-nav a{display: inline-block;height: 60px;line-height: 60px;width: 200px;color:#d9d9d8;text-align: center;font-size: 20px;font-family: 微软雅黑;}
+.main .module-right-pic-cy .pic-content .pic-nav a:hover{border-bottom: 2px #d9d9d8 solid;color:#fff;}
+.main .module-right-pic-cy .pic-content i.divide-line{border-bottom: 1px #d9d9d8 solid;display: block;width: 95%;margin:auto;}
+.main .module-right-pic-cy .pic-content .pic-box{width: 95%;margin:auto;}
+.main .module-right-pic-cy .pic-content .pic-box ul li{float: left;margin: 15px 35px 0;position: relative;}
+.main .module-right-pic-cy .pic-content .pic-box ul li img.sm-pic{width: 336px;height: 210px;cursor: pointer; }
+.main .module-right-pic-cy .pic-content .pic-box ul li .scale-box{width: 300px;height: 180px;border: 1px #b99652 solid;position: absolute;top:15px;left: 15px;cursor:pointer;display: none;}
+.main .module-right-pic-cy .pic-content .pic-box ul li .scale-box a.pic-scale-btn{width: 60px;height: 60px;display: block;background: url("../images/gw/pic-scale-btn.png") no-repeat;position: absolute;top:50%;left: 50%;margin:-30px 0 0 -30px;cursor:pointer;}
+/*放大图弹出框*/
+.large-pic-box{display: none;width: 1020px;height: 600px; position: fixed;top: 50%;left: 50%;margin: -300px 0 0 -510px;z-index: 50;background-color: #510d06;}
+.closeBtn{float: right;margin-right: -52px;cursor:pointer;}
+.largeImg-box{width: 90%;height: 80%;background-color: black;margin: 50px auto;}
+.largeImg{width: 100%;height: 100%;}
+.largeImg:hover{cursor: pointer;}

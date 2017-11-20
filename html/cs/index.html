@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>客服中心</title>
+	<meta name="keywords" content="#">
+	<meta name="description" content="#">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/cs.css">
+	<include file="Public/IE" />
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<div class="tran-bg"></div>
+<div class="kf-home-container">
+	<div class="kf-home-content">
+		<ul>
+			<li>
+				<a class="online-normal" href="http://www16.53kf.com/webCompany.php?style=1&arg=10161684" target="_blank"></a><!-- 在线客服 -->
+				<a class="hover online-hover" href="http://www16.53kf.com/webCompany.php?style=1&arg=10161684" target="_blank">
+					<i>联系在线客服</i>
+					<p>9:30 - 00:00</p>
+				</a>
+			</li>
+			<li class="li-3 m-right-0">
+				<a class="tel-normal"></a><!-- 客服热线 -->
+				<a class="hover tel-hover">
+					028-67875837<br>4001-898-116<br>
+					<i>10:30 - 19:00 × 7</i>
+				</a>
+			</li>
+			<li>
+				<a class="query-normal"></a><!-- 账号查询 -->
+				<a class="hover query-hover" href="__ROOT__/home/cs/query">
+					<i>查询</i>
+				</a>
+			</li>
+			<li class="m-right-0">
+				<a class="wg-normal"></a><!-- 外挂举报 -->
+				<a class="hover wg-hover" href="__ROOT__/home/cs/wg">
+					<i>举报</i>
+				</a>
+			</li>
+			<li class="w-225">
+				<a class="record-normal"></a><!--服务记录 -->
+				<a class="hover record-hover" href="__ROOT__/home/cs/myrecord">
+					<i>查看记录</i>
+				</a>
+			</li>
+			<li class="w-225">
+				<a class="bug-normal"></a><!-- 游戏建议及bug反馈 -->
+				<a class="hover bug-hover" href="__ROOT__/home/cs/bug">
+					<i>提交</i>
+				</a>
+			</li>
+			<li>
+				<a class="repair-normal"></a><!-- 账号修复 -->
+				<a class="hover repair-hover" href="__ROOT__/home/cs/repair">
+					<i>修复</i>
+				</a>
+			</li>
+			<li class="m-right-0">
+				<a  class="complain-normal"></a><!-- 投诉 -->
+				<a class="hover complain-hover" href="__ROOT__/home/cs/complain">
+					<i>投诉</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		$('.kf-home-content ul li').hover(function () {
+			$(this).find('.hover').fadeIn(200)
+		},function () {
+			$(this).find('.hover').fadeOut(200);
+		})
+	</script>
+</div>
+<!-- footer -->
+<include file="Public/footer" />
+<!-- footer - end -->
+<style>
+	.footer5{margin-top:0;}
+</style>
+</body>
+</html>

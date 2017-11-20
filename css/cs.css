@@ -1,0 +1,413 @@
+@import "jHsDate.css";/*-- 选择日期 --*/
+.tran-bg{height:25px;width:100%;background:url("../images/op/transition_bg.jpg") repeat-x;}
+/*--------------------- 主页 ------------------*/
+.kf-home-container{width:100%;min-height:696px;margin-top:25px;background:url("../images/op/kf_bg.jpg") no-repeat bottom center;}
+.kf-home-container .kf-home-content{width:850px;height:548px;margin:auto}
+.kf-home-container .kf-home-content ul li{width:172px;height:170px;float:left;margin:0 18px 18px 0;position:relative;}
+.kf-home-container .kf-home-content ul li:first-child{width:470px;height:358px;}
+.kf-home-container .kf-home-content ul li.li-3{width:362px;}
+.kf-home-container .kf-home-content ul li.w-225{width:225px;margin-right:19px;}
+.kf-home-container .kf-home-content ul li.m-right-0{margin-right:0;}
+.kf-home-container .kf-home-content ul li a{display:block;width:100%;height:100%;}
+.kf-home-container .kf-home-content ul li a.online-normal{background:url("../images/op/online_service_normal.jpg") no-repeat center;}
+.kf-home-container .kf-home-content ul li a.query-normal{background:url("../images/op/account_query_normal.jpg") no-repeat center;}
+.kf-home-container .kf-home-content ul li a.tel-normal{background:url("../images/op/cs_tel_normal.jpg") no-repeat center;}
+.kf-home-container .kf-home-content ul li a.wg-normal{background:url("../images/op/wg__normal.jpg") no-repeat center;}
+.kf-home-container .kf-home-content ul li a.repair-normal{background:url("../images/op/account_repair_normal.jpg") no-repeat center;}
+.kf-home-container .kf-home-content ul li a.complain-normal{background:url("../images/op/complain_normal.jpg") no-repeat center;}
+.kf-home-container .kf-home-content ul li a.record-normal{background:url("../images/op/service_record_normal.jpg") no-repeat center;}
+.kf-home-container .kf-home-content ul li a.bug-normal{background:url("../images/op/bug_normal.jpg") no-repeat center;}
+	/* -- 鼠标移入 -- */
+.kf-home-container .kf-home-content ul li a.hover{position:absolute;text-align:center;font-family:微软雅黑;top:0;left:0;color:#fff;font-size:26px;padding-top:65px;display:none;}
+.kf-home-container .kf-home-content ul li a.hover i{display:inline-block;border:2px solid #fff;width:140px;height:40px;border-radius:20px;line-height:34px;font-size:26px;}
+.kf-home-container .kf-home-content ul li a.online-hover{background-color:#ff952d;padding-top:151px;}
+.kf-home-container .kf-home-content ul li a.online-hover i{width:280px;height:50px;border-radius:25px;border:3px solid #fff;line-height:40px;font-size:30px;}
+.kf-home-container .kf-home-content ul li a.query-hover{background-color:#5f52a0;padding-top:65px;}
+.kf-home-container .kf-home-content ul li a.tel-hover{background-color:#5f52a0;padding-top:20px;}
+.kf-home-container .kf-home-content ul li a.tel-hover i{width:190px;height:40px;border-radius:20px;line-height:34px;font-size:16px;margin-top:5px;}
+.kf-home-container .kf-home-content ul li a.wg-hover,
+.kf-home-container .kf-home-content ul li a.repair-hover,
+.kf-home-container .kf-home-content ul li a.complain-hover{background-color:#7ecef4;}
+.kf-home-container .kf-home-content ul li a.record-hover,
+.kf-home-container .kf-home-content ul li a.bug-hover{background-color:#eb6877;padding-top:60px;}
+.kf-home-container .kf-home-content ul li a.record-hover i,
+.kf-home-container .kf-home-content ul li a.bug-hover i{width:200px;height:50px;border-radius:25px;line-height:44px;}
+
+/*---------------------  ------------------*/
+.a-upload {padding-left:14px;height: 30px;line-height: 30px;position: relative;cursor: pointer;color:#a0a0a0;background: #eeeeee;border: 1px solid #ddd;border-radius: 1px;overflow: hidden;display: inline-block;*display: inline;*zoom: 1 }
+.a-upload input {position: absolute;font-size:100px;right:0;top:0;opacity: 0;filter:alpha(opacity=0);cursor:pointer;}
+.a-upload button {width:98px;background:url("../images/op/kf-btn-bg.png") no-repeat center;border:0;outline:none;cursor:pointer;color:#2d5294;font-size:14px;height:28px;line-height:28px;}
+
+.kf-container{width:100%;min-height:700px;margin-top:25px;background:url("../images/op/kf_bg.jpg") no-repeat bottom center;}
+.kf-container .kf-content{width:1040px;margin:auto;padding-bottom:105px;}
+.kf-container .kf-content>.title{width:100%;height:60px;background-color:#ff952d;font-size:24px;color:#fff;line-height:60px;padding-left:13px;}
+.kf-container .kf-content .content{margin:10px auto 0;min-height:520px;background-color:#dcdcdc;}
+/* -- 左边导航 -- */
+.kf-container .kf-content .content .left-nav{width:120px;font-size:14px;font-family:微软雅黑;}
+.kf-container .kf-content .content .left-nav ul li{height:40px;width:100%;line-height:40px;text-align:center;}
+.kf-container .kf-content .content .left-nav ul li a{display:block;width:100%;height:100%;color:#000;}
+.kf-container .kf-content .content .left-nav ul li a.on{background-color:#fff;}
+.kf-container .kf-content .content .left-nav ul li a:hover{background-color:#fff;}
+/* -- 公共样式 -- */
+.kf-container .kf-content .content .o-step{width:920px;background-color:#fff;margin-left:120px;font-family:宋体;font-size:12px;}
+.kf-container .kf-content .content .o-step input{background-color:#eeeeee;border:1px #d8d8d8 solid;border-radius:1px;width:260px;height:30px;padding-left:14px;}
+.kf-container .kf-content .content .o-step select{background-color:#eeeeee;border:1px #d8d8d8 solid;border-radius:1px;width:260px;height:30px;padding-left:10px;}
+.kf-container .kf-content .content .o-step{height:520px;padding:20px 80px;}
+.kf-container .kf-content .content .o-step .title{color:#00b7ee;font-size:18px;text-align:center;font-weight:bold;}
+.kf-container .kf-content .content .o-step .title i{color:#000;font-size:12px;margin-top:20px;display:inline-block;font-weight:normal;}
+.kf-container .kf-content .content .o-step table tr td:first-child i{color:#ff0000;}
+
+.kf-container .kf-content .content .o-step table tr td ul li{float:left;margin-right:6px;}
+.kf-container .kf-content .content .o-step table tr td ul li:nth-child(3){padding-top:17px;}
+.kf-container .kf-content .content .o-step table tr td ul li img{width:80px;height:32px;margin-top:-1px;}
+.kf-container .kf-content .content .o-step table tr td ul li button{width:98px;height:28px;background:url("../images/op/kf-btn-bg.png") no-repeat center;border:0;outline:none;cursor:pointer;color:#2d5294;font-size:14px;line-height:28px;margin-top:1px;}
+.buttonshovers:hover{color:#06327f;}
+																/* -- 消息提示 -- */
+.kf-container .kf-content .content .o-step table tr td.err-caption span.normal{color:#a0a0a0;}
+.kf-container .kf-content .content .o-step table tr td.err-caption span.err{color:red;}
+.kf-container .kf-content .content .o-step table tr td.err-caption span.ok{color:green;}
+/*-----+++++---- 账号查询 通过密保手机找回 ----+++++----- */
+.kf-container .kf-content .content .query-o-step .step-0 ul{margin-top:70px;}
+.kf-container .kf-content .content .query-o-step .step-0 ul li{color:#898989;font-size:12px;width:360px;height:210px;border:1px solid #c9c9c9;float:left;margin-right:40px;padding:10px 2px 10px 8px;line-height:30px;}
+.kf-container .kf-content .content .query-o-step .step-0 ul li:last-child{margin-right:0;}
+.kf-container .kf-content .content .query-o-step .step-0 ul li a.btn{display:block;width:260px;height:40px;background-color:#ff952d;text-align:center;line-height:40px;border-radius:1px;color:#fff;font-size:14px;margin:20px auto 15px;cursor:pointer;}
+.kf-container .kf-content .content .query-o-step .step-0 ul li a.btn:hover{background-color: #FFB935;}
+.kf-container .kf-content .content .query-o-step .step-0 ul li i{color:#ff0000;display:block;}
+.kf-container .kf-content .content .query-o-step .step-0 ul li i a{color:#0000ff;}
+/* -- 第1步 -- */
+.kf-container .kf-content .content .query-o-step .step-1 .step-icon,
+.kf-container .kf-content .content .query-o-step .step-2 .step-icon{width:265px;height:70px;margin:20px auto 0;padding-top:55px;color:#828282;}
+.kf-container .kf-content .content .query-o-step .step-1 .step-icon{background:url("../images/op/psw-step1.png") no-repeat left top;}
+.kf-container .kf-content .content .query-o-step .step-1 table{margin:40px 0 0 80px;}
+.kf-container .kf-content .content .query-o-step .step-1 table tr td:first-child{text-align:right;}
+.kf-container .kf-content .content .query-o-step .step-1 table tr td.err-caption{padding-left:158px;height:25px;vertical-align:top;text-align:left;padding-left:160px;}
+.kf-container .kf-content .content .query-o-step .step-1 table tr td>button{width:194px;height:36px;background-color:#ffa144;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;}
+.kf-container .kf-content .content .query-o-step .step-1 table tr td>button:hover{background-color:#f7ad1f;}
+.kf-container .kf-content .content .query-o-step .step-1 table tr td input.code-inp,
+.kf-container .kf-content .content .query-o-step .step-1 table tr td input.mes-code{width:160px;}
+.kf-container .kf-content .content .query-o-step .step-1 table tr td.sub-btn-td{text-align:left;padding-left:200px;}
+.kf-container .kf-content .content .query-o-step .step-1 .f-cap{text-align:center;margin-top:20px;}
+.kf-container .kf-content .content .query-o-step .step-1 .f-cap a{color:red;}
+/* -- 第2步 -- */
+.kf-container .kf-content .content .query-o-step .step-2 .step-icon{background:url("../images/op/psw-step2.png") no-repeat left top;}
+.kf-container .kf-content .content .query-o-step .step-2 .success-cap{color:#a0a0a0;text-align:center;margin:50px 0 40px 0;line-height:30px;}
+.kf-container .kf-content .content .query-o-step .step-2 .success-cap span{color:#ff952d;font-size:18px;font-weight:bold;}
+.kf-container .kf-content .content .query-o-step .step-2 .change-way{color:#000;padding-left:70px;}
+.kf-container .kf-content .content .query-o-step .step-2 .change-way a{color:#a0a0a0;font-size:14px;display:block;border:1px #dcdcdc solid;width:240px;height:80px;background:url("../images/op/psw-keyboard.png") no-repeat 25px;line-height:80px;padding-left:125px;margin-top:20px;}
+.kf-container .kf-content .content .query-o-step .step-2 .change-way a:hover{color:#000;}
+/*-----+++++---- 账号查询 通过人工服务找回 ----+++++----- */
+/* -- 第1步 帐号角色信息 -- */
+.kf-container .kf-content .content .query-o-step-rg{height:auto;}
+.kf-container .kf-content .content .query-o-step-rg .step-1{height:520px;}
+.kf-container .kf-content .content .query-o-step-rg .step-1 .step-icon,
+.kf-container .kf-content .content .query-o-step-rg .step-2 .step-icon,
+.kf-container .kf-content .content .query-o-step-rg .step-3 .step-icon,
+.kf-container .kf-content .content .query-o-step-rg .step-4 .step-icon{width:375px;height:70px;margin:20px auto 0;padding-top:55px;color:#828282;}
+.kf-container .kf-content .content .query-o-step-rg .step-1 .step-icon{background:url("../images/op/findpsw-step1.png") no-repeat left top;}
+.kf-container .kf-content .content .query-o-step-rg .step-2 .step-icon{background:url("../images/op/findpsw-step2.png") no-repeat left top;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 .step-icon{background:url("../images/op/findpsw-step3.png") no-repeat left top;}
+.kf-container .kf-content .content .query-o-step-rg .step-4 .step-icon{background:url("../images/op/findpsw-step4.png") no-repeat left top;}
+.kf-container .kf-content .content .query-o-step-rg .step-icon ul li{float:left;width:25%;}
+.kf-container .kf-content .content .query-o-step-rg .step-icon ul li:nth-child(2){padding-left:5px;}
+.kf-container .kf-content .content .query-o-step-rg .step-icon ul li:nth-child(3){padding-left:20px;}
+.kf-container .kf-content .content .query-o-step-rg .step-icon ul li:last-child{text-align:right;}
+.kf-container .kf-content .content .query-o-step-rg .step-1 p,
+.kf-container .kf-content .content .query-o-step-rg .step-2 p,
+.kf-container .kf-content .content .query-o-step-rg .step-3 p{text-align:center;margin-top:20px;color:#a0a0a0;}
+.kf-container .kf-content .content .query-o-step-rg .step-1 table{margin:20px 0 0 120px;}
+.kf-container .kf-content .content .query-o-step-rg .step-1 table tr{height:50px;}
+.kf-container .kf-content .content .query-o-step-rg .step-1 table tr td:first-child{text-align:right;}
+.kf-container .kf-content .content .query-o-step-rg .step-1 table tr td>button{width:194px;height:36px;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;}
+.rebuttonshovers{background-color:#ffa144;}
+.rebuttonshovers:hover{ background-color: #f7ad1f;}
+.kf-container .kf-content .content .query-o-step-rg .step-1 table tr td.sub-btn-td{text-align:left;padding-left:150px;}
+/* -- 第2步 注册及密保信息 -- */
+.kf-container .kf-content .content .query-o-step-rg .step-2 table{margin:20px 0 0 150px;}
+.kf-container .kf-content .content .query-o-step-rg .step-2 table tr{height:40px;}
+.kf-container .kf-content .content .query-o-step-rg .step-2 table tr.reg-address select{width:125px;margin-right:5px;}
+.kf-container .kf-content .content .query-o-step-rg .step-2 table tr td:first-child{text-align:right;}
+.kf-container .kf-content .content .query-o-step-rg .step-2 table tr td>button{width:194px;height:36px;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;margin-top:10px;}
+.kf-container .kf-content .content .query-o-step-rg .step-2 table tr.ck-box{height:18px;}
+.kf-container .kf-content .content .query-o-step-rg .step-2 table tr.ck-box td{position:relative;padding-left:18px;}
+.kf-container .kf-content .content .query-o-step-rg .step-2 table tr.ck-box td input{width:14px;height:14px;position:absolute;left:-2px;top:-1px;}
+.kf-container .kf-content .content .query-o-step-rg .step-2 table tr.ck-box td label{color:#a0a0a0;}
+.kf-container .kf-content .content .query-o-step-rg .step-2 table tr td.sub-btn-td{text-align:left;padding-left:130px;padding-bottom:30px;}
+/* -- 第3步 帐号充值信息 -- */
+.kf-container .kf-content .content .query-o-step-rg .step-3{height:auto;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table{margin:20px 0 0 150px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr{height:40px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr.reg-address select{width:125px;margin-right:5px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr td:first-child{text-align:right;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr td>button{width:194px;height:36px;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;margin-top:10px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr td input.code-inp{width:160px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr.recharge-record{width:125px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr.recharge-record td:nth-child(2){position:relative;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr.recharge-record input{width:125px;margin-right:4px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr.recharge-record button{width:98px;background:url("../images/op/kf-btn-bg.png") no-repeat center;border:0;outline:none;cursor:pointer;color:#2d5294;font-size:14px;height:28px;line-height:28px;position:absolute;top:-5px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr.r-caption{vertical-align:top;color:#a0a0a0;line-height:20px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr.ck-box{height:18px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr.ck-box td{position:relative;padding-left:18px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr.ck-box td input{width:14px;height:14px;position:absolute;left:-2px;top:-1px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr.ck-box td label{color:#a0a0a0;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr td.protocol-td{text-align:left;padding-left:135px;position:relative;color:#000;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr td.protocol-td a{color:#ff952d;cursor:pointer;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr td.protocol-td input.ck-box{width:17px;height:17px;position:absolute;top:9px;}
+.kf-container .kf-content .content .query-o-step-rg .step-3 table tr td.sub-btn-td{text-align:left;padding-left:130px;padding-bottom:50px;}
+/* -- 第4步 提交成功 -- */
+.kf-container .kf-content .content .query-o-step-rg .step-4{height:405px;}
+.kf-container .kf-content .content .query-o-step-rg .step-4 .success-cap{color:#a0a0a0;text-align:center;margin:50px 0 40px 0;line-height:30px;}
+.kf-container .kf-content .content .query-o-step-rg .step-4 .success-cap span{color:#ff952d;font-size:18px;font-weight:bold;}
+.kf-container .kf-content .content .query-o-step-rg .step-4 .success-cap span.time{color:#ff0000;font-size:12px;font-weight:normal;}
+.kf-container .kf-content .content .query-o-step-rg .step-4 .success-cap a{color:#00a0e9;text-decoration:underline;}
+.kf-container .kf-content .content .query-o-step-rg .step-4 .change-way{color:#000;padding-left:70px;}
+.kf-container .kf-content .content .query-o-step-rg .step-4 .change-way a{color:#a0a0a0;font-size:14px;display:block;border:1px #dcdcdc solid;width:240px;height:80px;background:url("../images/op/psw-keyboard.png") no-repeat 25px;line-height:80px;padding-left:125px;margin-top:20px;}
+.kf-container .kf-content .content .query-o-step-rg .step-4 .change-way a:hover{color:#000;}
+
+/*-----+++++---- 密码找回 ----+++++----- */
+/* -- 第1步 确认账号 -- */
+.kf-container .kf-content .content .findpsw-o-step .step-1 .step-icon,
+.kf-container .kf-content .content .findpsw-o-step .step-2 .step-icon,
+.kf-container .kf-content .content .findpsw-o-step .step-3 .step-icon,
+.kf-container .kf-content .content .findpsw-o-step .step-4 .step-icon{width:375px;height:70px;margin:20px auto 0;padding-top:55px;color:#828282;}
+.kf-container .kf-content .content .findpsw-o-step .step-1 .step-icon{background:url("../images/op/findpsw-step1.png") no-repeat left top;}
+.kf-container .kf-content .content .findpsw-o-step .step-2 .step-icon{background:url("../images/op/findpsw-step2.png") no-repeat left top;}
+.kf-container .kf-content .content .findpsw-o-step .step-3 .step-icon{background:url("../images/op/findpsw-step3.png") no-repeat left top;}
+.kf-container .kf-content .content .findpsw-o-step .step-4 .step-icon{background:url("../images/op/findpsw-step4.png") no-repeat left top;}
+		/* -- 公共样式 -- */
+.kf-container .kf-content .content .findpsw-o-step .step-icon ul li{float:left;width:25%;}
+.kf-container .kf-content .content .findpsw-o-step .step-icon ul li:nth-child(2){padding-left:15px;}
+.kf-container .kf-content .content .findpsw-o-step .step-icon ul li:nth-child(3){padding-left:30px;}
+.kf-container .kf-content .content .findpsw-o-step .step-icon ul li:last-child{text-align:right;padding-right:8px;}
+.kf-container .kf-content .content .findpsw-o-step table tr td:first-child{color:#a0a0a0;}
+		/* -- 公共样式 end -- */
+.kf-container .kf-content .content .findpsw-o-step .step-1 table{width:500px;margin:100px auto 0;}
+.kf-container .kf-content .content .findpsw-o-step .step-1 table tr td:first-child{text-align:right;width:130px;}
+.kf-container .kf-content .content .findpsw-o-step .step-1 table tr td.err-caption{padding-left:132px;height:25px;vertical-align:top;text-align:left;}
+.kf-container .kf-content .content .findpsw-o-step .step-1 table tr td>button{width:194px;height:36px;background-color:#ffa144;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;margin-top:20px;}
+.kf-container .kf-content .content .findpsw-o-step .step-1 table tr td>button:hover{background-color:#f7ad1f;}
+.kf-container .kf-content .content .findpsw-o-step .step-1 table tr td.sub-btn-td{text-align:left;padding-left:150px;}
+/* -- 第2步 密保验证 -- */
+.kf-container .kf-content .content .findpsw-o-step{min-height:520px;height:auto;}
+.kf-container .kf-content .content .findpsw-o-step .step-2 table{width:500px;margin:30px auto 0;}
+.kf-container .kf-content .content .findpsw-o-step .step-2 table tr:nth-child(2){height:60px;}
+.kf-container .kf-content .content .findpsw-o-step .step-2 table tr td:first-child{text-align:right;width:130px;}
+.kf-container .kf-content .content .findpsw-o-step .step-2 table tr td.err-caption{padding-left:132px;height:25px;vertical-align:top;text-align:left;}
+.kf-container .kf-content .content .findpsw-o-step .step-2 table tr td>button{width:194px;height:36px;background-color:#ffa144;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;}
+.kf-container .kf-content .content .findpsw-o-step .step-2 table tr td>button:hover{background-color:#f7ad1f;}
+.kf-container .kf-content .content .findpsw-o-step .step-2 table tr td input.code-inp,
+.kf-container .kf-content .content .findpsw-o-step .step-2 table tr td input.mes-code{width:160px;}
+.kf-container .kf-content .content .findpsw-o-step .step-2 table tr td.sub-btn-td{text-align:left;padding-left:135px;}
+.kf-container .kf-content .content .findpsw-o-step .step-2 .f-cap{text-align:center;margin-top:15px;}
+.kf-container .kf-content .content .findpsw-o-step .step-2 .f-cap a{color:red;}
+/* -- 第3步 重置密码 -- */
+.kf-container .kf-content .content .findpsw-o-step .step-3 table{width:500px;margin:30px auto 0;}
+.kf-container .kf-content .content .findpsw-o-step .step-3 table tr:first-child{height:75px;}
+.kf-container .kf-content .content .findpsw-o-step .step-3 table tr td:first-child{text-align:right;width:130px;}
+.kf-container .kf-content .content .findpsw-o-step .step-3 table tr td.err-caption{padding-left:132px;height:25px;vertical-align:top;text-align:left;}
+.kf-container .kf-content .content .findpsw-o-step .step-3 table tr td>button{width:194px;height:36px;background-color:#ffa144;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;}
+.kf-container .kf-content .content .findpsw-o-step .step-3 table tr td>button:hover{background-color:#f7ad1f;}
+.kf-container .kf-content .content .findpsw-o-step .step-3 table tr td.sub-btn-td{text-align:left;padding-left:160px;}
+.kf-container .kf-content .content .findpsw-o-step .step-3 .f-cap{text-align:center;margin-top:15px;}
+.kf-container .kf-content .content .findpsw-o-step .step-3 .f-cap a{color:red;}
+/* -- 第4步 完成 -- */
+.kf-container .kf-content .content .findpsw-o-step .step-4 .reset-ok{margin:100px auto 0;text-align:center;}
+.kf-container .kf-content .content .findpsw-o-step .step-4 .reset-ok a{color:#ff952d;}
+/*-----+++++---- 外挂举报 ----+++++----- */
+.kf-container .kf-content .content .wg-o-step{height:700px;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table{width:500px;margin:30px auto 0;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table select,
+.kf-container .kf-content .content .wg-o-step .wg-desc table input{color:#a0a0a0;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr{height:40px;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr:first-child{height:30px;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td:first-child{text-align:right;width:130px;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td.err-caption{padding-left:132px;height:25px;vertical-align:top;text-align:left;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td>button{width:194px;height:36px;background-color:#ffa144;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;margin-top:20px;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td>button:hover{background-color:#f7ad1f;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td input.code-inp{width:160px;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td .a-upload {padding-left:14px;height: 30px;line-height: 30px;position: relative;cursor: pointer;color:#a0a0a0;background: #eeeeee;border: 1px solid #ddd;border-radius: 1px;overflow: hidden;display: inline-block;*display: inline;*zoom: 1 }
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td .a-upload input {position: absolute;font-size:100px;right:0;top:0;opacity: 0;filter:alpha(opacity=0);cursor:pointer;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td .a-upload button {width:98px;background:url("../images/op/kf-btn-bg.png") no-repeat center;border:0;outline:none;cursor:pointer;color:#2d5294;font-size:14px;height:28px;line-height:28px;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td.pic-cap{text-align:left;padding-left:135px;vertical-align:top;color:#a0a0a0;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td i{color:#ff0000;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td.pro-desc{vertical-align:top;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td textarea{color:#a0a0a0;}
+.kf-container .kf-content .content .wg-o-step .wg-desc table tr td.sub-btn-td{text-align:left;padding-left:135px;}
+
+/*-----+++++---- 账号修复 ----+++++----- */
+.kf-container .kf-content .content .o-step .repair-step-icon{width:482px;height:70px;margin:20px auto 0;padding-top:55px;color:#828282;}
+.kf-container .kf-content .content .o-step .repair-step-icon ul li{float:left;width:20%;}
+.kf-container .kf-content .content .o-step .repair-step-icon ul li:nth-child(2){padding-left:5px;}
+.kf-container .kf-content .content .o-step .repair-step-icon ul li:nth-child(3){padding-left:15px;}
+.kf-container .kf-content .content .o-step .repair-step-icon ul li:nth-child(4){padding-left:35px;}
+.kf-container .kf-content .content .o-step .repair-step-icon ul li:last-child{text-align:right;padding-right:8px;}
+/* -- 第1步 填写申请 -- */
+.kf-container .kf-content .content .repair-o-step-1{min-height:520px;height:auto;}
+.kf-container .kf-content .content .repair-o-step-1 .title i{text-align:left;width:600px;line-height:20px;}
+.kf-container .kf-content .content .repair-o-step-1 .repair-step-icon{background:url("../images/op/repair-step1.png") no-repeat left top;}
+.kf-container .kf-content .content .repair-o-step-1 table{width:580px;margin:25px auto 0;}
+.kf-container .kf-content .content .repair-o-step-1 table tr:first-child{height:40px;}
+.kf-container .kf-content .content .repair-o-step-1 table tr td:first-child{color:#a0a0a0;text-align:right;}
+.kf-container .kf-content .content .repair-o-step-1 table tr td>button{width:194px;height:36px;background-color:#ffa144;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;}
+.kf-container .kf-content .content .repair-o-step-1 table tr td>button:hover{background-color:#f7ad1f;}
+.kf-container .kf-content .content .repair-o-step-1 table tr td input.code-inp,
+.kf-container .kf-content .content .repair-o-step-1 table tr td input.mes-code{width:160px;}
+.kf-container .kf-content .content .repair-o-step-1 table tr td.err-caption{padding-left:165px;height:25px;vertical-align:top;text-align:left;}
+.kf-container .kf-content .content .repair-o-step-1 table tr td.sub-btn-td{text-align:left;padding-left:190px;}
+/* -- 第2步 基本资料申请 -- */
+.kf-container .kf-content .content .repair-o-step-2{min-height:760px;}
+.kf-container .kf-content .content .repair-o-step-2 .title i{text-align:left;width:600px;line-height:20px;}
+.kf-container .kf-content .content .repair-o-step-2 .repair-step-icon{background:url("../images/op/repair-step2.png") no-repeat left top;}
+.kf-container .kf-content .content .repair-o-step-2 table{width:580px;margin:auto;}
+.kf-container .kf-content .content .repair-o-step-2 table tr{height:40px;}
+.kf-container .kf-content .content .repair-o-step-2 table tr.login-address{width:125px;}
+.kf-container .kf-content .content .repair-o-step-2 table tr.login-address td:nth-child(2){position:relative;}
+.kf-container .kf-content .content .repair-o-step-2 table tr.login-address select{width:125px;margin-right:4px;}
+.kf-container .kf-content .content .repair-o-step-2 table tr.login-address button{width:98px;background:url("../images/op/kf-btn-bg.png") no-repeat center;border:0;outline:none;cursor:pointer;color:#2d5294;font-size:14px;height:28px;line-height:28px;position:absolute;top:-15px;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td:first-child{color:#a0a0a0;text-align:right;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td:first-child i{color:#ff0000;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td>button{width:194px;height:36px;background-color:#ffa144;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;margin-top:20px;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td>button:hover{background-color:#f7ad1f;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td input.code-inp,
+.kf-container .kf-content .content .repair-o-step-2 table tr td input.mes-code{width:160px;}
+.kf-container .kf-content .content .repair-o-step-2 table tr.err-tr{height:20px;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td.err-caption{padding-left:205px;vertical-align:top;text-align:left;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td.cause-td{vertical-align:top;padding-top:10px;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td ul li{width:108px;margin-right:5px;position:relative;height:30px;line-height:30px;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td ul li:nth-child(3){padding-top:0;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td ul li input.radio{width:16px;height:16px;position:absolute;left:0;top:5px;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td ul li label{cursor:pointer;margin-left:23px;}
+.kf-container .kf-content .content .repair-o-step-2 table tr td.sub-btn-td{text-align:left;padding-left:100px;}
+.kf-container .kf-content .content .repair-o-step-2 .repair-caption{text-align:left;width:600px;line-height:20px;margin:25px auto 0;color:#a0a0a0;}
+.kf-container .kf-content .content .repair-o-step-2 p{text-align:center;}
+.kf-container .kf-content .content .repair-o-step-2 p a{color:#ff952d;}
+/* -- 第3步 补充账号信息 -- */
+.kf-container .kf-content .content .repair-o-step-3{min-height:760px;height:auto;}
+.kf-container .kf-content .content .repair-o-step-3 .title i{text-align:left;width:600px;line-height:20px;}
+.kf-container .kf-content .content .repair-o-step-3 .repair-step-icon{background:url("../images/op/repair-step3.png") no-repeat left top;}
+.kf-container .kf-content .content .repair-o-step-3 table{width:580px;margin:auto;}
+.kf-container .kf-content .content .repair-o-step-3 table tr{height:40px;}
+.kf-container .kf-content .content .repair-o-step-3 table tr.login-address{width:125px;}
+.kf-container .kf-content .content .repair-o-step-3 table tr.login-address td:nth-child(2){position:relative;}
+.kf-container .kf-content .content .repair-o-step-3 table tr.login-address select{width:125px;margin-right:4px;}
+.kf-container .kf-content .content .repair-o-step-3 table tr.login-address button{width:98px;background:url("../images/op/kf-btn-bg.png") no-repeat center;border:0;outline:none;cursor:pointer;color:#2d5294;font-size:14px;height:28px;line-height:28px;position:absolute;top:-15px;}
+.kf-container .kf-content .content .repair-o-step-3 table tr.login-address input{width:125px;margin-right:4px;}
+.kf-container .kf-content .content .repair-o-step-3 table tr.recharge-record-cap{vertical-align:top;color:#a0a0a0;}
+.kf-container .kf-content .content .repair-o-step-3 table tr td:first-child{color:#a0a0a0;text-align:right;}
+.kf-container .kf-content .content .repair-o-step-3 table tr td:first-child i{color:#ff0000;}
+.kf-container .kf-content .content .repair-o-step-3 table tr td>button{width:194px;height:36px;background-color:#ffa144;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;margin-top:30px;}
+.kf-container .kf-content .content .repair-o-step-3 table tr td>button:hover{background-color:#f7ad1f;}
+.kf-container .kf-content .content .repair-o-step-3 table tr td input.code-inp,
+.kf-container .kf-content .content .repair-o-step-3 table tr td input.mes-code{width:160px;}
+.kf-container .kf-content .content .repair-o-step-3 table tr.err-tr{height:20px;}
+.kf-container .kf-content .content .repair-o-step-3 table tr td.err-caption{padding-left:155px;height:25px;vertical-align:top;text-align:left;}
+.kf-container .kf-content .content .repair-o-step-3 table tr td.sub-btn-td{text-align:left;padding-left:80px;}
+.kf-container .kf-content .content .repair-o-step-3 table tr td textarea{color:#a0a0a0;background-color:#eeeeee;}
+.kf-container .kf-content .content .repair-o-step-3 .repair-caption{text-align:left;width:600px;line-height:20px;margin:25px auto 0;color:#a0a0a0;}
+.kf-container .kf-content .content .repair-o-step-3 p{text-align:center;}
+.kf-container .kf-content .content .repair-o-step-3 p a{color:#ff952d;}
+/* -- 第4步 申请人资料 -- */
+.kf-container .kf-content .content .repair-o-step-4{min-height:760px;height:auto;}
+.kf-container .kf-content .content .repair-o-step-4 .title i{text-align:left;width:600px;line-height:20px;}
+.kf-container .kf-content .content .repair-o-step-4 .repair-step-icon{background:url("../images/op/repair-step4.png") no-repeat left top;}
+.kf-container .kf-content .content .repair-o-step-4 table{width:580px;margin:15px auto 0;}
+.kf-container .kf-content .content .repair-o-step-4 table tr{height:40px;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td:first-child{color:#a0a0a0;text-align:right;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td:first-child i{color:#ff0000;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td>button{width:194px;height:36px;background-color:#ffa144;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;margin-top:30px;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td>button:hover{background-color:#f7ad1f;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td input.code-inp,
+.kf-container .kf-content .content .repair-o-step-4 table tr td input.mes-code{width:160px;}
+.kf-container .kf-content .content .repair-o-step-4 table tr.err-tr{height:20px;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td.err-caption{padding-left:183px;height:25px;vertical-align:top;text-align:left;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td.sub-btn-td{text-align:left;padding-left:80px;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td.pic-cap{text-align:left;padding-left:185px;position:relative;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td.protocol-td{text-align:left;padding-left:185px;position:relative;color:#000;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td.protocol-td a{color:#ff952d;cursor:pointer;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td.protocol-td input.ck-box{width:17px;height:17px;position:absolute;top:9px;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td ul li{position:relative;margin-right:20px;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td ul li input.radio{width:16px;height:16px;position:absolute;left:0;top:-4px;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td ul li label{cursor:pointer;margin-left:23px;}
+.kf-container .kf-content .content .repair-o-step-4 table tr td a.phone{color:#ff952d;}
+.kf-container .kf-content .content .repair-o-step-4 .repair-caption{text-align:left;width:600px;line-height:20px;margin:25px auto 0;color:#a0a0a0;}
+/* -- 第5步 完成 -- */
+.kf-container .kf-content .content .repair-o-step-5{min-height:760px;}
+.kf-container .kf-content .content .repair-o-step-5 .title i{text-align:left;width:600px;line-height:20px;}
+.kf-container .kf-content .content .repair-o-step-5 .repair-step-icon{background:url("../images/op/repair-step5.png") no-repeat left top;}
+.kf-container .kf-content .content .repair-o-step-5 .repair-ok{text-align:center;}
+.kf-container .kf-content .content .repair-o-step-5 .repair-ok table{margin:10px auto 50px;width:370px;height:110px;border:1px #dcdcdc solid;font-size:14px;}
+.kf-container .kf-content .content .repair-o-step-5 p.ok-text{font-size:18px;color:#ff952d;font-weight:bold;margin-top:50px;}
+.kf-container .kf-content .content .repair-o-step-5 p.caption-text{line-height:25px;}
+.kf-container .kf-content .content .repair-o-step-5 p.caption-text span.service-num{color:#ff0000;}
+.kf-container .kf-content .content .repair-o-step-5 p.caption-text a{color:#ff952d;}
+
+/*-----+++++---- 账号修复结果查询 ----+++++----- */
+.kf-container .kf-content .content .repairResult-o-step{min-height:520px;height:auto;}
+.kf-container .kf-content .content .repairResult-o-step .title i{text-align:center;width:600px;line-height:20px;}
+.kf-container .kf-content .content .repairResult-o-step .repair-step-icon{background:url("../images/op/repair-step5.png") no-repeat left top;}
+.kf-container .kf-content .content .repairResult-o-step .reply{width:600px;text-align:center;margin:auto;font-size:14px;padding-top:70px;}
+.kf-container .kf-content .content .repairResult-o-step .step-1{padding-top:40px;}
+.kf-container .kf-content .content .repairResult-o-step .reply p.result-num{font-size:18px;margin-bottom:10px;}
+.kf-container .kf-content .content .repairResult-o-step .reply p.ts{color:red;margin:0;padding-left:220px;text-align:left;}
+.kf-container .kf-content .content .repairResult-o-step .reply a{color:#ff952d;}
+.kf-container .kf-content .content .repairResult-o-step .reply p.result-num span.service-num{color:#ff0000;}
+.kf-container .kf-content .content .repairResult-o-step .change-way{color:#000;padding-left:20px;text-align:left;}
+.kf-container .kf-content .content .repairResult-o-step .change-way a{color:#a0a0a0;font-size:14px;display:block;border:1px #dcdcdc solid;width:240px;height:80px;background:url("../images/op/psw-keyboard.png") no-repeat 25px;line-height:80px;padding-left:125px;margin-top:20px;}
+.kf-container .kf-content .content .repairResult-o-step .change-way a:hover{color:#000;}
+.kf-container .kf-content .content .repairResult-o-step a.to-repair{display:block;margin:30px auto 30px;width:194px;height:36px;background-color:#ffa144;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;}
+.kf-container .kf-content .content .repairResult-o-step a.to-repair:hover{background-color:#f7ad1f;}
+
+/*-----+++++---- 建议与bug反馈 与 投诉 ----+++++----- */
+.kf-container .kf-content .content .bug-o-step{height:auto;}/* 高度自适应 */
+.kf-container .kf-content .content .bug-o-step .bug-desc table{width:500px;margin:50px auto 0;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table select,
+.kf-container .kf-content .content .bug-o-step .bug-desc table input{color:#a0a0a0;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr{height:40px;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr:first-child{height:30px;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td:first-child{text-align:right;width:130px;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td.err-caption{padding-left:132px;height:25px;vertical-align:top;text-align:left;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td>button{width:194px;height:36px;background-color:#ffa144;border:0;outline:none;cursor:pointer;border-radius:1px;font-size:14px;color:#fff;line-height:36px;margin:40px 0;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td>button:hover{background-color:#f7ad1f;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td input.code-inp{width:160px;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td .a-upload {padding-left:14px;height: 30px;line-height: 30px;position: relative;cursor: pointer;color:#a0a0a0;background: #eeeeee;border: 1px solid #ddd;border-radius: 1px;overflow: hidden;display: inline-block;*display: inline;*zoom: 1 }
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td .a-upload input {position: absolute;font-size:100px;right:0;top:0;opacity: 0;filter:alpha(opacity=0);cursor:pointer;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td .a-upload button {width:98px;background:url("../images/op/kf-btn-bg.png") no-repeat center;border:0;outline:none;cursor:pointer;color:#2d5294;font-size:14px;height:28px;line-height:28px;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td.pic-cap{text-align:left;padding-left:135px;vertical-align:top;color:#a0a0a0;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td i{color:#ff0000;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td.pro-desc{vertical-align:top;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td textarea{color:#a0a0a0;}
+.kf-container .kf-content .content .bug-o-step .bug-desc table tr td.sub-btn-td{text-align:left;padding-left:135px;}
+
+/*-----+++++---- 服务记录查询 ----+++++----- */
+.kf-container .kf-content .content .record-o-step-1{height:520px;}
+.kf-container .kf-content .content .record-o-step-1 ul.tab-btn{margin-top:50px;height:40px;}
+.kf-container .kf-content .content .record-o-step-1 ul.tab-btn li{float:left;margin-right:10px;}
+.kf-container .kf-content .content .record-o-step-1 ul.tab-btn li a{font-size:12px;color:#000;}
+.kf-container .kf-content .content .record-o-step-1 ul.tab-btn li a.on{color:#ffa144;}
+.kf-container .kf-content .content .record-o-step-1 ul.tab-btn li a:hover{color:#ffa144;}
+.kf-container .kf-content .content .record-o-step-1 table.record-list{width:730px;border:1px #b0b0b0 solid;font-size:12px;text-align:center;color:#535353;}
+.kf-container .kf-content .content .record-o-step-1 table.record-list tr:first-child{color:#000;font-weight:bold;background-color:#f8f5ec;}
+.kf-container .kf-content .content .record-o-step-1 table.record-list tr{height:36px;}
+.kf-container .kf-content .content .record-o-step-1 table.record-list tr td:first-child{width:160px;}
+.kf-container .kf-content .content .record-o-step-1 table.record-list tr td a{color:#00a0e9;text-decoration:underline;}
+/* -- 提单内容 --- */
+.kf-container .kf-content .content .record-o-step-2{height:auto;min-height:520px;}
+.kf-container .kf-content .content .record-o-step-2 p{margin:50px auto 35px;height:20px;}
+.kf-container .kf-content .content .record-o-step-2 p span{color:#ff0000;}
+.kf-container .kf-content .content .record-o-step-2 p a{color:#535353;float:right;}
+.kf-container .kf-content .content .record-o-step-2 .rp-title{height:35px;background:url("../images/op/circle-bg.png") no-repeat 0;position:relative;}
+.kf-container .kf-content .content .record-o-step-2 .rp-title span{display:block;width:133px;height:22px;border-radius:11px;border:1px #00a0e9 solid;text-align:center;line-height:20px;color:#00a0e9;font-size:14px;position:absolute;left:30px;top:-5px;}
+.kf-container .kf-content .content .record-o-step-2 .s-content{border-left:1px #c9c9c9 solid;margin-left:8px;border-top:1px white solid;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .history{width:750px;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .history span.content-arrow{display:block;width:30px;height:80px;background:url("../images/op/circle-content.png") no-repeat 0;margin-left:-6px;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .history .con-list{height:auto;min-height:100px;background-color:#c7edff;width:724px;margin:25px 0 0  24px ;border-radius:5px;padding:15px 11px;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .history .con-list ul{width:100%;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .history .con-list ul li{float:left;width:25%;margin-bottom:10px;line-height:20px;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .history .con-list ul li:nth-child(odd){text-align:right;padding-right:20px;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .history .con-list .h-tit{font-weight:bold;height:30px;font-size:14px;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .history .con-list .h-tit span{font-weight:normal;color:#a0a0a0;font-size:12px;}
+/* -- 已回复 -- */
+.kf-container .kf-content .content .record-o-step-2 .s-content .reply{width:750px;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .reply span.reply-arrow{display:block;width:30px;height:80px;background:url("../images/op/circle-reply.png") no-repeat 0;margin-left:-6px;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .reply .con-list{height:auto;min-height:100px;background-color:#fff0c2;width:724px;margin:25px 0 0  24px ;border-radius:5px;padding:15px 11px;line-height:20px;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .reply .con-list .h-tit{font-weight:bold;height:30px;font-size:14px;}
+.kf-container .kf-content .content .record-o-step-2 .s-content .reply .con-list .h-tit span{font-weight:normal;color:#a0a0a0;font-size:12px;}

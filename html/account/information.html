@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+    <link href="__PUBLIC__/css/datetimepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/css/ac_account.css">
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+
+<div class="ac_contentox">
+    <include file="Public/ac_userinform" />
+    <div class="ac_textbox">
+        <include file="Public/ac_leftnav" />
+
+        <!--右侧内容-->
+        <div class="ac_rightnav">
+            <!--个人资料-->
+            <div class="Anti-addiction">
+                <p class="tit">个人资料</p>
+                <!--<p class="tit">完善个人资料</p>-->
+                <p class="p2">个人资料/<span>完善个人资料</span></p>
+                <!--<p class="p2"><span>个人资料</span>/完善个人资料</p>-->
+
+                <!--个人资料详情-->
+                <div class="ac_info-content ">
+                    <ul class="ac_infobox">
+                        <li class="name">
+                            <div>姓名：</div>
+                            <span>未知</span>
+                        </li>
+                        <li class="sex">
+                            <div>性别：</div>
+                            <span>未知</span>
+                        </li>
+                        <li class="id-car">
+                            <div>身份证号：</div>
+                            <span>511323188522452658</span>
+                            <i>身份证信息只能填写一次，是判断帐号归属和提现审核的重要依据</i>
+                        </li>
+                        <li class="birthday">
+                            <div>生日：</div>
+                            <span>未知</span>
+                            <i>帐号的出生日期只能填写一次，是判断您生日特权的重要凭证</i>
+                        </li>
+                        <li class="weixin-nub">
+                            <div>微信号：</div>
+                            <span>未知</span>
+                        </li>
+                        <li class="QQ-nub">
+                            <div>QQ：</div>
+                            <span>未知</span>
+                        </li>
+                        <div class="keep-btn">
+                            <a href="javascript:;">编辑</a>
+                        </div>
+                    </ul>
+
+                </div>
+
+                <!--编辑资料页面-->
+                <div class="ac_info-content  ac_info-edit">
+                    <ul class="ac_infobox ">
+                        <form action="">
+                            <li class="name">
+                                <div>姓名：</div>
+                                <input type="text" name="name">
+                            </li>
+                            <li class="sex">
+                                <div>性别：</div>
+                                    <input type="radio" name="sex" id="male" checked/>
+                                    <label for="male">男</label>
+                                    <input type="radio" name="sex" id="female" />
+                                    <label for="female">女</label>
+                            </li>
+                            <li class="id-car">
+                                <div>身份证号：</div>
+                                <input type="text" name="id-car" maxlength="18">
+                                <i><span>*</span>身份证信息只能填写一次，是判断帐号归属和提现审核的重要依据</i>
+                            </li>
+                            <li class="birthday">
+                                <div>生日：</div>
+                                <input type="text" name="date" class="form_datetime" value="2017-10-20 14:45" readonly >
+                                <i><span>*</span>帐号的出生日期只能填写一次，是判断您生日特权的重要凭证</i>
+                            </li>
+                            <li class="weixin-nub">
+                                <div>微信号：</div>
+                                <input type="text" name="weixin">
+                            </li>
+                            <li class="QQ-nub">
+                                <div>QQ：</div>
+                                <input type="text" name="QQ">
+                            </li>
+                        </form>
+                        <div class="keep-btn">
+                            <button>保存</button>
+                            <a href="javascript:;">取消</a>
+                        </div>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<include file="Public/footer" />
+
+<script  src="__PUBLIC__/lib/jquery-1.9.1.min.js"></script>
+
+<script src="__PUBLIC__/js/bootstrap-datetimepicker.min.js"></script>
+<script src="__PUBLIC__/js/ac_account.js"></script>
+</body>
+</html>

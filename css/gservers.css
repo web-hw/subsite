@@ -1,0 +1,89 @@
+html, body {
+	margin: 0;
+	padding: 0
+}
+body{background-color: black;}
+ul,li{margin:0;padding:0;list-style: none;}
+a{text-decoration: none;}
+/*清除浮动*/
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+
+.noBr_IE{border:0;}
+
+/*永恒领主*/
+.yh-container{background: url("../images/gw/yhlz_serversBg.jpg") no-repeat center top #000000;}
+.yh-content{background: url("../images/gw/yhlz_serversBgC.jpg") no-repeat center top;}
+/*寒刀*/
+.hd-container{background: url("../images/gw/hd_serversBg.jpg") no-repeat center top #000000;}
+.hd-content{background: url("../images/gw/hd_serversBgC.jpg") no-repeat center top;}
+/*赤月*/
+.cy-container{background: url("../images/gw/cy_serversBg.jpg") no-repeat center top #000000;}
+.cy-content{background: url("../images/gw/cy_serversBg.jpg") no-repeat center top;}
+/*神魔*/
+.sm-container{background: url("../images/gw/sm-servers-bg.jpg") no-repeat center top #000000;}
+.sm-content{background: url("../images/gw/sm-servers-bg.jpg") no-repeat center top;}
+/*奇迹MU遗失的大陆*/
+.qj-container{background: url("../images/gw/qj-servers-bg.jpg") no-repeat center top #000000;}
+.qj-content{background: url("../images/gw/qj-servers-bg.jpg") no-repeat center top;}
+/*其他游戏*/
+.all-container{background: url("../images/gw/all-servers-bg.jpg") no-repeat center top #000000;}
+.all-container{background: url("../images/gw/all-servers-bg.jpg") no-repeat center top;}
+
+.container {width: 100%;height: 1083px;}
+.content {width: 1240px;height: 100%;margin: auto;}
+
+.serversListBox{
+	background: url("../images/gw/serversListBg.png") no-repeat center top;
+	width:818px;height: 100%;float: right;font-family: 微软雅黑;
+}
+.serversListBoxC{width:85%;margin: auto;}
+
+/*头部*/
+.topLink{margin-top: 55px;}
+.topLink ul li{float: left;margin:0 8px;}
+.topLink ul li a{display: block;width: 157px;height: 39px;line-height: 39px;font-size: 18px;
+	background-color: #a02d36;color:white;text-align: center;}
+.topLink ul li a:hover{background-color: #f8ac3c;}
+/*标题文本*/
+.titleText{text-align: center;width: 100%;margin-top: 25px;}
+.titleText ul{display:inline-block;}
+.titleText ul li{float: left;font-size: 22px;color: #a02d36;font-weight: bold;margin:0 5px;}
+/*登录框*/
+.loginBox{margin-top: 35px;padding-left: 50px;}
+.loginBox ul li input{width:190px;height:32px;background-color: #e9f1ff;border: 0px;padding-left: 10px;font-size: 12px;}
+.loginBox ul li{float: left;margin-right: 20px;}
+.loginBox ul li button{cursor: pointer;border:0px;background-color: #f8ac3c;width: 150px;height: 39px;line-height: 39px;text-align: center;font-size: 20px;color:white;}
+.loginBox ul li button:hover{background-color: #ef9b1f;}
+.loginCaptionBox{ padding-left:50px;}
+.loginCaptionBox ul li{float: left;font-size: 13px;}
+.loginCaptionBox ul li a{color:#4d4d4d;}
+.loginCaptionBox ul li a:hover{color:#a1333c;}
+.checkbox-li{margin-right: 150px;}
+.regAccount-li{margin-right: 60px;}
+/*服务器列表*/
+.serversList{width: 95%;margin:auto;padding-left: 45px;}
+.s-title{margin-top: 35px;}
+.serverText{font-size: 20px;color:#333333;}
+.tj-sTitle{margin-top: 50px;}
+/*服务器条目*/
+.serversName{float: left;margin-left: 15px;}
+.hotServers{float: right;margin-right: 15px;}
+.serversItemBox ul li{float: left;margin-right: 27px;font-size: 14px;margin-bottom: 20px;}
+.serversItemBox ul li a{display:block;width:185px;height:42px;line-height:42px;text-align:center;color:white;}
+/*推荐服务器*/
+.tj-sBox{margin-top: 15px;}
+.tj-sBox ul li a{background-color: #de8708;;}
+.tj-sBox ul li a:hover{background-color: #e7a039;}
+/*全部服务器*/
+.all-serversList-title .title{width: 30%;float: left;margin-top: 20px;}
+.fastEntry{float: right;width: 60%;}
+.fastEntry ul{float: right;margin-right: 50px;}
+.fastEntry ul li {float: left;color:#a02d36;margin-left: 8px;}
+.fastEntry ul li input{width:72px;height:22px;border:1px white solid;background-color: #b2b2b2;}
+.fastEntry ul li button{width: 78px;height: 26px;background-color: #a02d36;color: #d0c8c8;font-size: 14px;border: 0;cursor:pointer;}
+.fastEntry ul li button:hover{background-color: #a71823;color:white;}
+.lostFoucs-ts-text{color:#a02d36;font-size: 12px;text-align: right;margin: 5px 50px 10px 0;}
+.all-sBox{max-height: 400px;overflow: auto;padding-top:10px;}
+.all-sBox ul li a{background-color: #a02d36;}
+.all-sBox ul li a:hover{background-color: #f8ac3c;}

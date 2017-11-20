@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>礼包中心</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/pack_detail.css">
+	<include file="Public/IE" />
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<div class="main clearfix">
+	<div class="act-left f-left">
+		<!-- 领取礼包 -->
+		<p class="location">当前位置 : <a href="__ROOT__/">首页</a> > <a href="__ROOT__/home/package">礼包中心</a> > <a class="r">礼包领取记录</a></p>
+		<div class="package-cont">
+			<p class="comp-title comp-title-package">领取<b>礼包</b> - 领取记录</p>
+			<!-- 礼包列表 -->
+			<ul class="record-list">
+				<li>
+					<div class="package-name">
+						<img src="__PUBLIC__/images/op/test_hot_game.jpg" alt="" width="65" height="65">
+						<p class="name">等级成长礼包</p>
+						<span class="time">领取时间 : 2017-10-12</span>
+						<a class="enter-game" href="">进入游戏</a>
+						<a class="gw" href="">官网</a>
+					</div>
+					<div class="package-content">
+						<p class="title">礼包码 :</p>
+						<input class="packageCode" type="text" value="ABCDEFGHIJK" readonly>
+						<a class="copy-btn">复制礼包码</a>
+					</div>
+				</li>
+				<li>
+					<div class="package-name">
+						<img src="__PUBLIC__/images/op/test_hot_game.jpg" alt="" width="65" height="65">
+						<p class="name">等级成长礼包</p>
+						<span class="time">领取时间 : 2017-10-12</span>
+						<a class="enter-game" href="">进入游戏</a>
+						<a class="gw" href="">官网</a>
+					</div>
+					<div class="package-content">
+						<p class="title">礼包码 :</p>
+						<input class="packageCode" type="text" value="KJHGFEDCBA" readonly>
+						<a class="copy-btn">复制礼包码</a>
+					</div>
+				</li>
+				<li>
+					<div class="package-name">
+						<img src="__PUBLIC__/images/op/test_hot_game.jpg" alt="" width="65" height="65">
+						<p class="name">等级成长礼包</p>
+						<span class="time">领取时间 : 2017-10-12</span>
+						<a class="enter-game" href="">进入游戏</a>
+						<a class="gw" href="">官网</a>
+					</div>
+					<div class="package-content">
+						<p class="title">礼包码 :</p>
+						<input class="packageCode" type="text" value="15008356823" readonly>
+						<a class="copy-btn">复制礼包码</a>
+					</div>
+				</li>
+				<li>
+					<div class="package-name">
+						<img src="__PUBLIC__/images/op/test_hot_game.jpg" alt="" width="65" height="65">
+						<p class="name">等级成长礼包</p>
+						<span class="time">领取时间 : 2017-10-12</span>
+						<a class="enter-game" href="">进入游戏</a>
+						<a class="gw" href="">官网</a>
+					</div>
+					<div class="package-content">
+						<p class="title">礼包码 :</p>
+						<input class="packageCode" type="text" value="12da1321a588255" readonly>
+						<a class="copy-btn">复制礼包码</a>
+					</div>
+				</li>
+				<li>
+					<div class="package-name">
+						<img src="__PUBLIC__/images/op/test_hot_game.jpg" alt="" width="65" height="65">
+						<p class="name">等级成长礼包</p>
+						<span class="time">领取时间 : 2017-10-12</span>
+						<a class="enter-game" href="">进入游戏</a>
+						<a class="gw" href="">官网</a>
+					</div>
+					<div class="package-content">
+						<p class="title">礼包码 :</p>
+						<input class="packageCode" type="text" value="12da1321a588255" readonly>
+						<a class="copy-btn">复制礼包码</a>
+					</div>
+				</li>
+			</ul>
+			<!-- 复制礼包码 start -->
+			<script type="text/javascript">
+				var curr_copyBtn = $('.package-content .copy-btn')
+				;curr_copyBtn.on('click',function () {
+					$(this).parent().find('.packageCode').select()
+					;document.execCommand('copy')
+					;$('.code-wind').addClass('is-visible');
+				})
+			</script>
+			<!-- end 复制礼包码 -->
+			
+			<!-- 分页 -->
+			<div class="page">1231312</div>
+		</div>
+		<!-- 弹出框 start -->
+		<div class="code-wind">
+			<div class="box">
+				<a class="code-close">关闭</a>
+				<p class="title">领取礼包</p>
+				<p class="text">复制成功！请在游戏中用ctrl+v进行粘贴。</p>
+				<a class="code-ok">确定</a>
+			</div>
+			<script type="text/javascript">
+				$('.code-wind .box .code-close,.code-wind .box .code-ok').on('click',function () {
+					$('.code-wind').removeClass('is-visible');
+				})
+			</script>
+		</div>
+		<!-- end 弹出框 -->
+		
+		<!-- 其他游戏推荐礼包 -->
+		<include file="Public/package_other" />
+	</div>
+	<div class="act-right f-right">
+		<include file="Public/hot_package" />
+		<include file="Public/hot_rank" />
+	</div>
+</div>
+<include file="Public/footer" />
+</body>
+</html>

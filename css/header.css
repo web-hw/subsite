@@ -1,0 +1,7 @@
+.current-nav{color:#ff952d!important;}
+.header5{height:100px;background-color: white;width:100%;}
+.header5 .header-nav{height:100px;line-height:100px;width:1300px;background-color: white;margin:auto;}
+.header5 .header-nav .nav-logo a.logo-a{ display:block;width: 254px;height: 100px; background: url("../images/logo/dslogo-nav.png") no-repeat left;}
+.header5 .header-nav .nav-list ul li{float: left;margin-left: 40px;}
+.header5 .header-nav .nav-list ul li a{display: block; height: 100px;font-size: 16px;font-family: 微软雅黑;color:#000000;}
+.header5 .header-nav .nav-list ul li a:hover{color:#ff952d;}

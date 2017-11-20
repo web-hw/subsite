@@ -1,0 +1,15 @@
+/* title */
+.comp-title{padding-left:40px;width:100%;height:42px;line-height:42px;border-bottom:1px #ececec solid;font-size:18px;color:#333;font-weight:bold;}
+.comp-title b{color:#ff952d;}
+.comp-title a{color:#9c9c9c;font-size:12px;float:right;margin-right:40px;}
+.comp-title a:hover{color:#ff952d;}
+.comp-title-act{background:url("../images/icon/indexIcon.png") no-repeat 2px 8px;}
+.comp-title-serversList{background:url("../images/icon/indexIcon.png") no-repeat 2px -113px;}
+.comp-title-hotRank{background:url("../images/icon/indexIcon.png") no-repeat 2px -295px;}
+.comp-title-gamePrevue{background:url("../images/icon/indexIcon.png") no-repeat -23px -1844px;}
+.comp-title-hotPackage{background:url("../images/icon/indexIcon.png") no-repeat 2px -295px;}
+.comp-title-hotGame{background:url("../images/icon/indexIcon.png") no-repeat 2px -52px;}
+.comp-title-newTui{background:url("../images/icon/indexIcon.png") no-repeat 2px -173px;}
+.comp-title-package{background:url("../images/icon/indexIcon.png") no-repeat 2px -235px;}
+.comp-title-package b{color:#80c269;}
+.comp-title-hotGame b{color:#e60012;}

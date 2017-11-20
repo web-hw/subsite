@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>客服中心|密码找回</title>
+	<meta name="keywords" content="#">
+	<meta name="description" content="#">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/cs.css">
+	<include file="Public/IE" />
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<div class="tran-bg"></div>
+<div class="kf-container">
+	<div class="kf-content">
+		<div class="title">客服中心丨自助服务</div>
+		<div class="content clearfix boxShadow">
+			<div class="left-nav f-left">
+				<include file="Public/cs_left_nav" />
+			</div>
+			<div class="o-step findpsw-o-step" >
+				<div class="title">
+					密码找回<br><i>如您一时忘记了自己的游戏平台帐号登录密码，可通过密码找回功能，迅速为您重置您的帐号密码</i>
+				</div>
+				<!-- 第1步 确认账号 -->
+				<div class="step-1" >
+					<div class="step-icon clearfix">
+						<ul>
+							<li>确认账号</li>
+							<li>密保验证</li>
+							<li>重置密码</li>
+							<li>完成</li>
+						</ul>
+					</div>
+					<!--<form>-->
+						<table>
+							<tr>
+								<td>* 请确认账号：</td>
+								<td><input type="text" id="name" name="name"/></td>
+							</tr>
+							<tr>
+								<td class="err-caption  zh" colspan="2"><span class="err">请输入您的账号</span></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="sub-btn-td"><button id="xyb" type="button">下一步</button></td>
+							</tr>
+						</table>
+					<!--</form>-->
+				</div>
+				<!-- 第2步 密保验证 -->
+				<div class="step-2" hidden>
+					<div class="step-icon clearfix">
+						<ul class="clearfix">
+							<li>确认账号</li>
+							<li>密保验证</li>
+							<li>重置密码</li>
+							<li>完成</li>
+						</ul>
+					</div>
+					<!--<form>-->
+						<table>
+							<tr>
+								<td>* 验证方式：</td>
+								<td>
+									<select id="yz">
+										<option value="1">手机验证</option>
+										<option value="2">密保验证</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>* 您的账号：</td>
+								<td class="zhs">1231313213</td>
+							</tr>
+							<tr class="sj">
+								<td>* 请输入验证手机号：</td>
+								<td><input class="phone-inp" data-true="1" maxlength="11" value=""  onblur="vifs(this.value,this,1)"/></td>
+							</tr>
+							<tr> <!--class="err"-->
+								<td class="err-caption" colspan="2"><span class="err vifmobile1"></span></td>
+							</tr>
+							<tr class="sj">
+								<td>* 请输入验证码：</td>
+								<td>
+									<ul class="clearfix">
+										<li><input class="code-inp"  data-true="1"  name="revif"  onblur="vifs(this.value,this,2)"/></li>
+										<li><img src="?ct=cs&ac=code" onClick="this.src='?ct=cs&ac=code&a='+Math.random();"  title="点击换一张"></li>
+										<li><a href="javascript:0" class="img-tx">看不清,换一张</a></li>
+									</ul>
+								</td>
+							</tr>
+							<!--点击更换验证码-->
+							<script>
+                                $('.img-tx').click(function () {
+                                    $(this).parent('li').prev('li').find('img').attr('src','?ct=cs&ac=code&a='+Math.random())
+                                });
+							</script>
+							<tr class="sj">
+								<td class="err-caption" colspan="2"><span class="err vifmobile2"></span></td>
+							</tr>
+							<tr class="sj">
+								<td>* 请输入短信验证码：</td>
+								<td>
+									<ul class="clearfix">
+										<li><input class="mes-code" data-true="1"  onblur="vifs(this.value,this,3)" />
+										<input type="hidden" value=""/></li>
+										<li><button type="button"  id="buttons" class="buttonshovers" data-pwd="ll">获取验证码</button></li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="sj">
+								<td class="err-caption" colspan="2"><span class="err vifmobile3">您输入的短信验证码错误</span></td>
+							</tr>
+							<tr class="nosj" style="display: none">
+								<td class="err-caption" colspan="2"><span class="err">此账号未绑定手机</span></td>
+							</tr>
+
+							<!--  密保 start -->
+							<tr class="mb">
+								<td>* 密保问题：</td>
+								<td>
+									<select name="type" id="type">
+										<option>请选择一个问题</option>
+										<option value="1">我就读的第一所学校的名称？</option>
+										<option value="2">我喜欢的休闲运动是什么？</option>
+									</select>
+								</td>
+							</tr>
+							<tr class="mb">
+								<td class="err-caption " colspan="2"></td>
+							</tr>
+							<tr class="mb">
+								<td>* 答案：</td>
+								<td><input type="text" name="da" id="da"/></td>
+							</tr>
+							<tr class="mb">
+								<td class="err-caption  mbts" colspan="2"><span class="err">密保答案错误</span></td>
+							</tr>
+							<tr class="nomb" style="display: none">
+								<td class="err-caption err3" colspan="2"><span class="err">此账号没有设置密保问题</span></td>
+							</tr>
+							<!--  密保 end -->
+							
+							<tr>
+								<td colspan="2" class="sub-btn-td"><button type="button" disabled id="stepbutton2">下一步</button></td>
+							</tr>
+						</table>
+					<!--</form>-->
+					<div class="f-cap">
+						忘记账号密保？请进行<a href="/?ct=cs&ac=repair">账号修复</a>　　　
+					</div>
+				</div>
+				<!-- 第3步 重置密码 -->
+				<div class="step-3" hidden >
+					<div class="step-icon clearfix">
+						<ul>
+							<li>确认账号</li>
+							<li>密保验证</li>
+							<li>重置密码</li>
+							<li>完成</li>
+						</ul>
+					</div>
+					<!--<form>-->
+						<table>
+							<tr>
+								<td>* 您的账号：</td>
+								<td class="zhs"></td>
+							</tr>
+							<tr>
+								<td>* 新密码：</td>
+								<td><input type="password" name="password" id="password"/></td>
+							</tr>
+							<tr>
+								<td class="err-caption  err2" colspan="2"><span class="normal">6-20字母、数字、符号组成，不含空格键、「“」及「‘」</span></td>
+							</tr>
+							<tr>
+								<td>* 确认密码：</td>
+								<td><input type="password" name="repassword" id="repassword"/></td>
+							</tr>
+							<tr>
+								<td class="err-caption err3" colspan="2"><span class="err">两次密码输入不一致</span></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="sub-btn-td"><button type="button" id="sub">下一步</button></td>
+							</tr>
+						</table>
+					<!--</form>-->
+				</div>
+				<!-- 第4步 完成 --->
+				<div class="step-4" hidden>
+					<div class="step-icon clearfix">
+						<ul>
+							<li>确认账号</li>
+							<li>密保验证</li>
+							<li>重置密码</li>
+							<li>完成</li>
+						</ul>
+					</div>
+					<div class="reset-ok">
+						密码重置成功！点击<a href="/?ct=login">返回平台</a>登录帐号
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--手机密保验证JS-->
+<script src="static5/js/kf_query.js"></script>
+<script>
+
+//	验证账号
+    $("#name").blur(function () {
+        var  name=$('#name').val()
+		if (name==''){
+            $(".zh span").attr('class','err').text('您输入的账号为空');
+            $("#xyb").attr('disabled','disabled');
+            return false;
+		}
+        $.getJSON("/?ct=cs&ac=zhmm", {name: name}, function (res) {
+            if (res.code) {
+                for (i in data = res.data) {
+                    if (data[i]==1){
+                        $(".zh span").attr('class','ok').text('您输入的账号正确');
+                        $("#xyb").removeAttr('disabled');
+                        $("#xyb").click(function () {
+                            $(".step-1").hide();
+                            $(".step-2").show();
+                            $(".zhs").text(name);
+                        })
+                    }
+                }
+            }else{
+                $(".zh span").attr('class','err').text('您输入的账号错误');
+                $("#xyb").attr('disabled','disabled');
+            }
+        });
+    });
+//验证一发
+$("#yz").change(function () {
+	var  val=$(this).val();
+	if (val==1){
+	    $(".sj").show();
+	    $(".mb").hide();
+	}else {
+        $(".mb").show();
+        $(".sj").hide();
+	}
+});
+
+$("#da").blur(function () {
+    var  name=$('#name').val()
+	var  da=$(this).val();
+    if (da==''){
+        $(".mbts span").attr('class','err').text('密保答案不能为空');
+        return false;
+	}
+    $.post("/?ct=cs&ac=cxmb", {name: name,type:$("#type").val(),da:da}, function (hhd) {
+        console.log(hhd);
+        if (hhd.code) {
+            for (var i in data = hhd.data) {
+                if (data[i]==1){
+                    $(".mbts span").attr('class','ok').text('密保答案正确');
+                    $("#stepbutton2").removeAttr('disabled');
+                    $("#stepbutton2").click(function () {
+                        $(".step-2").hide();
+                        $(".step-3").show();
+                    })
+                }
+            }
+        }
+    }, 'JSON');
+});
+//重置密码
+$("#password").blur(function () {
+    var pass1=$("#password").val();
+    if (6 > pass1.length){
+        $(".err2 span").attr('class','err').text('您输入的密码长度不够');
+        return false;
+    }else {
+        $(".err2 span").attr('class','ok').text('您输入的密码正确');
+	}
+})
+
+$("#repassword").blur(function () {
+    var pass1=$("#password").val();
+    var pass2=$("#repassword").val();
+    if (6 > pass2.length){
+        $(".err3 span").attr('class','err').text('您输入的密码长度不够');
+        return false;
+    }
+    if (pass1==pass2){
+        $(".err3 span").attr('class','ok').text('两次密码输入一致');
+        $("#sub").removeAttr('disabled');
+        $("#sub").click(function () {
+            var  name=$('#name').val()
+            $.post("/?ct=cs&ac=xgmm", {name: name,password:pass1}, function (hhd) {
+                if (hhd.code) {
+                    for (var i in data = hhd.data) {
+                        	if (data[i]==1){
+                                $(".step-3").hide();
+                                $(".step-4").show();
+                        	}
+                    }
+                }
+            }, 'JSON');
+        })
+	}else {
+        $(".err3 span").attr('class','err').text('两次密码输入不一致');
+        $("#sub").attr('disabled','disabled');
+	}
+})
+</script>
+<!-- footer -->
+<include file="Public/footer" />
+<!-- footer - end -->
+<style>
+	.mb{ display: none}
+	.footer5{margin-top:0;}
+</style>
+</body>
+</html>

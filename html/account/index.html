@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/ac_account.css">
+
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+
+<div class="ac_contentox">
+    <include file="Public/ac_userinform" />
+    <div class="ac_textbox">
+        <include file="Public/ac_leftnav" />
+
+        <!--右侧内容-->
+        <div class="ac_rightnav">
+            <!--防沉迷验证-->
+            <div class="Anti-addiction">
+                <p class="tit">我的账号</p>
+                <!--<p class="tit">防沉迷认证</p>-->
+                <p class="p2">我的账号/<span>防沉迷认证</span></p>
+                <!--<p class="p2">/<span>我的账号</span>防沉迷认证</p>-->
+
+                <!--我的账号展示-->
+                <div class="Verified-message ">
+                    <div class="Verified-name"><span>真实姓名</span> <i>于浩</i></div>
+                    <div class="Verified-idcar"><span>身份证号</span> <i>511323199011586847</i></div>
+                    <div class="remind-words2">根据政府相关规定， <span>未满18周岁</span>的玩家将被纳入防沉迷范围；届时被纳入防沉迷的玩家，
+                        游戏收益将会受损；<span>未填写身份证玩家在游戏内3小时后会被踢下线或收益减半5小时后被踢下线</span>，
+                        请各位玩家尽快填写姓名、身份证信息，以便顺畅游戏。【此帐号的身份证信息只能填写一次，是判断帐号归属的重要依据。】</div>
+                </div>
+                <!--进行过防沉迷设置-->
+                <div class="Anti-addiction-message active">
+                    <form action="">
+                        <p class="p1">真实姓名：<input type="text"></p>
+                        <p class="p2">身份证号：<input type="text" maxlength="18"></p>
+                        <button>提交</button>
+
+                    </form>
+                    <div class="remind-words">根据政府相关规定， <span>未满18周岁</span>的玩家将被纳入防沉迷范围；届时被纳入防沉迷的玩家，
+                        游戏收益将会受损；<span>未填写身份证玩家在游戏内3小时后会被踢下线或收益减半5小时后被踢下线</span>，
+                        请各位玩家尽快填写姓名、身份证信息，以便顺畅游戏。【此帐号的身份证信息只能填写一次，是判断帐号归属的重要依据。】</div>
+                </div>
+            </div>
+            <!--账号安全设置-->
+            <div class="ac_accountsafe">
+                <p class="tit">账号安全/<span>完善密保</span></p>
+                <ul class="set-password">
+                    <li class="user-password">
+                        <div class="words_box active">
+                            <p class="tit">密保问题 <i >已设置</i></p>
+                            <a href="javascript:;">已设置</a>
+                            <p class="tit-pro">用于忘记密码或帐号被盗时快速重置密码</p>
+                        </div>
+                    </li>
+                    <li class="user-email">
+                        <div class="words_box ">
+                            <p class="tit">密保邮箱 <i >未设置</i></p>
+                            <a href="javascript:;">设置邮箱</a>
+                            <p class="tit-pro">用于忘记密码或帐号被盗时快速重置密码</p>
+                        </div>
+                    </li>
+                    <li class="user-phone">
+                        <div class="words_box  ">
+                            <p class="tit">手机号码 <i >未设置</i></p>
+                            <a href="javascript:;">未设置</a>
+                            <p class="tit-pro">用于密码修改时短信提示和密码遗失时重置密码</p>
+                        </div>
+                    </li>
+                    <li class="user-idcar">
+                        <div class="words_box  ">
+                            <p class="tit">证件信息 <i >未设置</i></p>
+                            <a href="javascript:;">未设置</a>
+                            <p class="tit-pro"><span class="name">于浩*</span> <i class="id-car">511323188088452654</i></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<include file="Public/footer" />
+<script src="__PUBLIC__/js/ac_account.js"></script>
+</body>
+</html>

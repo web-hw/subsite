@@ -1,0 +1,20 @@
+@import "componet_title.css";
+.hot-package{margin:auto;width:330px;height:428px;border:1px #dcdcdc solid;}
+.hot-package ul.hot-package-list{display:none;}
+.hot-package ul#hotPackage_cont_1{display:block;}
+.hot-package ul.hot-package-list li{height:68px;border-bottom:1px #dcdcdc dashed;font-size:12px;}
+.hot-package ul.hot-package-list li a{display:block;position:relative;width:100%;height:100%;}
+.hot-package ul.hot-package-list li a:hover{background: #FEFFF6;}
+.hot-package ul.hot-package-list li a:hover .package-btn{background:#80c269;color:#fff;transition:.3s;}
+.hot-package ul.hot-package-list li a img{position:absolute;top:10px;left:16px;border:1px #dedede solid;border-radius:25px;}
+.hot-package ul.hot-package-list li span{position:absolute;color:#535353;}
+.hot-package ul.hot-package-list li span.g-name{top:5px;left:80px;font-size:16px;font-weight:bold;}
+.hot-package ul.hot-package-list li span.package-name{top:40px;left:80px;}
+.hot-package ul.hot-package-list li span.package-num{top:8px;left:235px;}
+.hot-package ul.hot-package-list li span.package-num b{color:red;}
+.hot-package ul.hot-package-list li span.package-btn{display:block;width:84px;height:22px;line-height:20px;top:35px;right:22px;color:#80c269;font-size:14px;text-align:center;border:1px #80c269 solid;border-radius:10px;}
+.hot-package ul.hot-package-list li span.package-btn:hover{background:#80c269;color:#fff;}
+.hot-package .btns{text-align:center;padding-top:12px;}
+.hot-package .btns a:first-child{margin-right:10px;}
+.hot-package .btns a.btn{display:inline-block;width:16px;height:16px;border:2px #FF952D solid;border-radius:8px;cursor:pointer;}
+.hot-package .btns a.on{display:inline-block;width:16px;height:16px;background:#ff952d;border-radius:8px;cursor:pointer;}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>客服中心|账号修复</title>
+	<meta name="keywords" content="#">
+	<meta name="description" content="#">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/cs.css">
+	<include file="Public/IE" />
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<div class="tran-bg"></div>
+<div class="kf-container">
+	<div class="kf-content">
+		<div class="title">客服中心丨自助服务</div>
+		<div class="content clearfix boxShadow">
+			<div class="left-nav f-left">
+				<include file="Public/cs_left_nav" />
+			</div>
+			<!-- 第1步 确认账号 -->
+			<div class="o-step repair-o-step-1" >
+				<div class="title">
+					账号修复<br><i>帐号修复是为玩家提供的帐号安全保护及帐号被盗后应急措施，如您帐号被盗或忘记密码及密保措施，
+					可提交帐号修复申请，经查证核实后，客服为您的帐号进行修复重置。</i>
+				</div>
+				<div class="step-icon repair-step-icon clearfix">
+					<ul>
+						<li>填写申请</li>
+						<li>基本资料申请</li>
+						<li>补充账号信息</li>
+						<li>申请人资料</li>
+						<li>完成</li>
+					</ul>
+				</div>
+				<form action="" method="post">
+					<table>
+						<tr>
+							<td>* 请输入需修复的帐号：</td>
+							<td><input name="" id="repair_accounts" type="text" placeholder="请输入需修复的帐号"/></td>
+						</tr>
+						<tr>
+							<td class="err-caption err-message" colspan="2"><span class="ok"></span></td>
+						</tr>
+						<tr>
+							<td>* 请输入您的联系手机：</td>
+							<td><input class="phone-inp" id="phone_1" name="" placeholder="请输入您的联系手机" /></td>
+						</tr>
+						<tr>
+							<td class="err-caption err_mobile" colspan="2"><span class="err" id="vifmobile1"></span></td>
+						</tr>
+						<tr>
+							<td><i>*</i> 请输入验证码：</td>
+							<td>
+								<ul>
+									<li><input id="code_1" data-true="1" class="code-inp" placeholder="请输入右侧验证码"/></li>
+									<li><img src="?ct=cs&ac=code" onClick="this.src='?ct=cs&ac=code&a='+Math.random();"></li>
+									<li><a href="javascript:0" class="img-tx">看不清,换一张</a></li>
+								</ul>
+								<!--点击更换验证码-->
+								<script>
+									$('.img-tx').click(function () {
+										$(this).parent('li').prev('li').find('img').attr('src','?ct=cs&ac=code&a='+Math.random())
+									});
+								</script>
+							</td>
+						</tr>
+						<tr>
+							<td class="err-caption err-code" colspan="2"><span class="err vifmobile2" ></span></td>
+						</tr>
+						<!--<tr>-->
+							<!--<td>* 请输入短信验证码：</td>-->
+							<!--<td>-->
+								<!--<ul>-->
+									<!--<li><input class="mes-code" required onblur="vifs(this.value,this,3)" placeholder="请输入手机短信验证码"/>-->
+										<!--<input type="hidden" value=""/></li>-->
+									<!--<li><button  id="buttons" class="buttonshovers">获取验证码</button></li>-->
+								<!--</ul>-->
+							<!--</td>-->
+						<!--</tr>-->
+						<tr>
+							<td>* 请输入短信验证码：</td>
+							<td>
+								<ul>
+									<li><input name="" class="mes-code" data-true="1" id="code_1_1" placeholder="请输入手机短信验证码"/>
+										<input name="" type="hidden" id="code-1-1" value=""/>
+									</li>
+									<li><button type="button"  id="buttons_1" class="buttonshovers" onclick="getcode()" one="false">获取验证码</button></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="err-caption err-messag" colspan="2"><span class="err vifmobile3"></span></td>
+						</tr>
+						<script>
+							var onceGetTime = 60;
+							function sendCode(){
+								if(onceGetTime > 1){
+									onceGetTime--;
+									$("#buttons_1").html("重新获取("+onceGetTime+")");
+									setTimeout(arguments.callee,1000);
+								}else{
+									$("#buttons_1").html("获取验证码");
+									$("#buttons_1").attr("one",false);
+								}
+							}
+							//发送
+							function getcode(){
+								//避免重复发
+								if  ($("#buttons_1").attr("one")=='true'){
+									return false;
+								}
+								//异步获取验证码，并发送的程序，当发送成功后回调函数调用
+								//以下的代码
+								$("#buttons_1").attr("one",true);
+								onceGetTime=60;
+								sendCode();
+							}
+						</script>
+
+						<!--<tr>-->
+							<!--<td>* 请输入短信验证码：</td>-->
+							<!--<td>-->
+								<!--<ul>-->
+									<!--<li><input class="mes-code" required onblur="vif(this.value,this,3)"/>-->
+										<!--<input type="hidden" value=""/></li>-->
+									<!--<li><button  id="buttons" class="buttonshovers">获取验证码</button></li>-->
+								<!--</ul>-->
+							<!--</td>-->
+						<!--</tr>-->
+						<!--<tr>-->
+							<!--<td class="err-caption" colspan="2"><span id="vifmobile3"></span></td>-->
+						<!--</tr>-->
+						<tr>
+							<td colspan="2" class="sub-btn-td"><button type="button" id="button_1">下一步</button></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<!-- 第2步 基本资料申请 -->
+			<div class="o-step repair-o-step-2" hidden>
+				<div class="title">
+					账号修复<br><i>帐号修复是为玩家提供的帐号安全保护及帐号被盗后应急措施，如您帐号被盗或忘记密码及密保措施，
+					可提交帐号修复申请，经查证核实后，客服为您的帐号进行修复重置。</i>
+				</div>
+				<div class="step-icon repair-step-icon clearfix">
+					<ul>
+						<li>填写申请</li>
+						<li>基本资料申请</li>
+						<li>补充账号信息</li>
+						<li>申请人资料</li>
+						<li>完成</li>
+					</ul>
+				</div>
+				<div class="repair-caption">
+					为了帐号安全，请您尽量多提供帐号使用资料以帮助我们判断您是帐号的主人，而非试图获取他人帐号的盗号者。
+					即使您对某些答案不确定，也可提供您认为最正确的答案。
+				</div>
+				<p>您正在为帐号<span id="user" style="color:red;"></span>进行帐号修复<a href="">[帐号不对？返回重填]</a></p>
+				<form>
+					<table>
+						<tr>
+							<td><i>*</i> 注册时身份证号码：</td>
+							<td><input name="" id="sfzh" placeholder="请输入注册时所填身份证号（或本人身份证号）"/></td>
+						</tr>
+						<tr class="err-tr">
+							<td class="err-caption err-sfzh" colspan="2"><span class="err"></span></td>
+						</tr>
+						<tr class="login-address">
+							<td><i>*</i> 帐号常用登录地点：</td>
+							<td>
+								<select class="sub_inp1" >
+									<option>请选择所在省份</option>
+									<{foreach from=$var item=row}>
+									<option value="" name="sf_name" id="sf_id"><{$row.shengfen}></option>
+									<{/foreach}>
+								</select>
+								<select id="sub_inp2">
+									<option>请选择所在城市</option>
+									<option value="" name="chengshi"></option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><i>*</i> 所在游戏：</td>
+							<td><select class="youxi_id">
+								<option>-请选择一个你经常玩的游戏</option>
+								<option>赤月传说II</option>
+								<option>寒刀</option>
+								<option>永恒领主</option>
+								<option>神魔传说</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td><i>*</i> 绑定邮箱：</td>
+							<td><input name="" id="email" placeholder="请输入您的绑定邮箱（或本人邮箱）"/></td>
+						</tr>
+						<tr class="err-tr">
+							<td class="err-caption err-email" colspan="2"><span class="ok"></span></td>
+						</tr>
+						<tr>
+							<td><i>*</i> 绑定手机：</td>
+							<td><input name="" id="repair_mobile" placeholder="请输入您的绑定手机（或本人手机）"/></td>
+						</tr>
+						<tr class="err-tr">
+							<td class="err-caption err_mobile_1" colspan="2"><span class="ok"></span></td>
+						</tr>
+						<tr>
+							<td class="cause-td"><i>*</i> 您本次帐号修复的原因：</td>
+							<td>
+								<select class="xiufu_id">
+									<option>-请选择一个帐号修复的原因</option>
+									<option>帐号被盗</option>
+									<option>忘记密码</option>
+									<option>忘记注册邮箱</option>
+									<option>忘记注册手机</option>
+									<option>修改密保问题</option>
+									<option>信息被他人修改</option>
+									<option>其他</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="sub-btn-td">
+								<button type="button" id="button_-1">上一步</button>
+								<button type="button" id="button_2">下一步</button>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<!-- 第3步 补充账号信息 -->
+			<div class="o-step repair-o-step-3" hidden>
+				<div class="title">
+					账号修复<br><i>帐号修复是为玩家提供的帐号安全保护及帐号被盗后应急措施，如您帐号被盗或忘记密码及密保措施，
+					可提交帐号修复申请，经查证核实后，客服为您的帐号进行修复重置。</i>
+				</div>
+				<div class="step-icon repair-step-icon clearfix">
+					<ul>
+						<li>填写申请</li>
+						<li>基本资料申请</li>
+						<li>补充账号信息</li>
+						<li>申请人资料</li>
+						<li>完成</li>
+					</ul>
+				</div>
+				<div class="repair-caption">
+					为了帐号安全，请您尽量多提供帐号使用资料以帮助我们判断您是帐号的主人，而非试图获取他人帐号的盗号者。
+					即使您对某些答案不确定，也可提供您认为最正确的答案。
+				</div>
+				<p>您正在为帐号<span id="user_name_1" style="color:red;"></span>进行帐号修复<a href="">[帐号不对？返回重填]</a></p>
+				<form>
+					<table>
+						<tr>
+							<td>注册日期：</td>
+							<td><input name="" id="create_time" placeholder="请输入注册日期，若遗忘可大致填写"/></td>
+						</tr>
+						<tr class="err-tr">
+							<td class="err-caption err_time" colspan="2"><span class="ok"></span></td>
+						</tr>
+						<tr class="login-address">
+							<td>注册地点：</td>
+							<td>
+								<select class="sub_inp_bc" >
+									<option>请选择所在省份</option>
+									<{foreach from=$var item=row}>
+									<option value="" name="sf_name" id="sf_x_id"><{$row.shengfen}></option>
+									<{/foreach}>
+								</select>
+								<select id="sub_inp4">
+									<option>请选择所在城市</option>
+									<option value="" name="chengshi"></option>
+								</select>
+							</td>
+						</tr>
+						<tr class="login-address">
+							<td>账号充值记录：</td>
+							<td id="cz_jl_1">
+								<input name="cz_jl" id="cz_jl_time" placeholder="请选择充值日期"/>
+								<input name="cz_jl" id="cz_jl_sz" placeholder="充值金额（数字）"/>
+								<button class="add-record" id="tj_jv" type="button">"+"添加记录</button>
+							</td>
+						</tr>
+						<tr class="recharge-record-cap">
+							<td></td>
+							<td>如您使用网银、支付宝、微信充值，可登录您的<br>
+								网银、支付宝或微信进行查询</td>
+						</tr>
+						<tr>
+							<td style="vertical-align:top;">账号遇到的情况：</td>
+							<td>
+								<textarea rows="5" cols="35" id="content" placeholder="请详细填写您的账号情况，方便核实查证。"></textarea>
+							</td>
+						</tr>
+						<tr class="err-tr">
+							<td class="err-caption err_content" colspan="2"><span class="ok"></span></td>
+						</tr>
+						<tr>
+							<td colspan="2" class="sub-btn-td">
+								<button type="button" id="button_-2">上一步</button>
+								<button type="button" id="button_3">下一步</button>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<!-- 第4步 申请人资料 -->
+			<div class="o-step repair-o-step-4" hidden>
+				<div class="title">
+					账号修复<br><i>帐号修复是为玩家提供的帐号安全保护及帐号被盗后应急措施，如您帐号被盗或忘记密码及密保措施，
+					可提交帐号修复申请，经查证核实后，客服为您的帐号进行修复重置。</i>
+				</div>
+				<div class="step-icon repair-step-icon clearfix">
+					<ul>
+						<li>填写申请</li>
+						<li>基本资料申请</li>
+						<li>补充账号信息</li>
+						<li>申请人资料</li>
+						<li>完成</li>
+					</ul>
+				</div>
+				<div class="repair-caption">
+					为了帐号安全，请您尽量多提供帐号使用资料以帮助我们判断您是帐号的主人，而非试图获取他人帐号的盗号者。
+					即使您对某些答案不确定，也可提供您认为最正确的答案。
+				</div>
+				<form enctype="multipart/form-data">
+					<table>
+						<tr>
+							<td><i>*</i> 姓名：</td>
+							<td><input name="" id="user_name" placeholder="请输入您的真实姓名"/></td>
+						</tr>
+						<tr class="err-tr">
+							<td class="err-caption err_user_name" colspan="2"><span class="ok"></span></td>
+						</tr>
+						<tr>
+							<td class="cause-td"><i>*</i> 性别：</td>
+							<td><select class="sex_id">
+								<option>-请选择你的性别</option>
+								<option>男</option>
+								<option>女</option>
+							</select>
+							</td>
+						</tr>
+						<tr class="err-tr">
+							<td class="err-caption err_sex" colspan="2"><span class="ok"></span></td>
+						</tr>
+						<tr>
+							<td><i>*</i> 联系手机：</td>
+							<td><span id="mobile_lx"></span>　　(<a class="phone" href="#">联系手机不对?返回重填</a>)</td>
+						</tr>
+						<tr>
+							<td><i>*</i> 联系邮箱：</td>
+							<td id="email_user"></td>
+						</tr>
+						<tr>
+							<td><i>*</i> 身份证号码：</td>
+							<td id="sfzh_id"></td>
+						</tr>
+						<tr>
+							<td><i>*</i> 上传玩家身份证件：</td>
+							<td>
+								<a href="javascript:;" class="a-upload">
+									<input type="file" name="" multiple="multiple" id="image">点击这里上传图片　　
+									<button>选择图片</button>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="pic-cap" colspan="2">选择jpg/jpeg/png/gif格式的图片。<br>最多可以传五张图片，总大小不超过 2 M。</td>
+						</tr>
+						<tr>
+							<td class="protocol-td" colspan="2"><input class="ck-box" type="checkbox"/>　　我已认真阅读并同意<a id="protocol-link">用户协议</a></td>
+						</tr>
+						<tr>
+							<td colspan="2" class="sub-btn-td">
+								<button type="button" id="button_-3">上一步</button>
+								<button type="button" id="button_4">完成，提交</button>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<!-- 第5步 完成 -->
+			<div class="o-step repair-o-step-5" hidden>
+				<div class="title">
+					账号修复<br><i>帐号修复是为玩家提供的帐号安全保护及帐号被盗后应急措施，如您帐号被盗或忘记密码及密保措施，
+					可提交帐号修复申请，经查证核实后，客服为您的帐号进行修复重置。</i>
+				</div>
+				<div class="step-icon repair-step-icon clearfix">
+					<ul>
+						<li>填写申请</li>
+						<li>基本资料申请</li>
+						<li>补充账号信息</li>
+						<li>申请人资料</li>
+						<li>完成</li>
+					</ul>
+				</div>
+				<div class="repair-ok">
+					<p class="ok-text">您的资料已成功提交，我们马上为您审核，请耐心等待</p>
+					<table border='1' cellspacing="0" cellpadding="0">
+						<tr>
+							<td>目前排队人数</td>
+							<td>目前处理进度</td>
+						</tr>
+						<tr>
+							<td><{$new}></td>
+							<td>正在处理中</td>
+						</tr>
+					</table>
+					<p class="caption-text">
+						本次服务编号为：<span class="service-num" id="service_num_time"><{$time}></span>，您可以在这里<a href="/?ct=cs&ac=repair_result">查看处理结果。</a><br>
+						该编号及密码已同时发送至您填写的联系手机（<span id="mobile-id"></span>）及邮箱（<span id="email-id"></span>）。<br>
+						编号密码为查询处理结果的唯一凭证，丢失无法找回，请牢记或妥善保管。<br><br>
+						<span>
+							如有任何疑问，请咨询<a href="#" target="_blank">在线客服</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="static/js/repair.js"></script>
+<!-- footer -->
+<include file="Public/footer" />
+<!-- footer - end -->
+<!-- 用户协议 -->
+<include file="Public/protocol" />
+<!-- 用户协议 - end -->
+<style>
+	.footer5{margin-top:0;}
+</style>
+</body>
+</html>

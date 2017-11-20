@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>活动中心</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/act.css">
+	<include file="Public/IE" />
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<!--banner start-->
+<div class="act-banner">
+	<script type="text/javascript" src="__PUBLIC__/lib/jquery-superslider.js"></script>
+	<include file="Public/act_banner" />
+</div>
+<!--banner end-->
+<div class="content">
+								<!--这里是动态的↓-->
+	<div class="location">当前位置： <a href="" style="color:black;">大神俱乐部</a> > 寒刀 - 30天升级次次好礼</div>
+	<div class="content-title clearfix">
+		<div class="title-left f-left">
+			<a class="club-title">俱乐部活动</a>
+		</div>
+	</div>
+	<div class="club-gift-list">
+		<div class="item-box">
+			<div class="list-item clearfix" style="background-color:#fff;">
+				<div class="pic f-left">
+					<img src="__PUBLIC__/images/op/test_hot_game.jpg"/><!-- #活动图片 -->
+				</div>
+				<div class="text-domain f-right">
+					<div class="game f-left">
+						<div class="activity-title">30天升级次次好礼</div>
+						<table cellspacing="0" cellpadding="0">
+							<tr>
+								<td class="time t">活动时间 :</td>
+								<td>2017-10-25 至 2017-10-25</td>
+							</tr>
+							<tr>
+								<td class="desc t">活动介绍 :</td>
+								<td>玩家在开服当天即可参与该活动。新服开启30天时间内全服玩家达到活动
+									要求的等级，即可获得对应等级的礼物一份，等级结算以新服开启的第30
+									天晚上24点。</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="btns f-right">
+						<a class="l-rule" href="" target="_blank">查看活动规则</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="gift-list">
+			<ul class="clearfix">
+				<li>
+					<a href="" target="_blank"><img src="__PUBLIC__/images/op/test_hot_game.jpg"></a>
+					<div class="gift-name clearfix">
+						<span>SONY-PS4+vr一套</span>
+						<a class="get f-right" href="" target="_blank">去领取</a>
+					</div>
+				</li>
+				<li>
+					<a href="" target="_blank"><img src="__PUBLIC__/images/op/test_hot_game.jpg"></a>
+					<div class="gift-name clearfix">
+						<span>SONY-PS4+vr一套</span>
+						<a class="get f-right" href="" target="_blank">去领取</a>
+					</div>
+				</li>
+				<li>
+					<a href="" target="_blank"><img src="__PUBLIC__/images/op/test_hot_game.jpg"></a>
+					<div class="gift-name clearfix">
+						<span>SONY-PS4+vr一套</span>
+						<a class="get f-right" href="" target="_blank">去领取</a>
+					</div>
+				</li>
+				<li>
+					<a href="" target="_blank"><img src="__PUBLIC__/images/op/test_hot_game.jpg"></a>
+					<div class="gift-name clearfix">
+						<span>SONY-PS4+vr一套</span>
+						<a class="get f-right" href="" target="_blank">去领取</a>
+					</div>
+				</li>
+				<li>
+					<a href="" target="_blank"><img src="__PUBLIC__/images/op/test_hot_game.jpg"></a>
+					<div class="gift-name clearfix">
+						<span>SONY-PS4+vr一套</span>
+						<a class="get f-right" href="" target="_blank">去领取</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script>
+			$(".gift-list ul li").on({
+				mouseover: function () {$(this).addClass("boxShadow-2");},
+				mouseout:function () {$(this).removeClass("boxShadow-2");}
+			});
+		</script>
+	</div>
+</div>
+<!-- footer -->
+<include file="Public/footer" />
+<!-- footer - end -->
+</body>
+</html>

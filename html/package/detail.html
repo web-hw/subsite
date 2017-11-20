@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>礼包中心</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/pack_detail.css">
+	<include file="Public/IE" />
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<div class="main clearfix">
+	<div class="act-left f-left">
+		<!-- 领取礼包 -->
+		<div class="package-cont">
+			<p class="comp-title comp-title-package">领取<b>礼包</b></p>
+			<div class="package-game">
+				<div class="game-pic f-left">
+					<img src="__PUBLIC__/images/op/test_hot_game.jpg" alt="" width="253" height="122">
+				</div>
+				<div class="game-name f-right">
+					<p class="name">赤月传说Ⅱ 礼包</p>
+					<p class="num">礼包数量 : <b>2</b> 个</p>
+					<a class="enter-game" href="" target="_blank">马上进入游戏</a>
+					<a class="get-record" href="__ROOT__/home/package/record">礼包领取记录</a>
+				</div>
+			</div>
+			<!-- 礼包列表 -->
+			<ul class="package-list clearfix">
+				<li>
+					<div class="package-name">
+						<img src="__PUBLIC__/images/op/test_hot_game.jpg" alt="" width="65" height="65">
+						<p class="name">等级成长礼包</p>
+						<span class="num">剩余 : <b>999</b></span>
+						<span class="condition">领取条件 : <b>VIP3</b></span>
+					</div>
+					<div class="package-content">
+						<p class="title">礼包内容</p>
+						<a class="get" onclick="showCode('15008356823')">立即领取</a>
+						<!--<a class="al-get">已领取</a>-->
+						<p class="condition">炼妖卷轴（中）*2、双倍经验（2小时）*1、5000血石碎片*1、官衔威望令牌*5、500礼金</p>
+					</div>
+				</li>
+				<li>
+					<div class="package-name">
+						<img src="__PUBLIC__/images/op/test_hot_game.jpg" alt="" width="65" height="65">
+						<p class="name">等级成长礼包</p>
+						<span class="num">剩余 : <b>999</b></span>
+						<span class="condition">领取条件 : <b>VIP3</b></span>
+					</div>
+					<div class="package-content">
+						<p class="title">礼包内容</p>
+						<a class="get" onclick="showCode('AVDFSFD123135')">立即领取</a>
+						<!--<a class="al-get">已领取</a>-->
+						<p class="condition">炼妖卷轴（中）*2、双倍经验（2小时）*1、5000血石碎片*1、官衔威望令牌*5、500礼金</p>
+					</div>
+				</li>
+				<li>
+					<div class="package-name">
+						<img src="__PUBLIC__/images/op/test_hot_game.jpg" alt="" width="65" height="65">
+						<p class="name">等级成长礼包</p>
+						<span class="num">剩余 : <b>999</b></span>
+						<span class="condition">领取条件 : <b>VIP3</b></span>
+					</div>
+					<div class="package-content">
+						<p class="title">礼包内容</p>
+						<a class="get" onclick="showCode('18913612AFFDD')">立即领取</a>
+						<!--<a class="al-get">已领取</a>-->
+						<p class="condition">炼妖卷轴（中）*2、双倍经验（2小时）*1、5000血石碎片*1、官衔威望令牌*5、500礼金</p>
+					</div>
+				</li>
+			</ul>
+			<!-- 弹出框 start -->
+			<div class="code-wind">
+				<div class="code-box">
+					<a class="code-close">关闭</a>
+					<p class="title">领取礼包</p>
+					<p class="text">礼包码 : </p>
+					<input type="text" readonly>
+					<a class="copy-btn">复制</a>
+				</div>
+				<div class="box" style="display:none;">
+					<a class="code-close">关闭</a>
+					<p class="title">领取礼包</p>
+					<p class="text">复制成功！请在游戏中用ctrl+v进行粘贴。</p>
+					<a class="code-ok">确定</a>
+				</div>
+				<script type="text/javascript">
+					// 显示弹框
+					function showCode (code) {
+						$('.code-wind').addClass('is-visible')
+						;$('.code-wind .code-box input').val(code);
+					}
+					// 关闭弹框
+					$('.code-wind .code-close,.code-wind .code-ok').on('click',function () {
+						$('.code-wind').removeClass('is-visible')
+						;$('.code-wind .code-box').fadeIn(300)
+						;$('.code-wind .box').hide()
+					})
+					// 复制礼包码
+					;$('.code-wind .code-box .copy-btn').on('click',function () {
+						$(this).parent().find('input').select()
+						;document.execCommand('copy')
+						;$('.code-wind .code-box').hide()
+						;$('.code-wind .box').fadeIn(100)
+					})
+				</script>
+			</div>
+			<!-- end 弹出框 -->
+			<!-- 注意 -->
+			<div class="caution">
+				<div class="cont f-left">
+					<p class="f-left">注意事项</p>
+					<ul class="f-right">
+						<li>1.同种礼包每个帐号只能领取1次。</li>
+						<li>2.同种礼包每个游戏角色只能激活1次。</li>
+						<li>3.一个礼包码只能激活1次，激活后失效。</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 其他游戏推荐礼包 -->
+		<include file="Public/package_other" />
+	</div>
+	<div class="act-right f-right">
+		<include file="Public/hot_package" />
+		<include file="Public/hot_rank" />
+	</div>
+</div>
+<include file="Public/footer" />
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>客服中心|服务记录</title>
+	<meta name="keywords" content="#">
+	<meta name="description" content="#">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/cs.css">
+	<include file="Public/IE" />
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<div class="tran-bg"></div>
+<div class="kf-container">
+	<div class="kf-content">
+		<div class="title">客服中心丨自助服务</div>
+		<div class="content clearfix boxShadow">
+			<div class="left-nav f-left">
+				<include file="Public/cs_left_nav" />
+			</div>
+			<!------ +++ 初始状态 +++ ------>
+			<div class="o-step record-o-step-1" hidden>
+				<div class="title">
+					服务记录查询<br>
+				</div>
+				<ul class="tab-btn clearfix">
+					<li><a class="on" href="#">处理中的问题</a></li>
+					<li>|</li>
+					<li><a href="#">已处理的问题</a></li>
+				</ul>
+				<!--没有记录时-->
+				<p>您暂时没有正在处理的问题记录。</p>
+				<!--有问题记录时-->
+				<table class="record-list" border="1" cellspacing="0" cellpadding="record-list">
+					<tr>
+						<td>单号</td>
+						<td>问题类型</td>
+						<td>受理时间</td>
+						<td>回复时间</td>
+						<td>状态</td>
+						<td>操作</td>
+					</tr>
+					<tr>
+						<td>201709201453261039</td>
+						<td>账号查询</td>
+						<td>2017-09-20 14:53:26</td>
+						<td>2017-09-20 14:53:26</td>
+						<td>处理中</td>
+						<td><a href="#">查看</a></td>
+					</tr>
+					<tr>
+						<td>201709201453261039</td>
+						<td>投诉</td>
+						<td>2017-09-20 14:53:26</td>
+						<td>2017-09-20 14:53:26</td>
+						<td>处理中</td>
+						<td><a href="#">查看</a></td>
+					</tr>
+				</table>
+			</div>
+			<!------ +++ 提单内容 +++ ------>
+			<div class="o-step record-o-step-2">
+				<div class="title">
+					服务记录查询<br>
+				</div>
+				<p class="clearfix">
+					单号<span>[201709201453261039]</span>的服务记录查询
+					<a href="">&lt; 返回上一级</a>
+				</p>
+				<div class="rp-title">
+					<span>提单历史及回复</span>
+				</div>
+				<div class="s-content">
+					<!------ +++ 回复 +++ ------->
+					<div class="reply">
+						<span class="reply-arrow f-left"></span>
+						<div class="con-list">
+							<div class="h-tit">客服工号881788回复　<span>2017-09-20 14:53:26</span></div>
+							<div>
+								您好，您提供的资料未查询到对应角色，请联系客服提供准确的角色名、服务器、游戏、平台信息或准确的充值订单号。或建议您
+								重新创建账号，谢谢！准确的充值订单号。或建议您准确的充值订单号。或建议您准确的充值订单号。或建议您准确的充值订单号。或建议您
+								重新创建账号，谢谢！重新创建账号，谢谢！重新创建账号，谢谢！重新创建账号，谢谢！
+							</div>
+						</div>
+					</div>
+					<!------ +++ 记录 +++ ------>
+					<div class="history clearfix">
+						<span class="content-arrow f-left"></span>
+						<div class="con-list">
+							<div class="h-tit">提单内容　<span>2017-09-20 14:53:26</span></div>
+							<ul class="clearfix">
+								<li>服务编号</li><li>201709201453261039</li>
+								<li>绑定电话</li><li>1878******1</li>
+								<li>注册姓名</li><li>何*</li>
+								<li>所在游戏</li><li>永恒领主</li>
+								<li>帐号注册时间</li><li>***</li>
+								<li>注册证件号码</li><li>111122222333334444</li>
+								<li>服务编号</li><li>201709201453261039</li>
+								<li>绑定邮箱</li><li>72***@qq.com</li>
+								<li>服务编号</li><li>201709201453261039</li>
+								<li>服务编号</li><li>201709201453261039</li>
+								<li>服务编号</li><li>201709201453261039</li>
+								<li>服务编号</li><li>201709201453261039</li>
+								<li>详细描述</li><li>忘记密码忘记密码忘记密码忘记密码忘记密码忘记密码忘记密码忘记密码</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+<include file="Public/footer" />
+<!-- footer - end -->
+<style>
+	.footer5{margin-top:0;}
+</style>
+</body>
+</html>

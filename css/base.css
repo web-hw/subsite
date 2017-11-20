@@ -1,0 +1,41 @@
+html,body,p{margin: 0;padding:0;}
+*{box-sizing: border-box;}
+/*清除浮动*/
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfix{zoom:1}
+
+/*左-右 浮动*/
+.f-left{float: left;}
+/*左-右 浮动*/
+.f-left{float: left;}
+.f-right{float: right;}
+
+ul,li{margin: 0;padding:0;list-style: none;}
+i{font-style: normal;}
+
+a{text-decoration: none;}
+img{border:0;}
+
+/*阴影*/
+.boxShadow {
+	-webkit-box-shadow: #999 0 0 12px;
+	-moz-box-shadow: #999 0 0 12px;
+	box-shadow: #999 0 0 12px;
+}
+.boxShadow1 {
+	-webkit-box-shadow: #999 0 0 2px;
+	-moz-box-shadow: #999 0 0 2px;
+	box-shadow: #999 0 0 2px;
+}
+.boxShadow-2 {
+	-webkit-box-shadow: #CFA972 0 0 13px;
+	-moz-box-shadow: #CFA972 0 0 13px;
+	box-shadow: #CFA972 0 0 13px;
+}
+.boxShadow-3 {
+	-webkit-box-shadow: #ff952d 0 0 14px;
+	-moz-box-shadow: #ff952d 0 0 14px;
+	box-shadow: #ff952d 0 0 14px;
+}
+/* 无数据时显示 */
+.no-data{background:#fff url("../images/op/panda01.png") no-repeat 150px 40px;color:#a0a0a0;height:300px;line-height:260px;padding-left:380px;width:100%;font-size:24px;border:1px #dcdcdc solid;}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>充值中心</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/recharge.css">
+	<script src="__PUBLIC__/lib/jquery-1.7.2.min.js"></script>
+	<include file="Public/IE" />
+</head>
+<include file="Public/recharge_top" />
+<div class="d">
+	<p class="divide"></p>
+</div>
+<div class="main">
+	<include file="Public/recharge_nav" />
+	<div class="c-alipay cont a-w f-right">
+		<p class="title">支付宝支付</p>
+		<form>
+			<dl>
+				<dt>充值目标 :</dt>
+				<dd>
+					<a class="target current">充值到游戏</a>
+					<a class="target">充值到神王币</a>
+				</dd>
+				<dt>选择游戏 :</dt>
+				<dd class="list">
+					<a class="game">选择游戏</a>
+					<a class="servers">选择区服</a>
+					<!-- 选择游戏 -->
+					<div class="gList">
+						<a class="close gClose">×</a>
+						<p>选择游戏</p>
+						<ul>
+							<li><a>奇迹MU遗失的大陆</a></li>
+							<li><a>奇迹MU</a></li>
+							<li><a>永恒领主</a></li>
+							<li><a>永恒领主</a></li>
+							<li><a>永恒领主</a></li>
+							<li><a>赤月传说</a></li>
+							<li><a>赤月传说</a></li>
+							<li><a>赤月传说</a></li>
+							<li><a>寒刀</a></li>
+							<li><a>寒刀</a></li>
+							<li><a>寒刀</a></li>
+						</ul>
+					</div>
+					<!-- 选择区服 -->
+					<div class="sList">
+						<a class="close sClose">×</a>
+						<p>选择区服</p>
+						<ul>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+							<li><a>1服</a></li>
+						</ul>
+					</div>
+				</dd>
+				<dt>充值账号 :</dt>
+				<dd><input type="text" name=""></dd>
+				<dt>确认账号 :</dt>
+				<dd><input type="text" name=""></dd>
+				<dt>游戏角色 :</dt>
+				<dd>这是游戏角色</dd>
+				<dt>充值金额 :</dt>
+				<dd class="moneys">
+					<div class="mList">
+						<a class="cMoney current" data-money="10">10元</a>
+						<a class="cMoney" data-money="30">30元</a>
+						<a class="cMoney" data-money="50">50元</a>
+						<a class="cMoney" data-money="100">100元</a>
+						<a class="cMoney" data-money="200">200元</a>
+						<a class="cMoney" data-money="500">500元</a>
+						<a class="cMoney" data-money="1000">1000元</a>
+						<a class="cMoney" data-money="2000">2000元</a>
+						<p>
+							<a class="other-sign">其他金额</a>
+							<input class="other-money" type="text" name=""> 元（充值金额不能小于1元）
+						</p>
+					</div>
+				</dd>
+				<dt></dt>
+				<dd><input class="btn" type="button" value="立即充值"></dd>
+			</dl>
+		</form>
+		<p class="tel">如有疑问, 请拨打 4001-898-116 / 028-67875837, 或联系在线客服</p>
+	</div>
+	<!-- 确认充值框 start -->
+	<div class="wind-recharge">
+		<div class="box">
+			<a class="r-close">×</a>
+			<p class="title">确认订单</p>
+			<p class="info">充值账号 : <b>hewu16</b></p>
+			<p class="info">充值目标 : <b>游戏</b></p>
+			<p class="info">游戏信息 : <b>赤月传说Ⅱ</b></p>
+			<p class="info r-money">充值金额 : <b>100元</b></p>
+			<a class="sure-recharge">确认充值</a>
+		</div>
+	</div>
+	<!-- end 确认充值框 -->
+	
+	<!-- 弹框2 start -->
+	<div class="wind-recharge">
+		<div class="box">
+			<a class="r-close">×</a>
+			<p class="title"></p>
+			<span class="symbol">!</span>
+			<p class="n-page">请在新页面上完成支付</p>
+			<p class="info-2">付款完成前请不要关闭此窗口。<br>完成付款后请根据您的情况点击下面的按钮：</p>
+			<a class="two r-ok">已完成</a>
+			<a class="two r-problem">支付遇到问题</a>
+			<a class="r-ret">返回选择其他支付方式</a>
+		</div>
+		<div class="problem-box" style="display:none;">
+			<a class="r-close">×</a>
+			<p class="title"></p>
+			<p class="p-t">付款遇到问题了？先看看是不是由于下面的原因。</p>
+			<p class="pro-list">
+				<b>所需支付金额超过了银行支付限额</b><br>
+				建议您登录网上银行提高上限额度，或是先分若干次充值到神王币(即充值到平台)，即能轻松支付。
+			</p>
+			<p class="pro-list">
+				<b>支付宝或网银页面显示错误或者空白</b><br>
+				部分网银对不同浏览器的兼容性有限，导致无法正常支付，建议您使用IE浏览器进行支付操作。
+			</p>
+			<p class="pro-list">
+				<b>网上银行已扣款，充值记录仍显示“未付款”</b><br>
+				可能由于银行的数据没有即时传输，请不要担心，稍后刷新页面查看。如较长时间仍显示未付款， 可联系客服为您解决。
+			</p>
+			<a class="know">知道了</a>
+		</div>
+	</div>
+	<!-- end 弹框2 -->
+	<script type="text/javascript">
+		// 弹框使用 addClass('is-visible') 显示
+		// 关闭弹框
+		$(
+			'.wind-recharge .r-close,' +
+			'.wind-recharge .r-ret,' +
+			'.wind-recharge .r-ok,' +
+			'.problem-box .know'
+		).on('click',function () {
+			$('.wind-recharge').removeClass('is-visible')
+		})
+		;$('.wind-recharge .r-problem').click(function () {
+			$(this).parent().fadeOut()
+			;$('.problem-box').fadeIn(150)
+		})
+	</script>
+</div>
+<include file="Public/footer"/>
+<script src="__PUBLIC__/js/recharge.js"></script>
+</body>
+</html>

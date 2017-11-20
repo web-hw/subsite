@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/ac_account.css">
+
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+
+<div class="ac_contentox">
+    <include file="Public/ac_userinform" />
+    <div class="ac_textbox">
+        <include file="Public/ac_leftnav" />
+
+        <!--右侧内容-->
+        <div class="ac_rightnav">
+            <!--账号安全设置-->
+            <div class="ac_accountsafe">
+                <p class="tit">账号安全/<span>完善密保</span></p>
+                <!--正常显示内容-->
+                <ul class="set-password" >
+                    <li class="user-password li-box">
+                        <div class="words_box active">
+                            <p class="tit">密保问题 <i >已设置</i></p>
+                            <a class="edit-btn"  href="javascript:;">已设置
+                                <div class="edit-content" >
+
+                                </div>
+                            </a>
+                            <p class="tit-pro">用于忘记密码或帐号被盗时快速重置密码</p>
+                        </div>
+                    </li>
+                    <li class="user-email li-box">
+                        <div class="words_box ">
+                            <p class="tit">密保邮箱 <i >未设置</i></p>
+                            <a class="edit-btn"  href="javascript:;">设置邮箱</a>
+                            <p class="tit-pro">用于忘记密码或帐号被盗时快速重置密码</p>
+                        </div>
+                    </li>
+                    <li class="user-phone li-box">
+                        <div class="words_box  ">
+                            <p class="tit">手机号码 <i >未设置</i></p>
+                            <a class="edit-btn"  href="javascript:;">未设置</a>
+                            <p class="tit-pro">用于密码修改时短信提示和密码遗失时重置密码</p>
+                        </div>
+                    </li>
+                    <li class="user-idcar li-box">
+                        <div class="words_box  ">
+                            <p class="tit">证件信息 <i >未设置</i></p>
+                            <a class="edit-btn"  href="javascript:;">未设置</a>
+                            <p class="tit-pro"><span class="name">于浩*</span> <i class="id-car">511323188088452654</i></p>
+                        </div>
+                    </li>
+                </ul >
+                <!--密保设置显示内容盒子-->
+                <div class="edit-contentbox">
+                    <!--设置密保问题-->
+                    <div class="edit-contentlist">
+                        <div class="edit-tit">
+                            <p class="p1">设置密保问题</p>
+                            <p class="p2">用于忘记密码或帐号被盗时快速重置密码</p>
+                        </div>
+                        <form action="">
+                            <div class="edit-question">密保问题
+                                <select name="psw-question" id="question" >
+                                    <option>请选择一个问题</option>
+                                    <option>你是傻逼</option>
+                                    <option>你是傻冒</option>
+                                    <option>你是傻叉</option>
+                                    <option>你是傻缺</option>
+                                    <option>你是傻楞</option>
+                                </select>
+                            </div>
+                            <div class="edit-answer">密保答案 <input type="text" placeholder="请输入答案"></div>
+                        </form>
+                        <p class="submit-btn"> <button>保存</button></p>
+
+                    </div>
+                    <!--设置密保邮箱-->
+                    <div class="edit-contentlist">
+                        <div class="edit-tit email">
+                            <p class="p1">设置密保邮箱</p>
+                            <p class="p2">用于忘记密码或帐号被盗时快速重置密码</p>
+                        </div>
+                        <form action="">
+
+                            <div class="edit-answer">密保邮箱 <input type="text" placeholder="请输入密保邮箱"></div>
+                        </form>
+                        <p class="submit-btn"> <button>发送验证邮箱</button></p>
+
+                    </div>
+                    <!--设置密保手机-->
+                    <div class="edit-contentlist">
+                        <div class="edit-tit phone">
+                            <p class="p1">设置密保手机</p>
+                            <p class="p2">用于密码修改时短信提示和密码遗失时重置密码</p>
+                        </div>
+                        <form action="">
+                            <div class="edit-question">手机号
+                                <input type="text" placeholder="请输入手机号"><button class="get-nub">获取验证码</button>
+                            </div>
+                            <div class="edit-answer">验证码 <input type="text" placeholder="请输入验证码"></div>
+                        </form>
+                        <p class="submit-btn"> <button>保存</button></p>
+
+                    </div>
+                    <!--实名验证-->
+                    <div class="edit-contentlist">
+                        <div class="edit-tit idcar">
+                            <p class="p1">实名认证</p>
+                            <p class="p2">请设置您的真实身份证</p>
+                        </div>
+                        <form action="">
+                        <div class="edit-question">真实姓名
+                            <input type="text" placeholder="请输入真实姓名">
+                        </div>
+                        <div class="edit-answer">身份证号 <input type="text" placeholder="请输入身份证号"></div>
+                        </form>
+                        <p class="submit-btn"> <button>保存</button></p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<include file="Public/footer" />
+<script src="__PUBLIC__/js/ac_account.js"></script>
+</body>
+</html>

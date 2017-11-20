@@ -1,0 +1,72 @@
+body{font-family:微软雅黑;}
+
+/* --- #新闻中心 --- */
+.news-nav{width:100%;height:126px;background:url("../images/op/news-nav-bg.jpg") no-repeat center;}
+.news-nav .nav{width:1300px;height:100%;line-height:126px;background:url("../images/op/news-nav-bg.jpg") no-repeat center;margin:auto;}
+.news-nav .nav ul li{float:left;margin-right:20px;}
+.news-nav .nav ul li.main-title{font-size:53px;margin-right:50px;color:white;}
+.news-nav .nav ul li a{display:inline-block;width:110px;height:40px;color:black;background-color:white;text-align:center;font-size:24px;line-height:40px;}
+.news-nav .nav ul li a:hover{background-color:#ff952d;color:white;}
+.news-nav .nav ul li a.active{background-color:#ff952d;color:white;}
+.nlist{width:1300px;margin:auto;padding-top:20px;}
+
+.nlist .newslist{width:950px;border-right:1px dashed #a0a0a0;}
+.nlist .newslist ul li{border-bottom:1px dashed #a0a0a0;width:900px;padding-bottom:10px;margin-top:20px;}
+.nlist .newslist ul li:first-child{margin-top:0;}
+.nlist .newslist ul li .n-time i{display:inline-block;}
+.nlist .newslist ul li .n-time i.i-in{width:86px;height:26px;line-height:26px;text-align:center;font-size:17px;color:white;margin-right:10px;}
+.nlist .newslist ul li .n-time i.notice{background-color:#eb6877;}
+.nlist .newslist ul li .n-time i.news{background-color:#448aca;}
+.nlist .newslist ul li .n-time i.act{background-color:#22ac38;}
+.nlist .newslist ul li .n-time i.strategy{background-color:#cfa972;}
+.nlist .newslist ul li .n-time i.time{font-size:14px;}
+.nlist .newslist ul li a.n-title{display:block;height:62px;width:100%;font-size:24px;line-height:62px;color:#434343;}
+.nlist .newslist ul li a.n-title:hover{color:#ff952d;}
+.nlist .newslist ul li .n-des{color:#959595;font-size:14px;}
+.nlist .newslist ul li .n-des a{color:#959595;}
+.nlist .newslist ul li .n-des a:hover{color:#000;}
+.nlist .serversList{width:310px;}
+/*分页样式*/
+.page{height: 80px;line-height: 80px;text-align: center;margin:0 auto 40px;padding-top: 10px;width:1300px;}
+.page .pagenumber{float: left;}
+.page a{width: 20px;height: 20px;text-align: center;line-height: 20px;float: left;color: #ff952d;font-size: 12px;border:1px #ff952d solid;margin-left: 4px;}
+.page a.first-page,.page a.last-page{width: 38px!important;}
+.current{width: 20px;height: 20px;text-align: center;line-height: 20px;float: left;color: #fff;font-size: 12px;background-color: #ff952d;border:1px #ff952d solid;margin-left: 4px;}
+.jl{width: 174px;height: 20px;text-align: center;line-height: 20px;float: left;color: #ff952d;font-size: 12px;border:1px #ff952d solid;margin-left: 4px;}
+/* --- #新闻详情 --- */
+.nInfo{width:1300px;margin:0 auto 100px;padding-top:20px;}
+.nInfo .newsInfo{width:950px;border-right:1px dashed #a0a0a0;}
+.nInfo .newsInfo ul li{border-bottom:1px dashed #a0a0a0;width:900px;padding-bottom:10px;margin-top:20px;}
+.nInfo .newsInfo ul li:first-child{margin-top:0;}
+.nInfo .newsInfo ul li .n-time i{display:inline-block;}
+.nInfo .newsInfo ul li .n-time i.i-in{width:86px;height:26px;line-height:26px;text-align:center;font-size:17px;color:white;margin-right:10px;}
+.nInfo .newsInfo ul li .n-time i.notice{background-color:#eb6877;}
+.nInfo .newsInfo ul li .n-time i.news{background-color:#448aca;}
+.nInfo .newsInfo ul li .n-time i.act{background-color:#22ac38;}
+.nInfo .newsInfo ul li .n-time i.strategy{background-color:#cfa972;}
+.nInfo .newsInfo ul li .n-time i.time{font-size:14px;}
+.nInfo .newsInfo ul li a.n-title{display:block;height:62px;width:100%;font-size:24px;line-height:62px;color:#434343;text-align:center;}
+.nInfo .newsInfo ul li .n-des{color:#959595;font-size:14px;text-align:center;}
+.nInfo .newsInfo .n-content{width:900px;color:#434343;line-height:25px;margin-top:30px;font-size:16px;}
+.nInfo .newsInfo .n-content img{max-width:900px;}
+
+/* --- 搜索页面 --- */
+.search-nav{width:100%;height:126px;background:url("../images/op/search-nav-bg.jpg") no-repeat center;}
+.search-nav .nav{width:1300px;height:100%;line-height:126px;background:url("../images/op/search-nav-bg.jpg") no-repeat center;margin:auto;}
+.search .gameList p,
+.search .newslist p{background-color:#eb6877;width:900px;height:26px;line-height:26px;color:white;font-size:17px;padding:0 0 0 4px;margin:0 0 30px 0;}
+.search .gameList{width:950px;border-right:1px dashed #a0a0a0;}
+.search .gameList ul li{border-bottom:1px dashed #a0a0a0;padding-bottom:10px;margin-top:20px;width:900px;}
+.search .gameList ul li .g-pic{width:240px;height:130px;border-radius:15px;}
+.search .gameList ul li .servers{width:645px;height:130px;}
+.search .gameList ul li .servers .name{font-size:18px;}
+.search .gameList ul li .servers .name span.gw{display:block;width:140px;font-size:14px;}
+.search .gameList ul li .servers .name span.gw a{color:#a0a0a0;display:inline-block;}
+.search .gameList ul li .servers .name span.gw a.lb{margin-right:32px;}
+.search .gameList ul li .servers .name span.gw a:hover{color:#ff952d;}
+.search .gameList ul li .servers ul li{float:left;margin-right:54px;border-bottom:0;width:178px;}
+.search .gameList ul li .servers ul li:nth-child(3){margin-right:0;}
+.search .gameList ul li .servers ul li:nth-child(6){margin-right:0;}
+.search .gameList ul li .servers ul li a{font-size:14px;color:#313131;display:block;border:1px #eb6877 solid;border-radius:12px;height:24px;line-height:24px;text-align:center;width:178px;}
+.search .gameList ul li .servers ul li a:hover{color:#eb6877;}
+.no-data{width:900px;}

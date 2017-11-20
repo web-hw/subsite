@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>客服中心|建议与bug反馈</title>
+	<meta name="keywords" content="#">
+	<meta name="description" content="#">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/cs.css">
+	<include file="Public/IE" />
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<div class="tran-bg"></div>
+<div class="kf-container">
+	<div class="kf-content">
+		<div class="title">客服中心丨自助服务</div>
+		<div class="content clearfix boxShadow">
+			<div class="left-nav f-left">
+				<include file="Public/cs_left_nav" />
+			</div>
+			<div class="o-step bug-o-step">
+				<div class="title">
+					建议与bug反馈<br><i>若您对游戏平台有任何的意见或建议，或您在游戏中遇到bug，您可以通过此页面向平台进行反馈</i>
+				</div>
+				<div class="bug-desc">
+					<form action="?ct=<{$request.ct}>&ac=<{$request.ac}>" method="POST" enctype="multipart/form-data" onSubmit="return checkData('Content');">
+						<input type="hidden" name="op" value="1">
+						<table>
+							<tr>
+								<td><i>*</i> 账号：</td>
+								<td><input name="user_name" placeholder="请输入您的平台账号"/></td>
+							</tr>
+							<tr>
+								<td><i>*</i> 游戏：</td>
+								<td>
+									<select id="game" name="fd_game">
+										<option value="0">请选择举报角色所在游戏</option>
+										<{html_options options=$game_options}>
+									</select>
+								</td>
+							</tr>
+							<!--查询服务器-->
+							<script>
+                                $("#game").change(function(){
+                                    var gid=$(this).val();
+                                    if(gid){
+                                        $.post("?ct=account&ac=president",{
+                                            gid:gid
+                                        },function(data){
+                                            if(data != ''){
+                                                $("#server").empty().append("<option value='0'>请选择举报角色所在游戏</option>");
+                                                $.each(data,function(key,value){
+                                                    var option = $("<option>").val(key).text(value);
+                                                    $("#server").append(option);
+                                                });
+                                            }
+                                        },"json");
+
+                                    }
+                                });
+							</script>
+							<tr>
+								<td><i>*</i> 服务器：</td>
+								<td>
+									<select id="server" name="fd_server">
+										<option value="0">请选择举报角色所在游戏</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><i>*</i> 角色名：</td>
+								<td><input name="fd_gname" placeholder="请输入您的游戏角色名"/></td>
+							</tr>
+							<tr>
+								<td><i>*</i> 上传截图：</td>
+								<td>
+									<a href="javascript:;" class="a-upload">
+										<input type="file" name="fd_imgs" multiple="multiple">点击这里上传问题截图　　
+										<button>选择图片</button>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td><i>*</i> 联系电话：</td>
+								<td><input maxlength="11" name="fd_mobile" placeholder="请输入您的姓名"/></td>
+							</tr>
+							<tr>
+								<td><i>*</i> QQ：</td>
+								<td><input maxlength="12" name="fd_qicq" placeholder="请输入您QQ号码"/></td>
+							</tr>
+							<tr>
+								<td class="pro-desc"><i>*</i> 建议或bug具体说明：</td>
+								<td>
+									<textarea rows="5" name="fd_content" cols="34" placeholder="请填写您的具体建议或遇到的bug具体情况"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="sub-btn-td"><button>提交</button></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+<include file="Public/footer" />
+<!-- footer - end -->
+<style>
+	.footer5{margin-top:0;}
+</style>
+</body>
+</html>

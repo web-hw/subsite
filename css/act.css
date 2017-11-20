@@ -1,0 +1,71 @@
+body{background-color:#fbfbfb;font-family:微软雅黑;}
+.act-banner{height: 380px;}
+.content{width: 1300px;margin:auto;}
+.content .content-title .title-left a.club-title{display: inline-block;padding-left: 40px;background: url("../images/op/diamond.png") no-repeat left;font-size: 24px;margin-right: 10px;}
+.content .location {color:#313131;font-size: 12px;margin:40px 0 40px 0;}
+/*筛选选项卡*/
+.game-filter-tab{width:100%;height:100px;border:1px #c9c9c9 solid;margin:20px auto 0;font-size:14px;}
+.game-filter-tab .title{width:158px;height: 100%;border-right:1px #c9c9c9 solid;background-color: #eeeeee;}
+.game-filter-tab .title i{text-align:center;color:#a0a0a0;height:50%;display:block;}
+.game-filter-tab .title i.time{padding-top:20px;}
+.game-filter-tab .title i.game{padding-top:5px;}
+.game-filter-tab .item-filter{height:100%;width:1138px;background-color:#fff;}
+.game-filter-tab .item-filter .time{margin-top:20px;}
+.game-filter-tab .item-filter .game{margin-top:15px;}
+.game-filter-tab .item-filter .tab ul li{float: left;}
+.game-filter-tab .item-filter .tab ul li a{display:block;height:20px;width:78px;color:#000000;text-align:center;margin-left:30px;}
+.game-filter-tab .item-filter .tab ul li a:hover{background-color:#ff952d;color:white;}
+.game-filter-tab .item-filter .time ul li a.active{background-color:#ff952d;color:white;}
+.game-filter-tab .item-filter .game ul li a.active{background-color:#ff952d;color:white;}
+/* 活动列表 */
+/*.content .club-activity-list{min-height:900px;}*/
+.content .club-activity-list .item-box{margin-top:20px;font-size:14px;}
+.content .club-activity-list .item-box .list-item{height:200px;margin-bottom:10px;background-color:#fff;}
+.content .club-activity-list .item-box .list-item .pic{width:450px;height:100%;}
+.content .club-activity-list .item-box .list-item .pic img{width:100%;height:100%;}
+.content .club-activity-list .item-box .list-item .text-domain{width:850px;height:100%;border:1px solid #dcdcdc;border-left:0;}
+.content .club-activity-list .item-box .list-item .text-domain .game{width:650px;height:100%;padding:0 85px 0 20px;}
+.content .club-activity-list .item-box .list-item .text-domain .game .activity-title{font-size:24px;margin:20px 0 20px;}
+.content .club-activity-list .item-box .list-item .text-domain .game table tr:first-child{height:30px;}
+.content .club-activity-list .item-box .list-item .text-domain .game table td{vertical-align:top;}
+.content .club-activity-list .item-box .list-item .text-domain .game table td.t{width:90px;padding-left:20px;color:#a0a0a0;}
+.content .club-activity-list .item-box .list-item .text-domain .game table td.time{background: url("../images/op/time-icon.png") no-repeat 0 3px;}
+.content .club-activity-list .item-box .list-item .text-domain .game table td.desc{background: url("../images/op/time-icon.png") no-repeat 0 -33px;}
+.content .club-activity-list .item-box .list-item .text-domain .btns{width:199px;height:100%;}
+.content .club-activity-list .item-box .list-item .text-domain .btns a{display:block;height:25px;line-height:25px;text-align:center;padding-left:22px;color:#ff952d;}
+.content .club-activity-list .item-box .list-item .text-domain .btns a.get{width:89px;background:url("../images/op/club-a-bg-normal.png") no-repeat;margin-top:60px;}
+.content .club-activity-list .item-box .list-item .text-domain .btns a.rule{width:120px;background:url("../images/op/club-a-bg-normal.png") no-repeat 0 -61px;margin-top:35px;}
+.content .club-activity-list .item-box .list-item .text-domain .btns a.get:hover{background:url("../images/op/club-a-bg-hover.png") no-repeat;color:#fff;}
+.content .club-activity-list .item-box .list-item .text-domain .btns a.rule:hover{background:url("../images/op/club-a-bg-hover.png") no-repeat 0 -61px;color:#fff;}
+
+/* 礼物列表 */
+.content .club-gift-list .item-box{margin-top:20px;font-size:14px;}
+.content .club-gift-list .item-box .list-item{height:200px;margin-bottom:10px;}
+.content .club-gift-list .item-box .list-item .pic{width:450px;height:100%;}
+.content .club-gift-list .item-box .list-item .pic img{width:100%;height:100%;}
+.content .club-gift-list .item-box .list-item .text-domain{width:850px;height:100%;border:1px solid #dcdcdc;border-left:0;}
+.content .club-gift-list .item-box .list-item .text-domain .game{width:650px;height:100%;padding:0 85px 0 20px;}
+.content .club-gift-list .item-box .list-item .text-domain .game .activity-title{font-size:24px;margin:20px 0 20px;}
+.content .club-gift-list .item-box .list-item .text-domain .game table tr:first-child{height:30px;}
+.content .club-gift-list .item-box .list-item .text-domain .game table td{vertical-align:top;}
+.content .club-gift-list .item-box .list-item .text-domain .game table td.t{width:90px;padding-left:20px;color:#a0a0a0;}
+.content .club-gift-list .item-box .list-item .text-domain .game table td.time{background: url("../images/op/time-icon.png") no-repeat 0 3px;}
+.content .club-gift-list .item-box .list-item .text-domain .game table td.desc{background: url("../images/op/time-icon.png") no-repeat 0 -33px;}
+.content .club-gift-list .item-box .list-item .text-domain .btns{width:199px;height:100%;}
+.content .club-gift-list .item-box .list-item .text-domain .btns a{display:block;height:25px;line-height:25px;text-align:center;padding-left:22px;color:#ff952d;}
+.content .club-gift-list .item-box .list-item .text-domain .btns a.l-rule{width:120px;background:url("../images/op/club-a-bg-normal.png") no-repeat 0 -61px;margin-top:105px;}
+.content .club-gift-list .item-box .list-item .text-domain .btns a.l-rule:hover{background:url("../images/op/club-a-bg-hover.png") no-repeat 0 -61px;color:#fff;}
+.content .club-gift-list .gift-list{margin:20px auto 150px;}
+.content .club-gift-list .gift-list ul li{width:426px;float:left;margin:0 11px 10px 0;border:1px #dcdcdc solid;background-color:#fff;}
+.content .club-gift-list .gift-list ul li:nth-child(3n+0){margin-right:0;}
+.content .club-gift-list .gift-list ul li img{width:100%;height:200px;cursor:pointer;}
+.content .club-gift-list .gift-list ul li .gift-name{height:40px;line-height:40px;font-size:18px;border:1px #dcdcdc solid;padding:0 10px;}
+.content .club-gift-list .gift-list ul li .gift-name a.get{display:inline-block;height:25px;line-height:25px;text-align:center;padding-left:22px;color:#ff952d;width:88px;background:url("../images/op/club-a-bg-normal.png") no-repeat;font-size:14px;margin-top:7px;}
+.content .club-gift-list .gift-list ul li .gift-name a.get:hover{background:url("../images/op/club-a-bg-hover.png") no-repeat;color:#fff;}
+/*分页样式*/
+.page{height: 60px;line-height: 60px;text-align: center;margin: auto;padding-top: 20px;}
+.page .pagenumber{float: right;}
+.page a{width: 20px;height: 20px;text-align: center;line-height: 20px;float: left;color: #ff952d;font-size: 12px;border:1px #ff952d solid;margin-left: 4px;}
+.page a.first-page,.page a.last-page{width: 38px!important;}
+.current{width: 20px;height: 20px;text-align: center;line-height: 20px;float: left;color: #fff;font-size: 12px;background-color: #ff952d;border:1px #ff952d solid;margin-left: 4px;}
+.jl{width: 174px;height: 20px;text-align: center;line-height: 20px;float: left;color: #ff952d;font-size: 12px;border:1px #ff952d solid;margin-left: 4px;}

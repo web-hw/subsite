@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>客服中心|账号查询</title>
+	<meta name="keywords" content="#">
+	<meta name="description" content="#">
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/cs.css">
+	<include file="Public/IE" />
+</head>
+<body>
+<include file="Public/top_line" />
+<include file="Public/header" />
+<div class="tran-bg"></div>
+<div class="kf-container">
+	<div class="kf-content">
+		<div class="title">客服中心丨自助服务</div>
+		<div class="content clearfix boxShadow">
+			<div class="left-nav f-left">
+				<include file="Public/cs_left_nav" />
+			</div>
+			<!------ +++ 通过密保手机找回 ++ ------>
+			<div class="o-step query-o-step">
+				<div class="title">
+					账号查询<br><i>如您一时忘记了自己的游戏平台帐号而无法登录，可通过帐号查询功能，迅速为您查找您的帐号名并第一时间告诉您。</i>
+				</div>
+				<!-- 初始状态 -->
+				<div class="step-0" >
+					<ul>
+						<li>
+							如您的帐号已绑定密保手机，且该绑定的手机号码仍然使用中，那么推荐您使用自助通道找回，查询便捷且结果可快速获得。
+							<a class="btn mb-btn" onclick="next('1','0','query-o-step','query-o-step-rg')">通过密保手机找回</a>
+						</li>
+						<li>
+							如您的帐号未绑定密保手机，可通过人工处理查询，我们会在48小时内为您处理。
+							<a class="btn un-use" onclick="<{if empty($userinfo)}>unuserprb()<{else}>next('1','0','query-o-step-rg','query-o-step')<{/if}>">通过人工服务找回</a>
+							<i>注意：申请前，您需要先确保您有一个可以登录的游戏帐号，该帐号用于您查询提交申请的处理情况，如无帐号，<a style="cursor:pointer;" onclick="regWindow.addClass('is-visible');">点此注册</a></i>
+						</li>
+					</ul>
+				</div>
+				<!-- 第1步 -->
+				<div class="step-1" hidden>
+					<div class="step-icon clearfix">
+						<span class="f-left">安全认证</span>
+						<span class="f-right">提交成功</span>
+					</div>
+						<table>
+							<tr>
+								<td>* 请输入您的绑定密保手机：</td>
+								<td><input class="phone-inp" maxlength="11" value="" required onblur="vif(this.value,this,1)"/></td>
+							</tr>
+							<tr> <!--class="err"-->
+								<td class="err-caption" colspan="2"><span id="vifmobile1"></span></td>
+							</tr>
+							<tr>
+								<td>* 请输入验证码：</td>
+								<td>
+									<ul>
+										<li><input  class="code-inp" required onblur="vif(this.value,this,2)"/></li>
+										<li><img src="?ct=cs&ac=code" onClick="this.src='?ct=cs&ac=code&a='+Math.random();"  title="点击换一张"></li>
+										<li><a href="javascript:0" class="img-tx">看不清,换一张</a></li>
+									</ul>
+								</td>
+								<!--点击更换验证码-->
+								<script>
+									$('.img-tx').click(function () {
+                                        $(this).parent('li').prev('li').find('img').attr('src','?ct=cs&ac=code&a='+Math.random())
+                                    });
+								</script>
+							</tr>
+							<tr>
+								<td class="err-caption"  colspan="2"><span class="vifmobile2"></span></td>
+							</tr>
+							<tr>
+								<td>* 请输入短信验证码：</td>
+								<td>
+									<ul>
+										<li><input class="mes-code" required onblur="vif(this.value,this,3)"/>
+                                            <input type="hidden" value=""/></li>
+										<li><button  id="buttons" class="buttonshovers">获取验证码</button></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="err-caption" colspan="2"><span id="vifmobile3"></span></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="sub-btn-td" ><button  type="button" disabled id="stepbutton1">提交</button></td>
+							</tr>
+						</table>
+					<div class="f-cap">
+						绑定手机无法使用？请通过<a href="javascript:(0)" onclick="next('1','0','query-o-step-rg','query-o-step')">人工通道</a>查询
+					</div>
+				</div>
+				<!-- 第2步 -->
+				<div class="step-2" hidden>
+					<div class="step-icon clearfix">
+						<span class="f-left">安全认证</span>
+						<span class="f-right">提交成功</span>
+					</div>
+					<div class="success-cap">
+						<span>提交成功！</span><br>
+						大神温馨提示，您的帐号正在传送中......<br>
+						请稍后滑开您的手机查看，记得妥善保管好并完善帐号安全信息哦！
+					</div>
+					<div class="change-way">
+						您还可以:
+						<a href="/?ct=cs&ac=findpsw">密码找回</a>
+					</div>
+				</div>
+			</div >
+			<!------ +++ 通过人工服务找回 ++ ------>
+			<div class="o-step query-o-step-rg" hidden>
+				<div class="title">
+					账号查询<br><i>如您一时忘记了自己的游戏平台帐号而无法登录，可通过帐号查询功能，迅速为您查找您的帐号名并第一时间告诉您。</i>
+				</div>
+				<!-- 第1步 帐号角色信息 -->
+				<div class="step-1" hidden>
+					<div class="step-icon clearfix">
+						<ul>
+							<li>帐号角色信息</li>
+							<li>注册及密保信息</li>
+							<li>帐号充值信息</li>
+							<li>提交成功</li>
+						</ul>
+					</div>
+					<p>温馨提示：请填写您需要查询的帐号所在游戏信息，填写准确率越高，核实处理成功率越高。</p>
+					<form>
+						<table>
+							<tr>
+								<td><i>*</i> 您的角色所在游戏：</td>
+								<td><input name="game" onblur="per_vif()" placeholder="请选择角色所在游戏"/></td>
+							</tr>
+							<tr>
+								<td><i>*</i> 所在服务器：</td>
+								<td><input name="servers" onblur="per_vif()" placeholder="请输入角色所在服务器"/></td>
+							</tr>
+							<tr>
+								<td><i>*</i> 角色名：</td>
+								<td><input name="uname" onblur="per_vif()"  placeholder="请输入准确的角色名"/></td>
+							</tr>
+							<tr>
+								<td><i>*</i> 角色等级：</td>
+								<td><input name="uleve"  onblur="per_vif()" placeholder="请输入准确的角色等级"/></td>
+							</tr>
+							<tr>
+								<td colspan="2"  class="sub-btn-td"><button type="button"  id="queryrg-step1">下一步</button></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<!-- 第2步 注册及密保信息 -->
+				<div class="step-2" hidden>
+					<div class="step-icon clearfix">
+						<ul>
+							<li>帐号角色信息</li>
+							<li>注册及密保信息</li>
+							<li>帐号充值信息</li>
+							<li>提交成功</li>
+						</ul>
+					</div>
+					<p>温馨提示：请填写您的注册用密保信息，填写准确率越高，核实处理成功率越高。</p>
+					<form>
+						<table>
+							<tr>
+								<td><i>*</i> 注册姓名：</td>
+								<td><input name="user_realname"  placeholder="账号资料所填写的真实姓名"/></td>
+							</tr>
+							<tr>
+								<td><i>*</i> 注册证件号码：</td>
+								<td><input name="reg_num" placeholder="账号资料所填写的注册证件号码"/></td>
+							</tr>
+							<tr>
+								<td><i>*</i> 注册日期：</td>
+								<td><input name="jHsDateInput" id="regDate" placeholder="请选择账号注册的日期"/></td>
+							</tr>
+							<tr class="reg-address">
+								<td><i>*</i> 注册地点：</td>
+								<td>
+									<select onchange="city(this,this.value)" onblur="per_vif()">
+										<option>选择省份</option>
+										<{html_options options=$citys}>
+									</select>
+									<select onchange="country(this.value)" onblur="per_vif()"></select>
+									<input type="hidden" name="reg_home" value="">
+								</td>
+							</tr>
+							<tr>
+								<td><i>*</i> 绑定邮箱：</td>
+								<td><input name="user_email" placeholder="请输入您绑定的邮箱，未绑定可填写本人邮箱"/></td>
+							</tr><!--
+							<tr>
+								<td><i>*</i> 绑定手机：</td>
+								<td><input name="user_mobile" placeholder="请输入您绑定的手机，未绑定可填写本人手机"/></td>
+							</tr>
+							<tr class="ck-box">
+								<td></td>
+								<td><input name="" type="checkbox" id="bd-phone"/><label for="bd-phone">本次处理结果的短信通知发送到以上手机号</label></td>
+							</tr>
+							<tr class="ck-box">
+								<td></td>
+								<td><input name="" type="checkbox" id="connection-phone"/><label for="connection-phone">本次处理结果的短信通知发送到以下手机号</label></td>
+							</tr>-->
+							<tr>
+								<td><i>*</i> 联系手机：</td>
+								<td><input name="user_phone" placeholder="请输入您用于接受处理结果短信的手机号码"/></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="sub-btn-td"><button type="button" disabled id="queryrg-step2">下一步</button></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">/*
+					$('#queryrg-step1').click(function () {
+                        $(".query-o-step-rg .step-1 input[type!='hidden']").each(function () {
+                            if ($(this).val() == "") {
+                                alert("不能为空！");
+                            }
+                        })
+                    });*/
+					$('#regDate').jHsDate();
+				</script>
+				<!-- 第3步 帐号充值信息 -->
+				<div class="step-3" hidden>
+					<div class="step-icon clearfix">
+						<ul class="clearfix">
+							<li>帐号角色信息</li>
+							<li>注册及密保信息</li>
+							<li>帐号充值信息</li>
+							<li>提交成功</li>
+						</ul>
+					</div>
+					<p>温馨提示：请填写您需要查询的帐号充值及出现问题信息。</p>
+					<form>
+						<table>
+							<tr class="recharge-record">
+								<td><i>*</i> 账号充值记录：</td>
+								<td>
+									<input name="pay_time1" title="1" onblur="pay_vif(this.title)" placeholder="日期:2016-04-02"/>
+									<input name="pay_money1" title="1" onblur="pay_vif(this.title)" placeholder="充值金额（数字）" onblur="pay_vif()"/>
+									<button class="add-record" id="add_record" type="button">"+"添加记录</button>
+									<input type="hidden" name="pay_orders1">
+								</td>
+							</tr>
+							<tr class="r-caption">
+								<td></td>
+								<td>如您使用网银、支付宝、微信充值，可登录您的<br>
+									网银、支付宝或微信进行查询</td>
+							</tr>
+							<tr>
+								<td style="vertical-align:top;"><i>*</i> 账号遇到的情况：</td>
+								<td>
+									<textarea rows="5" name="user_content" onblur="per_vif()" cols="34" placeholder="请详细填写您的账号情况，方便核实查证。"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td><i>*</i> 请输入验证码：</td>
+								<td>
+									<!--共用验证-->
+									<ul class="clearfix">
+										<li><input class="code-inp" name="revif" data-true="0" onblur="vif(this.value,this,2)"/></li>
+										<li><img src="?ct=cs&ac=code" onClick="this.src='?ct=cs&ac=code&a='+Math.random();"  title="点击换一张"></li>
+										<li><a href="javascript:0" class="img-tx">看不清,换一张</a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr style="    height: 0;">
+								<td class="err-caption"  colspan="2" style="text-align:center"><span class="vifmobile2"></span></td>
+							</tr>
+							<tr>
+								<td class="protocol-td" colspan="2" ><input class="ck-box" checked   name="iagree" type="checkbox"/>　　我已认真阅读并同意<a id="protocol-link">用户协议</a></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="sub-btn-td"><button type="button" id="queryrg-step3">下一步</button></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+                    <!--点击更换验证码-->
+                    $('.img-tx').click(function () {
+                        $(this).parent('li').prev('li').find('img').attr('src','?ct=cs&ac=code&a='+Math.random())
+                    });
+				</script>
+				<!-- 第4步 提交成功 -->
+				<div class="step-4" hidden>
+					<div class="step-icon clearfix">
+						<ul>
+							<li>帐号角色信息</li>
+							<li>注册及密保信息</li>
+							<li>帐号充值信息</li>
+							<li>提交成功</li>
+						</ul>
+					</div>
+					<div class="success-cap">
+						<span>提交成功！</span><br>
+						我们会在<span class="time">48小时内</span>处理完毕并短信通知您，请留意手机信息。<br>
+						您也可以登录提交申请的帐号后，在<a href="/?ct=cs&ac=ser_rec">我的服务记录</a>中随时查看申请进度。
+					</div>
+					<div class="change-way">
+						您还可以:
+						<a href="/?ct=cs&ac=findpsw">密码找回</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--手机密保验证JS-->
+<script src="__PUBLIC__/js/kf_query.js"></script>
+<!-- footer -->
+<include file="Public/footer" />
+<!-- footer - end -->
+<!-- 用户协议 -->
+<include file="Public/protocol" />
+<!-- 用户协议 - end -->
+<style>
+	.footer5{margin-top:0;}
+</style>
+</body>
+</html>
