@@ -6,20 +6,116 @@
 	<title>客服中心|账号修复</title>
 	<meta name="keywords" content="#">
 	<meta name="description" content="#">
-	<link rel="stylesheet" href="__PUBLIC__/css/base.css">
-	<link rel="stylesheet" href="__PUBLIC__/css/cs.css">
-	<include file="Public/IE" />
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/cs.css">
+	<!--[if IE]><style>.main .cont dd input.other-money{top:0;}</style><![endif]-->
+	<!--[if lt IE 8]><style>.main .cont{width:880px;}</style><![endif]-->
+	<link rel="stylesheet" href="../../css/top_line.css">
+	<!--[if lt IE 10]>	<style>.serch-box{margin-top: 4px;}</style><![endif]-->
+	<link rel="stylesheet" href="../../css/header.css">
+	<link rel="stylesheet" href="../../css/protocol.css">
+	<link rel="stylesheet" href="../../css/footer.css">
+	<script src="../../lib/jquery-1.7.2.min.js"></script>
 </head>
 <body>
-<include file="Public/top_line" />
-<include file="Public/header" />
+<!-- top_line start -->
+<div class="top_line_container">
+	<div class="top_line_content clearfix">
+		<div class="top_line_left f-left">
+			<ul class="left_list clearfix">
+				<li><a class="home-a" href="/">返回首页</a></li>
+				<li><a class="favorite-a" href="">收藏本页</a></li>
+				<li><a class="add-desk-a" href="/?ct=download">把游戏大神放到桌面上</a></li>
+				<li><a href="">客服电话：028-66666666</a></li>
+			</ul>
+		</div>
+		<div class="top_line_right f-right">
+			<div class="search-box">
+				<ul class="clearfix">
+					<li>
+						<div class="serch-box">
+							<div class="search clearfix">
+								<form method="get"  action="search/index.html">
+									<div class="select">
+										<a id="s_type" data-search-type="game">游戏</a>
+										<div class="part" id="type_box">
+											<a id="type_game" data-search-type="game">游戏</a>
+											<a id="type_info" data-search-type="info">资讯</a>
+										</div>
+									</div>
+									<input class="enter"  maxlength="22" id="search-input" name="q" type="text" value="请输入搜索内容" onfocus="this.value='';" onblur="if(this.value=='') {this.value='请输入搜索内容';}">
+									<input class="sb-btn" type="submit" value="搜索">
+									<input name="ct" type="hidden" value="search">
+									<input id="search-hidden-type" name="type" type="hidden" value="game">
+								</form>
+							</div>
+							<script>
+								var curr_type = '';
+								var curr_click = $('#type_box a');
+								var curr_choosed = $('#s_type');
+								curr_choosed.mouseenter(function () {
+									$('#type_box').attr('display','block');
+								});
+								curr_click.click(function () {
+									curr_type = $(this).text();
+									curr_choosed.text(curr_type).attr('data-search-type',$(this).attr('data-search-type'));
+									$("#search-hidden-type").val($(this).attr('data-search-type'));
+									$('#type_box').attr('display','none');
+								})
+							</script>
+						</div>
+					</li>
+					<!----------登录前---------->
+					<li class="login-reg"><a class="userLogin" id="top_line_loginbtn">登录</a></li>
+					<li class="login-reg"><a class="userReg" id="top_line_regbtn">注册</a></li>
+					<!----------登录前---------->
+					
+					<!----------登录后---------->
+					<!--<li class="login-reg"><a href="#"></a></li>
+					<li class="login-reg"><a href="">[退出]</a></li>-->
+					<!----------登录后---------->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end top_line -->
+<!-- header start -->
+<div class="header5">
+	<div class="header-nav clearfix">
+		<div class="nav-logo f-left">
+			<a class="logo-a" href="../../index.html"></a>
+		</div>
+		<div class="nav-list f-right">
+			<ul>
+				<li><a href="../../index.html">官网首页</a></li>
+				<li><a href="../account/index.html">用户中心</a></li>
+				<li><a href="../gcenter/index.html">游戏大厅</a></li>
+				<li><a href="../recharge/index.html">充值中心</a></li>
+				<li><a href="../act/index.html">活动中心</a></li>
+				<li><a href="../package/index.html">游戏礼包</a></li>
+				<li><a href="../cs/index.html">客服中心</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end header -->
 <div class="tran-bg"></div>
 <div class="kf-container">
 	<div class="kf-content">
 		<div class="title">客服中心丨自助服务</div>
 		<div class="content clearfix boxShadow">
 			<div class="left-nav f-left">
-				<include file="Public/cs_left_nav" />
+				<ul>
+					<li><a href="query.html">账号查询</a></li>
+					<li><a href="findpsw.html">密码找回</a></li>
+					<li><a href="wg.html">外挂举报</a></li>
+					<li><a class="on" href="repair.html">账号修复</a></li>
+					<li><a href="repairResult.html">账号修复结果查询</a></li>
+					<li><a href="bug.html">建议与bug反馈</a></li>
+					<li><a href="complain.html">投诉</a></li>
+					<li><a href="myrecord.html">服务记录</a></li>
+				</ul>
 			</div>
 			<!-- 第1步 确认账号 -->
 			<div class="o-step repair-o-step-1" >
@@ -423,15 +519,77 @@
 		</div>
 	</div>
 </div>
-<script src="static/js/repair.js"></script>
-<!-- footer -->
-<include file="Public/footer" />
-<!-- footer - end -->
-<!-- 用户协议 -->
-<include file="Public/protocol" />
-<!-- 用户协议 - end -->
-<style>
-	.footer5{margin-top:0;}
-</style>
+<!-- footer start -->
+<div class="footer5">
+	<div class="footer-content clearfix">
+		<div class="footer-left f-left"></div>
+		<div class="footer-right f-right">
+			<div class="footer-link">
+				<ul class="clearfix">
+					<li><a href="#">关于我们</a></li>
+					<li>｜</li>
+					<li><a href="#">客服中心</a></li>
+					<li>｜</li>
+					<li><a href="#">商务合作</a></li>
+					<li>｜</li>
+					<li><a href="#">联系我们</a></li>
+					<li>｜</li>
+					<li><a href="#">工作机会</a></li>
+					<li>｜</li>
+					<li><a href="#">家长监护</a></li>
+				</ul>
+			</div>
+			<div>CopyRight &copy; 2017 四川大神时代网络科技有限公司. All Right Reserved</div>
+			<div>川网文（2017）0000-000号 备11111111号-1   增值电信业务经营许可证：川A2-00000000</div>
+			<div>客服电话：028-11110000 / 4001-1111-000 纠纷处理方式：联系客服或依《用户协议》约定方式处理 </div>
+		</div>
+	</div>
+	<div class="work-logo-group">
+		<ul class="clearfix">
+			<li><a class="f-w f-w-1" href="javascript:;">公共信息安全<br>网络检查</a></li>
+			<li><a class="f-w f-w-2" href="javascript:;">不良信息举报<br>中心</a></li>
+			<li><a class="f-w f-w-3" href="javascript:;">企业信用评级<br>证书</a></li>
+			<li><a class="f-w f-w-4" href="javascript:;">互联网文化经<br>营单位</a></li>
+			<li><a class="f-w f-w-5" href="javascript:;">四川省工商行<br>政管理局</a></li>
+			<li class="safe-website"><a  key ="59896c002548be46f1222a90"  logo_size="124x47"  logo_type="common"  href="http://www.anquan.org" ><script src="//static.anquan.org/static/outer/js/aq_auth.js"></script></a></li>
+		</ul>
+	</div>
+	<!-----#站长统计----->
+	<div class="zztj">
+		<script src="https://s22.cnzz.com/z_stat.php?id=1262541727&web_id=1262541727
+
+" language="JavaScript"></script>
+	</div>
+	<style>
+		.zztj{position:absolute;bottom:0;}
+		.zztj a{color:black;font-size: 12px;}
+	</style>
+	<!-----#站长统计end----->
+	<!-- SEO 百度站长 -->
+	<script>
+		(function(){
+			var bp = document.createElement('script');
+			var curProtocol = window.location.protocol.split(':')[0];
+			if (curProtocol === 'https') {
+				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+			}
+			else {
+				bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
+		})();
+	</script>
+	<!-- 自动收录 -->
+	<script>(function(){
+		var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?8ef09848fa7de9ad9f2b90ae7b9338ac":"https://jspassport.ssl.qhimg.com/11.0.1.js?8ef09848fa7de9ad9f2b90ae7b9338ac";
+		document.write('<script src="' + src + '" id="sozz"><\/script>');
+	})();
+	</script>
+	<!-- 360流量统计 -->
+	<script type="text/javascript" src="//s.union.360.cn/177497.js" async defer></script>
+</div>
+<!-- end footer -->
+<script src="../../js/repair.js"></script>
 </body>
 </html>
