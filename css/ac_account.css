@@ -143,3 +143,46 @@ a:hover{text-decoration:none}
 .Anti-addiction .ac_news-content table tr:first-child{border-bottom: 1px solid #000}
 .Anti-addiction .ac_news-content table tr:last-child{border-bottom: none}
 .Anti-addiction .ac_news-content table td{border: none;height: 40px;line-height: 40px}
+
+
+
+/*user_inform*/
+.ac-userinform{  width: 1300px;height: 220px; margin:0 auto  ;  background-color: #fff;}
+.ac-userinform .ac-usertopbox{width: 100%;height: 120px;position: relative; background: url(../images/op/ac_topbg1.jpg) no-repeat ;}
+.ac-userinform .ac-userbottombox{width: 240px;height: 56px;margin: 20px auto 0 auto;background: url(../images/icon/ac_messageicon.png) no-repeat left;padding-left: 80px;font-size: 16px;color: #000}
+.ac-userinform .ac-userbottombox .p2{margin-top: 10px}
+.ac-userinform .ac-userbottombox .p2 a{border: 2px solid #8fc31f;color: #8fc31f;font-size: 14px;padding: 2px 15px}
+.ac-userinform .ac-usertopbox .ac-userimagebox{width: 125px;height: 168px;position: absolute;left: 50px;top: 25px;}
+.ac-userinform .ac-usertopbox .ac-userimagebox .ac-imgbox{width: 125px;height: 125px;border-radius: 125px;  background-color: #a0a0a0;border: 3px solid #FFF;}
+.ac-userinform .ac-usertopbox .ac-userimagebox .ac-imgbox>img{width: 100%;height: auto}
+.ac-userinform .ac-usertopbox .ac-userimagebox .edit-imagebox{text-align: center;width: 100px;height: 27px;margin: 10px auto 0 auto;cursor: pointer}
+.ac-userinform .ac-usertopbox .ac-userimagebox .edit-imagebox .edit-image{position: relative;overflow: hidden;border: 1px solid #a0a0a0;padding: 2px 15px;border-radius: 27px;cursor: pointer}
+.ac-userinform .ac-usertopbox .ac-userimagebox .edit-imagebox .edit-image input{position: absolute;left: 0;top: 0;width: 95px;opacity: 0;cursor: pointer;}
+.ac-userinform .ac-usertopbox .personal-pro{width: auto;margin-left: 200px;height: 100% ;color: #fff ;padding: 30px 0}
+.ac-userinform .ac-usertopbox .personal-pro .name-box{font-size: 18px}
+.ac-userinform .ac-usertopbox .personal-pro .name-box>input{text-align: center;width: auto;min-width: 80px;display: none}
+.ac-userinform .ac-usertopbox .personal-pro .name-box .edit{width: 26px;height: 26px;display: inline-block;vertical-align: bottom;
+    background: url(../images/icon/ac_editicon.png) no-repeat ;}
+.ac-userinform .ac-usertopbox .personal-pro .Account-box{margin-top: 20px;font-size: 12px}
+.ac-userinform .ac-usertopbox .personal-pro .Account-box .loading-time{padding-left: 80px}
+/*左侧NAV*/
+.ac-leftnav{width: 240px;height: 684px;  background-color: #fff;;float: left}
+.ac-leftnav ul{width: 100%;height: auto;}
+.ac-leftnav ul .ac-userchocklist{width: 110px;height: 20px;padding-left:  30px; margin: 15px auto; background: url(../images/icon/ac_allicon2.png) no-repeat left;font-size: 14px;  }
+.ac-leftnav ul .ac-userchocklist>a{color: #313131;cursor: pointer;}
+.ac-leftnav ul .ac-userchocklist.active{width: 110px;height: 20px;padding-left:  30px; margin: 15px auto;background: url(../images/icon/ac_allicon1.png) no-repeat left;  }
+.ac-leftnav ul .ac-userchocklist.active>a{color: #3889d6}
+.ac-leftnav ul .list-account{ background-position: 0 2px;}
+.ac-leftnav ul .list-personal{background-position: 0 -37px;}
+.ac-leftnav ul .list-news{background-position: 0 -76px;}
+.ac-leftnav ul .list-safe{background-position: 0 -115px;}
+.ac-leftnav ul .list-games{background-position: 0 -154px;}
+.ac-leftnav ul .list-answer{background-position: 0 -193px;}
+.ac-leftnav ul .list-recharge{background-position: 0 -231px;}
+.ac-leftnav ul .list-account.active{ background-position: 0 2px;}
+.ac-leftnav ul .list-personal.active{background-position: 0 -37px;}
+.ac-leftnav ul .list-news.active{background-position: 0 -76px;}
+.ac-leftnav ul .list-safe.active{background-position: 0 -115px;}
+.ac-leftnav ul .list-games.active{background-position: 0 -154px;}
+.ac-leftnav ul .list-answer.active{background-position: 0 -193px;}
+.ac-leftnav ul .list-recharge.active{background-position: 0 -231px;}
